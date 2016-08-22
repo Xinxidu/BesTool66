@@ -63,7 +63,6 @@
     
     MusicViewController *MusicVC = [[MusicViewController alloc] init];
     [self setUpOneChildVcWithVc:MusicVC Image:@"account_normal" selectedImage:@"account_highlight" title:@"音乐"];
-    MusicVC.view.backgroundColor = [UIColor blackColor];
 }
 //点击弹出与隐藏侧试图
 -(void)openOrCloseLeftList{
