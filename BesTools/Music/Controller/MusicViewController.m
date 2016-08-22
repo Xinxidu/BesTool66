@@ -2,7 +2,7 @@
 //  MusicViewController.m
 //  BesTools
 //
-//  Created by Aaron Lee on 16/8/18.
+//  Created by Aaron Lee on 16/8/22.
 //  Copyright © 2016年 Aaron Lee. All rights reserved.
 //
 
@@ -17,6 +17,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    self.view.backgroundColor=[UIColor whiteColor];
 }
 
 - (void)didReceiveMemoryWarning {
