@@ -66,20 +66,21 @@
 }
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(nonnull NSIndexPath *)indexPath{
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
-    UINavigationController *Vc = [[UINavigationController alloc]initWithRootViewController:[OtherViewController new]];
+//    UINavigationController *Vc = [[UINavigationController alloc]initWithRootViewController:[OtherViewController new]];
     AppDelegate *tempAppDelegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
     [tempAppDelegate.LeftSlideVC closeLeftView];
-    if (indexPath.row == 6) {
-        NSLog(@"00000");
-        [self chatQQ];//联系QQ
-    }else if (indexPath.row == 1){
-        NSLog(@"11111");
-    }else if (indexPath.row == 2){
-        NSLog(@"22222");
-    }else{
-        [self presentViewController:Vc animated:YES completion:nil];
-        NSLog(@"*****");
-    }
+    [self.parentViewController.navigationController pushViewController:[[OtherViewController alloc] init] animated:YES];
+//    if (indexPath.row == 6) {
+//        NSLog(@"00000");
+//        [self chatQQ];//联系QQ
+//    }else if (indexPath.row == 1){
+//        NSLog(@"11111");
+//    }else if (indexPath.row == 2){
+//        NSLog(@"22222");
+//    }else{
+//        [self presentViewController:Vc animated:YES completion:nil];
+//        NSLog(@"*****");
+//    }
 }
 - (CGFloat)tableView:(UITableView*)tableView heightForHeaderInSection:(NSInteger)section{
     return 180;
