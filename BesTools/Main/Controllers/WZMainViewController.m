@@ -20,7 +20,7 @@
 
 -(void)configureData{
     self.citys = [WZFileTool readCitysFromFile];
-    self.totalPages = self.citys.count + 1;
+    self.totalPages = (int)self.citys.count + 1;
     self.curPage = 0;
     self.viewControllers = [NSMutableArray array];
     WZWeatherViewController *defalutViewController =[[WZWeatherViewController alloc]init];//
