@@ -1,0 +1,866 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3B4909351D65B55B00A63FDC /* LeftSlideViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B4909321D65B55B00A63FDC /* LeftSlideViewController.m */; };
+		3B4909361D65B55B00A63FDC /* UIView_extra.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B4909341D65B55B00A63FDC /* UIView_extra.m */; };
+		3B49093B1D65B56A00A63FDC /* leftbackiamge.png in Resources */ = {isa = PBXBuildFile; fileRef = 3B4909371D65B56A00A63FDC /* leftbackiamge.png */; };
+		3B49093C1D65B56A00A63FDC /* LeftViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B4909391D65B56A00A63FDC /* LeftViewController.m */; };
+		3B49093D1D65B56A00A63FDC /* menu@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3B49093A1D65B56A00A63FDC /* menu@2x.png */; };
+		3B53780F1D66FD6100DAD224 /* OtherViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B53780E1D66FD6100DAD224 /* OtherViewController.m */; };
+		A424D6E71D65556800A6AE2A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A424D6E61D65556800A6AE2A /* main.m */; };
+		A424D6EA1D65556800A6AE2A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A424D6E91D65556800A6AE2A /* AppDelegate.m */; };
+		A424D6ED1D65556800A6AE2A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A424D6EC1D65556800A6AE2A /* ViewController.m */; };
+		A424D6F01D65556800A6AE2A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A424D6EE1D65556800A6AE2A /* Main.storyboard */; };
+		A424D6F21D65556800A6AE2A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A424D6F11D65556800A6AE2A /* Assets.xcassets */; };
+		A424D6F51D65556800A6AE2A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A424D6F31D65556800A6AE2A /* LaunchScreen.storyboard */; };
+		A424D7001D65556800A6AE2A /* BesToolsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A424D6FF1D65556800A6AE2A /* BesToolsTests.m */; };
+		A424D70B1D65556900A6AE2A /* BesToolsUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = A424D70A1D65556900A6AE2A /* BesToolsUITests.m */; };
+		A424D71A1D655A4F00A6AE2A /* UIView+LBExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = A424D7191D655A4F00A6AE2A /* UIView+LBExtension.m */; };
+		A424D7211D655A9800A6AE2A /* ZYTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = A424D71E1D655A9800A6AE2A /* ZYTabBarController.m */; };
+		A424D7221D655A9800A6AE2A /* ZYNewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A424D7201D655A9800A6AE2A /* ZYNewViewController.m */; };
+		A424D72A1D655AB600A6AE2A /* ZYPathButton.m in Sources */ = {isa = PBXBuildFile; fileRef = A424D7251D655AB600A6AE2A /* ZYPathButton.m */; };
+		A424D72B1D655AB600A6AE2A /* ZYPathItemButton.m in Sources */ = {isa = PBXBuildFile; fileRef = A424D7271D655AB600A6AE2A /* ZYPathItemButton.m */; };
+		A424D72C1D655AB600A6AE2A /* ZYTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = A424D7291D655AB600A6AE2A /* ZYTabBar.m */; };
+		A424D7401D6581AD00A6AE2A /* MusicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A424D73F1D6581AD00A6AE2A /* MusicViewController.m */; };
+		A424D7431D6581C600A6AE2A /* TalkViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A424D7421D6581C600A6AE2A /* TalkViewController.m */; };
+		A424D7461D6581D300A6AE2A /* ReadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A424D7451D6581D300A6AE2A /* ReadViewController.m */; };
+		A424D7491D6581E200A6AE2A /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A424D7481D6581E200A6AE2A /* HomeViewController.m */; };
+		C8243646E029343AE9DB9C32 /* libPods-BesTools.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A026D0734E41569235C5EE47 /* libPods-BesTools.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A424D6FC1D65556800A6AE2A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A424D6DA1D65556800A6AE2A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A424D6E11D65556800A6AE2A;
+			remoteInfo = BesTools;
+		};
+		A424D7071D65556900A6AE2A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A424D6DA1D65556800A6AE2A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A424D6E11D65556800A6AE2A;
+			remoteInfo = BesTools;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3B4909311D65B55B00A63FDC /* LeftSlideViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeftSlideViewController.h; sourceTree = "<group>"; };
+		3B4909321D65B55B00A63FDC /* LeftSlideViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LeftSlideViewController.m; sourceTree = "<group>"; };
+		3B4909331D65B55B00A63FDC /* UIView_extra.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIView_extra.h; sourceTree = "<group>"; };
+		3B4909341D65B55B00A63FDC /* UIView_extra.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIView_extra.m; sourceTree = "<group>"; };
+		3B4909371D65B56A00A63FDC /* leftbackiamge.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = leftbackiamge.png; sourceTree = "<group>"; };
+		3B4909381D65B56A00A63FDC /* LeftViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeftViewController.h; sourceTree = "<group>"; };
+		3B4909391D65B56A00A63FDC /* LeftViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LeftViewController.m; sourceTree = "<group>"; };
+		3B49093A1D65B56A00A63FDC /* menu@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "menu@2x.png"; sourceTree = "<group>"; };
+		3B53780D1D66FD6100DAD224 /* OtherViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OtherViewController.h; sourceTree = "<group>"; };
+		3B53780E1D66FD6100DAD224 /* OtherViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OtherViewController.m; sourceTree = "<group>"; };
+		A026D0734E41569235C5EE47 /* libPods-BesTools.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BesTools.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A424D6E21D65556800A6AE2A /* BesTools.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BesTools.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A424D6E61D65556800A6AE2A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A424D6E81D65556800A6AE2A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		A424D6E91D65556800A6AE2A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		A424D6EB1D65556800A6AE2A /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		A424D6EC1D65556800A6AE2A /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		A424D6EF1D65556800A6AE2A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A424D6F11D65556800A6AE2A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A424D6F41D65556800A6AE2A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A424D6F61D65556800A6AE2A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A424D6FB1D65556800A6AE2A /* BesToolsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BesToolsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A424D6FF1D65556800A6AE2A /* BesToolsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BesToolsTests.m; sourceTree = "<group>"; };
+		A424D7011D65556800A6AE2A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A424D7061D65556900A6AE2A /* BesToolsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BesToolsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A424D70A1D65556900A6AE2A /* BesToolsUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BesToolsUITests.m; sourceTree = "<group>"; };
+		A424D70C1D65556900A6AE2A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A424D7181D655A4F00A6AE2A /* UIView+LBExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+LBExtension.h"; sourceTree = "<group>"; };
+		A424D7191D655A4F00A6AE2A /* UIView+LBExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+LBExtension.m"; sourceTree = "<group>"; };
+		A424D71D1D655A9800A6AE2A /* ZYTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYTabBarController.h; sourceTree = "<group>"; };
+		A424D71E1D655A9800A6AE2A /* ZYTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZYTabBarController.m; sourceTree = "<group>"; };
+		A424D71F1D655A9800A6AE2A /* ZYNewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYNewViewController.h; sourceTree = "<group>"; };
+		A424D7201D655A9800A6AE2A /* ZYNewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZYNewViewController.m; sourceTree = "<group>"; };
+		A424D7241D655AB600A6AE2A /* ZYPathButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYPathButton.h; sourceTree = "<group>"; };
+		A424D7251D655AB600A6AE2A /* ZYPathButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZYPathButton.m; sourceTree = "<group>"; };
+		A424D7261D655AB600A6AE2A /* ZYPathItemButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYPathItemButton.h; sourceTree = "<group>"; };
+		A424D7271D655AB600A6AE2A /* ZYPathItemButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZYPathItemButton.m; sourceTree = "<group>"; };
+		A424D7281D655AB600A6AE2A /* ZYTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYTabBar.h; sourceTree = "<group>"; };
+		A424D7291D655AB600A6AE2A /* ZYTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZYTabBar.m; sourceTree = "<group>"; };
+		A424D73E1D6581AD00A6AE2A /* MusicViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MusicViewController.h; sourceTree = "<group>"; };
+		A424D73F1D6581AD00A6AE2A /* MusicViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MusicViewController.m; sourceTree = "<group>"; };
+		A424D7411D6581C600A6AE2A /* TalkViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TalkViewController.h; sourceTree = "<group>"; };
+		A424D7421D6581C600A6AE2A /* TalkViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TalkViewController.m; sourceTree = "<group>"; };
+		A424D7441D6581D300A6AE2A /* ReadViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReadViewController.h; sourceTree = "<group>"; };
+		A424D7451D6581D300A6AE2A /* ReadViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReadViewController.m; sourceTree = "<group>"; };
+		A424D7471D6581E200A6AE2A /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
+		A424D7481D6581E200A6AE2A /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
+		A8C2C7CD01E2ED59F6E2A833 /* Pods-BesTools.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BesTools.release.xcconfig"; path = "Pods/Target Support Files/Pods-BesTools/Pods-BesTools.release.xcconfig"; sourceTree = "<group>"; };
+		FF1B2240F9998567088E1FDE /* Pods-BesTools.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BesTools.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BesTools/Pods-BesTools.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A424D6DF1D65556800A6AE2A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C8243646E029343AE9DB9C32 /* libPods-BesTools.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A424D6F81D65556800A6AE2A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A424D7031D65556900A6AE2A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		236B5614D69E68C820A44273 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FF1B2240F9998567088E1FDE /* Pods-BesTools.debug.xcconfig */,
+				A8C2C7CD01E2ED59F6E2A833 /* Pods-BesTools.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		3B4909301D65B55B00A63FDC /* LeftSlideViewController */ = {
+			isa = PBXGroup;
+			children = (
+				3B4909311D65B55B00A63FDC /* LeftSlideViewController.h */,
+				3B4909321D65B55B00A63FDC /* LeftSlideViewController.m */,
+				3B4909331D65B55B00A63FDC /* UIView_extra.h */,
+				3B4909341D65B55B00A63FDC /* UIView_extra.m */,
+			);
+			path = LeftSlideViewController;
+			sourceTree = "<group>";
+		};
+		A424D6D91D65556800A6AE2A = {
+			isa = PBXGroup;
+			children = (
+				A424D6E41D65556800A6AE2A /* BesTools */,
+				A424D6FE1D65556800A6AE2A /* BesToolsTests */,
+				A424D7091D65556900A6AE2A /* BesToolsUITests */,
+				A424D6E31D65556800A6AE2A /* Products */,
+				236B5614D69E68C820A44273 /* Pods */,
+				C6ADC778B07B9CEC5133B936 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		A424D6E31D65556800A6AE2A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A424D6E21D65556800A6AE2A /* BesTools.app */,
+				A424D6FB1D65556800A6AE2A /* BesToolsTests.xctest */,
+				A424D7061D65556900A6AE2A /* BesToolsUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A424D6E41D65556800A6AE2A /* BesTools */ = {
+			isa = PBXGroup;
+			children = (
+				A424D7311D65808700A6AE2A /* Music */,
+				A424D7301D65807E00A6AE2A /* Talk */,
+				A424D72F1D65807600A6AE2A /* Read */,
+				A424D72E1D65806E00A6AE2A /* Home */,
+				A424D72D1D657FF200A6AE2A /* Main */,
+				A424D6EE1D65556800A6AE2A /* Main.storyboard */,
+				A424D6F11D65556800A6AE2A /* Assets.xcassets */,
+				A424D6F31D65556800A6AE2A /* LaunchScreen.storyboard */,
+				A424D6F61D65556800A6AE2A /* Info.plist */,
+				A424D6E51D65556800A6AE2A /* Supporting Files */,
+			);
+			path = BesTools;
+			sourceTree = "<group>";
+		};
+		A424D6E51D65556800A6AE2A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A424D6E61D65556800A6AE2A /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A424D6FE1D65556800A6AE2A /* BesToolsTests */ = {
+			isa = PBXGroup;
+			children = (
+				A424D6FF1D65556800A6AE2A /* BesToolsTests.m */,
+				A424D7011D65556800A6AE2A /* Info.plist */,
+			);
+			path = BesToolsTests;
+			sourceTree = "<group>";
+		};
+		A424D7091D65556900A6AE2A /* BesToolsUITests */ = {
+			isa = PBXGroup;
+			children = (
+				A424D70A1D65556900A6AE2A /* BesToolsUITests.m */,
+				A424D70C1D65556900A6AE2A /* Info.plist */,
+			);
+			path = BesToolsUITests;
+			sourceTree = "<group>";
+		};
+		A424D71B1D655A5B00A6AE2A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A424D7181D655A4F00A6AE2A /* UIView+LBExtension.h */,
+				A424D7191D655A4F00A6AE2A /* UIView+LBExtension.m */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		A424D71C1D655A8000A6AE2A /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				A424D71D1D655A9800A6AE2A /* ZYTabBarController.h */,
+				A424D71E1D655A9800A6AE2A /* ZYTabBarController.m */,
+				A424D71F1D655A9800A6AE2A /* ZYNewViewController.h */,
+				A424D7201D655A9800A6AE2A /* ZYNewViewController.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		A424D7231D655AA400A6AE2A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A424D7241D655AB600A6AE2A /* ZYPathButton.h */,
+				A424D7251D655AB600A6AE2A /* ZYPathButton.m */,
+				A424D7261D655AB600A6AE2A /* ZYPathItemButton.h */,
+				A424D7271D655AB600A6AE2A /* ZYPathItemButton.m */,
+				A424D7281D655AB600A6AE2A /* ZYTabBar.h */,
+				A424D7291D655AB600A6AE2A /* ZYTabBar.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		A424D72D1D657FF200A6AE2A /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				3B4909301D65B55B00A63FDC /* LeftSlideViewController */,
+				A424D6E81D65556800A6AE2A /* AppDelegate.h */,
+				A424D6E91D65556800A6AE2A /* AppDelegate.m */,
+				A424D6EB1D65556800A6AE2A /* ViewController.h */,
+				A424D6EC1D65556800A6AE2A /* ViewController.m */,
+				3B4909371D65B56A00A63FDC /* leftbackiamge.png */,
+				3B4909381D65B56A00A63FDC /* LeftViewController.h */,
+				3B4909391D65B56A00A63FDC /* LeftViewController.m */,
+				3B53780D1D66FD6100DAD224 /* OtherViewController.h */,
+				3B53780E1D66FD6100DAD224 /* OtherViewController.m */,
+				3B49093A1D65B56A00A63FDC /* menu@2x.png */,
+				A424D71B1D655A5B00A6AE2A /* View */,
+				A424D71C1D655A8000A6AE2A /* Controller */,
+				A424D7231D655AA400A6AE2A /* Model */,
+			);
+			name = Main;
+			sourceTree = "<group>";
+		};
+		A424D72E1D65806E00A6AE2A /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				A424D73D1D65818600A6AE2A /* Controller */,
+				A424D73C1D65817C00A6AE2A /* View */,
+				A424D73B1D65817400A6AE2A /* Model */,
+			);
+			name = Home;
+			sourceTree = "<group>";
+		};
+		A424D72F1D65807600A6AE2A /* Read */ = {
+			isa = PBXGroup;
+			children = (
+				A424D73A1D65816A00A6AE2A /* Controller */,
+				A424D7391D65816400A6AE2A /* View */,
+				A424D7381D65815D00A6AE2A /* Model */,
+			);
+			name = Read;
+			sourceTree = "<group>";
+		};
+		A424D7301D65807E00A6AE2A /* Talk */ = {
+			isa = PBXGroup;
+			children = (
+				A424D7371D65815100A6AE2A /* Model */,
+				A424D7361D65814B00A6AE2A /* View */,
+				A424D7351D65814200A6AE2A /* Controller */,
+			);
+			name = Talk;
+			sourceTree = "<group>";
+		};
+		A424D7311D65808700A6AE2A /* Music */ = {
+			isa = PBXGroup;
+			children = (
+				A424D7341D65813700A6AE2A /* Controller */,
+				A424D7331D65813000A6AE2A /* View */,
+				A424D7321D65812600A6AE2A /* Model */,
+			);
+			name = Music;
+			sourceTree = "<group>";
+		};
+		A424D7321D65812600A6AE2A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		A424D7331D65813000A6AE2A /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		A424D7341D65813700A6AE2A /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				A424D73E1D6581AD00A6AE2A /* MusicViewController.h */,
+				A424D73F1D6581AD00A6AE2A /* MusicViewController.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		A424D7351D65814200A6AE2A /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				A424D7411D6581C600A6AE2A /* TalkViewController.h */,
+				A424D7421D6581C600A6AE2A /* TalkViewController.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		A424D7361D65814B00A6AE2A /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		A424D7371D65815100A6AE2A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		A424D7381D65815D00A6AE2A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		A424D7391D65816400A6AE2A /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		A424D73A1D65816A00A6AE2A /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				A424D7441D6581D300A6AE2A /* ReadViewController.h */,
+				A424D7451D6581D300A6AE2A /* ReadViewController.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		A424D73B1D65817400A6AE2A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		A424D73C1D65817C00A6AE2A /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		A424D73D1D65818600A6AE2A /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				A424D7471D6581E200A6AE2A /* HomeViewController.h */,
+				A424D7481D6581E200A6AE2A /* HomeViewController.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		C6ADC778B07B9CEC5133B936 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A026D0734E41569235C5EE47 /* libPods-BesTools.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A424D6E11D65556800A6AE2A /* BesTools */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A424D70F1D65556900A6AE2A /* Build configuration list for PBXNativeTarget "BesTools" */;
+			buildPhases = (
+				DA9800E44DAC3F0E4BD23274 /* [CP] Check Pods Manifest.lock */,
+				A424D6DE1D65556800A6AE2A /* Sources */,
+				A424D6DF1D65556800A6AE2A /* Frameworks */,
+				A424D6E01D65556800A6AE2A /* Resources */,
+				B0DFD74AADB9CE644DB6BA45 /* [CP] Embed Pods Frameworks */,
+				DCC311D2D0DD8C857C0AAA7A /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BesTools;
+			productName = BesTools;
+			productReference = A424D6E21D65556800A6AE2A /* BesTools.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A424D6FA1D65556800A6AE2A /* BesToolsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A424D7121D65556900A6AE2A /* Build configuration list for PBXNativeTarget "BesToolsTests" */;
+			buildPhases = (
+				A424D6F71D65556800A6AE2A /* Sources */,
+				A424D6F81D65556800A6AE2A /* Frameworks */,
+				A424D6F91D65556800A6AE2A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A424D6FD1D65556800A6AE2A /* PBXTargetDependency */,
+			);
+			name = BesToolsTests;
+			productName = BesToolsTests;
+			productReference = A424D6FB1D65556800A6AE2A /* BesToolsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A424D7051D65556900A6AE2A /* BesToolsUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A424D7151D65556900A6AE2A /* Build configuration list for PBXNativeTarget "BesToolsUITests" */;
+			buildPhases = (
+				A424D7021D65556900A6AE2A /* Sources */,
+				A424D7031D65556900A6AE2A /* Frameworks */,
+				A424D7041D65556900A6AE2A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A424D7081D65556900A6AE2A /* PBXTargetDependency */,
+			);
+			name = BesToolsUITests;
+			productName = BesToolsUITests;
+			productReference = A424D7061D65556900A6AE2A /* BesToolsUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A424D6DA1D65556800A6AE2A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "Aaron Lee";
+				TargetAttributes = {
+					A424D6E11D65556800A6AE2A = {
+						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = 34585F6SJP;
+					};
+					A424D6FA1D65556800A6AE2A = {
+						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = V28AGEWQRE;
+						TestTargetID = A424D6E11D65556800A6AE2A;
+					};
+					A424D7051D65556900A6AE2A = {
+						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = V28AGEWQRE;
+						TestTargetID = A424D6E11D65556800A6AE2A;
+					};
+				};
+			};
+			buildConfigurationList = A424D6DD1D65556800A6AE2A /* Build configuration list for PBXProject "BesTools" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A424D6D91D65556800A6AE2A;
+			productRefGroup = A424D6E31D65556800A6AE2A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A424D6E11D65556800A6AE2A /* BesTools */,
+				A424D6FA1D65556800A6AE2A /* BesToolsTests */,
+				A424D7051D65556900A6AE2A /* BesToolsUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A424D6E01D65556800A6AE2A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A424D6F51D65556800A6AE2A /* LaunchScreen.storyboard in Resources */,
+				A424D6F21D65556800A6AE2A /* Assets.xcassets in Resources */,
+				3B49093D1D65B56A00A63FDC /* menu@2x.png in Resources */,
+				A424D6F01D65556800A6AE2A /* Main.storyboard in Resources */,
+				3B49093B1D65B56A00A63FDC /* leftbackiamge.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A424D6F91D65556800A6AE2A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A424D7041D65556900A6AE2A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		B0DFD74AADB9CE644DB6BA45 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BesTools/Pods-BesTools-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DA9800E44DAC3F0E4BD23274 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		DCC311D2D0DD8C857C0AAA7A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BesTools/Pods-BesTools-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A424D6DE1D65556800A6AE2A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3B4909361D65B55B00A63FDC /* UIView_extra.m in Sources */,
+				A424D7431D6581C600A6AE2A /* TalkViewController.m in Sources */,
+				3B4909351D65B55B00A63FDC /* LeftSlideViewController.m in Sources */,
+				A424D72C1D655AB600A6AE2A /* ZYTabBar.m in Sources */,
+				A424D72B1D655AB600A6AE2A /* ZYPathItemButton.m in Sources */,
+				A424D6ED1D65556800A6AE2A /* ViewController.m in Sources */,
+				A424D6EA1D65556800A6AE2A /* AppDelegate.m in Sources */,
+				A424D72A1D655AB600A6AE2A /* ZYPathButton.m in Sources */,
+				A424D71A1D655A4F00A6AE2A /* UIView+LBExtension.m in Sources */,
+				3B49093C1D65B56A00A63FDC /* LeftViewController.m in Sources */,
+				A424D7401D6581AD00A6AE2A /* MusicViewController.m in Sources */,
+				A424D7211D655A9800A6AE2A /* ZYTabBarController.m in Sources */,
+				3B53780F1D66FD6100DAD224 /* OtherViewController.m in Sources */,
+				A424D7221D655A9800A6AE2A /* ZYNewViewController.m in Sources */,
+				A424D7461D6581D300A6AE2A /* ReadViewController.m in Sources */,
+				A424D6E71D65556800A6AE2A /* main.m in Sources */,
+				A424D7491D6581E200A6AE2A /* HomeViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A424D6F71D65556800A6AE2A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A424D7001D65556800A6AE2A /* BesToolsTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A424D7021D65556900A6AE2A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A424D70B1D65556900A6AE2A /* BesToolsUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A424D6FD1D65556800A6AE2A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A424D6E11D65556800A6AE2A /* BesTools */;
+			targetProxy = A424D6FC1D65556800A6AE2A /* PBXContainerItemProxy */;
+		};
+		A424D7081D65556900A6AE2A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A424D6E11D65556800A6AE2A /* BesTools */;
+			targetProxy = A424D7071D65556900A6AE2A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A424D6EE1D65556800A6AE2A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A424D6EF1D65556800A6AE2A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A424D6F31D65556800A6AE2A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A424D6F41D65556800A6AE2A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A424D70D1D65556900A6AE2A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A424D70E1D65556900A6AE2A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A424D7101D65556900A6AE2A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FF1B2240F9998567088E1FDE /* Pods-BesTools.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = BesTools/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.test.BesTools;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		A424D7111D65556900A6AE2A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A8C2C7CD01E2ED59F6E2A833 /* Pods-BesTools.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = BesTools/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.test.BesTools;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		A424D7131D65556900A6AE2A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = BesToolsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.test.BesToolsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BesTools.app/BesTools";
+			};
+			name = Debug;
+		};
+		A424D7141D65556900A6AE2A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = BesToolsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.test.BesToolsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BesTools.app/BesTools";
+			};
+			name = Release;
+		};
+		A424D7161D65556900A6AE2A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = BesToolsUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.test.BesToolsUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = BesTools;
+			};
+			name = Debug;
+		};
+		A424D7171D65556900A6AE2A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = BesToolsUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.test.BesToolsUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = BesTools;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A424D6DD1D65556800A6AE2A /* Build configuration list for PBXProject "BesTools" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A424D70D1D65556900A6AE2A /* Debug */,
+				A424D70E1D65556900A6AE2A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A424D70F1D65556900A6AE2A /* Build configuration list for PBXNativeTarget "BesTools" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A424D7101D65556900A6AE2A /* Debug */,
+				A424D7111D65556900A6AE2A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A424D7121D65556900A6AE2A /* Build configuration list for PBXNativeTarget "BesToolsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A424D7131D65556900A6AE2A /* Debug */,
+				A424D7141D65556900A6AE2A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A424D7151D65556900A6AE2A /* Build configuration list for PBXNativeTarget "BesToolsUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A424D7161D65556900A6AE2A /* Debug */,
+				A424D7171D65556900A6AE2A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A424D6DA1D65556800A6AE2A /* Project object */;
+}
