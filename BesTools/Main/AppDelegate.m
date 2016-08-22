@@ -18,10 +18,11 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     ZYTabBarController *mainVC = [[ZYTabBarController alloc]init];
-//    self.mainNavigationController = [[UINavigationController alloc]initWithRootViewController:mainVC];
     LeftViewController *leftVC = [[LeftViewController alloc]init];
     self.LeftSlideVC = [[LeftSlideViewController alloc]initWithLeftView:leftVC andMainView:mainVC];
-    self.window.rootViewController = self.LeftSlideVC;
+    UINavigationController *mainNav = [[UINavigationController alloc] initWithRootViewController:self.LeftSlideVC];
+    mainNav.navigationBarHidden = YES;
+    self.window.rootViewController = mainNav;
     [[UINavigationBar appearance] setBarTintColor:[UIColor orangeColor]];
     return YES;
 }
