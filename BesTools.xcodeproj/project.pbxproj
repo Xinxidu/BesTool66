@@ -43,6 +43,7 @@
 		3BAB59131D6AE75F008B696C /* WZIndexTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3BAB58ED1D6AE75F008B696C /* WZIndexTableViewCell.xib */; };
 		3BAB59141D6AE75F008B696C /* WZTitleTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BAB58EF1D6AE75F008B696C /* WZTitleTableViewCell.m */; };
 		3BAB59151D6AE75F008B696C /* WZTitleTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3BAB58F01D6AE75F008B696C /* WZTitleTableViewCell.xib */; };
+		3BAB59171D6AFADD008B696C /* address.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3BAB59161D6AFADD008B696C /* address.plist */; };
 		A424D6E71D65556800A6AE2A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A424D6E61D65556800A6AE2A /* main.m */; };
 		A424D6F01D65556800A6AE2A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A424D6EE1D65556800A6AE2A /* Main.storyboard */; };
 		A424D6F21D65556800A6AE2A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A424D6F11D65556800A6AE2A /* Assets.xcassets */; };
@@ -156,6 +157,7 @@
 		3BAB58EF1D6AE75F008B696C /* WZTitleTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WZTitleTableViewCell.m; sourceTree = "<group>"; };
 		3BAB58F01D6AE75F008B696C /* WZTitleTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WZTitleTableViewCell.xib; sourceTree = "<group>"; };
 		3BAB58F11D6AE75F008B696C /* WZConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WZConstants.h; sourceTree = "<group>"; };
+		3BAB59161D6AFADD008B696C /* address.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = address.plist; sourceTree = "<group>"; };
 		A026D0734E41569235C5EE47 /* libPods-BesTools.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BesTools.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A424D6E21D65556800A6AE2A /* BesTools.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BesTools.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A424D6E61D65556800A6AE2A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -245,6 +247,7 @@
 		3BAB589F1D6AE75F008B696C /* Weather */ = {
 			isa = PBXGroup;
 			children = (
+				3BAB59161D6AFADD008B696C /* address.plist */,
 				3BAB58A01D6AE75F008B696C /* Controllers */,
 				3BAB58A91D6AE75F008B696C /* Models */,
 				3BAB58B21D6AE75F008B696C /* ThirdLibs */,
@@ -735,6 +738,7 @@
 				3BAB590F1D6AE75F008B696C /* WZHeaderTableViewCell.xib in Resources */,
 				3BAB59131D6AE75F008B696C /* WZIndexTableViewCell.xib in Resources */,
 				A424D6F51D65556800A6AE2A /* LaunchScreen.storyboard in Resources */,
+				3BAB59171D6AFADD008B696C /* address.plist in Resources */,
 				A424D6F21D65556800A6AE2A /* Assets.xcassets in Resources */,
 				3BAB590B1D6AE75F008B696C /* WZForecastItemTableViewCell.xib in Resources */,
 				A45DBB411D6ADF8E00B4AC2A /* menu@2x.png in Resources */,
