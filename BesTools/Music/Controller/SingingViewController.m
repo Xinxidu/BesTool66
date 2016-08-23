@@ -45,7 +45,7 @@
     [self creatPage];
     
     [self creatTableView];
-    
+    //创建播放按钮
     [self creatBtn];
     //音量
    // [self volume];
@@ -86,9 +86,6 @@
     [self creatScrollViewBack];
     [self creatScrollLeftView];
     [self creatScrollRightView:model.blurPicUrl];
-    
-  
-    
 //    调用光盘方法
     self.picImageView = [[UIImageView alloc]initWithFrame:CGRectMake(0, 0, 200, 200)];
     [self creatPicture:model.picUrl];
@@ -134,15 +131,10 @@
                     
                     //分割区间求歌词时间
                     NSString *timeString = [[lineArray objectAtIndex:i] substringWithRange:NSMakeRange(1, 5)];
-                   
-                 
-                    
                     
                     //把时间 和 歌词 加入
                     [self.lrcTime addObject:timeString];
                     [self.lrcAll addObject:lrcString];
-                    
-
                     
                 }
             }
@@ -154,8 +146,6 @@
 - (void)time{
 int hh= 0,mm = 0,ss = 0;
 
-
-
 NSString *mmStr= nil;
 
 NSString *ssStr= nil;
@@ -165,8 +155,6 @@ hh = self.player.currentTime / 360;
 mm = (self.player.currentTime -hh * 360)/ 60;
 
 ss = (int)self.player.currentTime % 60;
-
-
 
 if (mm< 10){
     
@@ -199,21 +187,10 @@ if (ss< 10){
                 NSIndexPath *indexPath = [NSIndexPath indexPathForRow:i inSection:0];
                 
                 [self.tableView selectRowAtIndexPath:indexPath animated:YES scrollPosition:UITableViewScrollPositionMiddle];
-                
               
             }
-            
-            
         }
-        
     }
-
-    
-    
-
-    
-    
-    
 
 }
 //音乐播放器
@@ -237,9 +214,6 @@ if (ss< 10){
 //    self.player = [[AVAudioPlayer alloc] initWithContentsOfURL:fileURL error:nil];
     
     self.player = [[AVAudioPlayer alloc]initWithData:audioData error:nil];
-    
-    
-    
     
     [self.player prepareToPlay];
     
@@ -374,7 +348,6 @@ if (ss< 10){
 //铺tableView 在ScrollView 上面
 - (void)creatTableView{
 
-    
     self.tableView = [[UITableView alloc]
     initWithFrame:CGRectMake([UIScreen mainScreen].bounds.size.width + 30, 290, 350, 200)];
     
@@ -382,9 +355,6 @@ if (ss< 10){
     
     self.tableView.dataSource = self;
     self.tableView.delegate = self;
-    
-
-    
     [self.scrollView addSubview:self.tableView];
     
   
@@ -411,14 +381,10 @@ if (ss< 10){
     
     cell.backgroundColor = [UIColor clearColor];
     
-  
-
-        cell.textLabel.text = [self.lrcAll objectAtIndex:indexPath.row];
+    cell.textLabel.text = [self.lrcAll objectAtIndex:indexPath.row];
         
 //        NSLog(@"%@",[self.lrcAll objectAtIndex:indexPath.row]);
     
-
-
     cell.textLabel.textAlignment = NSTextAlignmentRight;
     
 //    [cell.textLabel setNumberOfLines:0];
@@ -430,8 +396,6 @@ if (ss< 10){
     tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
     // 设置文字高亮颜色
     cell.textLabel.highlightedTextColor = [UIColor colorWithRed:0.2 green:0.3 blue:0.9 alpha:1];
-    
-    
     // 设置被选取的cell
     UIView *view = [[UIView alloc]initWithFrame:cell.contentView.frame];
     view.backgroundColor = [UIColor clearColor];
@@ -439,19 +403,14 @@ if (ss< 10){
     
 //    cell.selectionStyle = UITableViewCellSelectionStyleNone;
     
-    
-    
     return cell;
 }
 //光盘 music 里面调用
 - (void)creatPicture:(NSString *)str{
    
-    
-    self.picImageView.center = CGPointMake([UIScreen mainScreen].bounds.size.width + 207, 120);
+    self.picImageView.center = CGPointMake([UIScreen mainScreen].bounds.size.width + WIDTH/2, 120);
     
     self.picImageView.layer.cornerRadius = 100;
-    
-    
     
     [self.picImageView sd_setImageWithURL:[NSURL URLWithString:str]];
 
@@ -459,18 +418,14 @@ if (ss< 10){
     
     CGFloat point = M_PI_4;
     
-    
     ani.values = @[@(9 * point),@(8 * point),@(7 * point),@(6 * point),@(5 * point),@(4 * point),@(3 * point),@(2 * point),@(point)];
-    
     ani.repeatCount = MAXFLOAT;
     
     ani.duration = 5;
     
     
-    
     [self.picImageView.layer addAnimation:ani forKey:nil];
     
-
      [self.picImageView.layer setMasksToBounds:YES];
     
      [self.scrollView addSubview:self.picImageView];
@@ -502,9 +457,7 @@ if (ss< 10){
 
     //播放背景图片
     self.imageViewSceond = [[UIImageView alloc]initWithFrame:CGRectMake([UIScreen mainScreen].bounds.size.width, 0, [UIScreen mainScreen].bounds.size.width, 750)];
-    
     [self.imageViewSceond sd_setImageWithURL:[NSURL URLWithString:str]];
-    //    self.imageViewSceond.image = [UIImage imageNamed:@"bakeThree.jpg"];
     //    毛玻璃
     //    UIBlurEffect *effect = [UIBlurEffect effectWithStyle:UIBlurEffectStyleLight];
     //
@@ -558,25 +511,17 @@ if (ss< 10){
 }
 - (void)btnA{
    // NSLog(@"+");
-    
     if (self.player.volume > 100) {
    
-        
-        
     }else{
-        
         self.player.volume = self.player.volume + 1;
-        
     }
     self.alert = [UIAlertController alertControllerWithTitle:@"音量" message:[NSString stringWithFormat:@"%d",(int)self.player.volume] preferredStyle:1];
     
-    
-
     [self presentViewController:self.alert animated:YES completion:^{
         
         
     }];
-    
     NSTimer *timeVolume = [NSTimer scheduledTimerWithTimeInterval:1 target:self selector:@selector(timeVolumeGo) userInfo:nil repeats:NO];
     [timeVolume fire];
 }
@@ -584,9 +529,7 @@ if (ss< 10){
     //NSLog(@"弹框消失");
     [self.alert dismissViewControllerAnimated:YES completion:^{
         
-        
     }];
-    
 }
 - (void)btnL{
     //NSLog(@"-");
@@ -600,10 +543,7 @@ if (ss< 10){
     }
     self.alert = [UIAlertController alertControllerWithTitle:@"音量" message:[NSString stringWithFormat:@"%d",(int)self.player.volume] preferredStyle:1];
     
-    
-    
     [self presentViewController:self.alert animated:YES completion:^{
-        
         
     }];
     
@@ -637,14 +577,9 @@ if (ss< 10){
 - (void)creatSegment{
     UISegmentedControl *segment = [[UISegmentedControl alloc]initWithItems:@[@"左声道",@"立体声",@"右声道"]];
     segment.frame = CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, 45);
-    
     [segment addTarget:self action:@selector(segmentClick:) forControlEvents:UIControlEventValueChanged];
-    
     segment.selectedSegmentIndex = 1;
-    
     segment.tintColor = [UIColor grayColor];
-  
-    
     [self.scrollView addSubview:segment];
 }
 - (void)segmentClick:(UISegmentedControl *)btn{
