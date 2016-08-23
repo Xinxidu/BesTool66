@@ -33,19 +33,20 @@
     self.plusBtn.delegate = self;
     self.plusBtn.tag=100;
     [self setUpPathButton:self.plusBtn];
-    self.plusBtn.ZYButtonCenter = CGPointMake(self.centerX, self.superview.height - self.height * 0.5 - 2 *ZYMagin );
+   // self.plusBtn.ZYButtonCenter = CGPointMake(self.centerX, self.superview.height - self.height * 0.5 - 2 *ZYMagin );
+    self.plusBtn.ZYButtonCenter = CGPointMake(self.centerX, self.superview.height - self.height * 0.5);
     [self.plusBtn addPathItems:self.pathButtonArray];
     //必须加到父视图上
     [self.superview addSubview:self.plusBtn];
-    UILabel *label = [[UILabel alloc]init];
-    label.tag=101;
-    label.text = @"发布";
-    label.font = [UIFont systemFontOfSize:13];
-    [label sizeToFit];
-    label.textColor = [UIColor grayColor];
-    label.centerX = _plusBtn.centerX;
-    label.centerY = CGRectGetMaxY(_plusBtn.frame) + ZYMagin;
-    [self.superview addSubview:label];
+//    UILabel *label = [[UILabel alloc]init];
+//    label.tag=101;
+//    label.text = @"发布";
+//    label.font = [UIFont systemFontOfSize:13];
+//    [label sizeToFit];
+//    label.textColor = [UIColor grayColor];
+//    label.centerX = _plusBtn.centerX;
+//    label.centerY = CGRectGetMaxY(_plusBtn.frame) + ZYMagin;
+//    [self.superview addSubview:label];
 }
 //重新绘制按钮
 - (void)layoutSubviews {

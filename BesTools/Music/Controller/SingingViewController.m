@@ -57,15 +57,11 @@
     self.tabBarController.tabBar.hidden = YES;
     UIImageView *image = (UIImageView *)[self.tabBarController.view viewWithTag:100];
     image.hidden = YES;
-    UIImageView *image1 = (UIImageView *)[self.tabBarController.view viewWithTag:101];
-    image1.hidden = YES;
 }
 -(void)viewWillDisappear:(BOOL)animated{
     self.tabBarController.tabBar.hidden = NO;
     UIImageView *image = (UIImageView *)[self.tabBarController.view viewWithTag:100];
     image.hidden = NO;
-    UIImageView *image1 = (UIImageView *)[self.tabBarController.view viewWithTag:101];
-    image1.hidden = NO;
 }
 -(void)lrcShow{
     UIButton *rightBtn = [[UIButton alloc]initWithFrame:CGRectMake(0,0,30,30)];
