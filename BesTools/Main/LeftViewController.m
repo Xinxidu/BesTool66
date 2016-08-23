@@ -75,13 +75,13 @@
     }
 }
 - (CGFloat)tableView:(UITableView*)tableView heightForHeaderInSection:(NSInteger)section{
-    return 180;
+    return 150;
 }
 - (UIView*)tableView:(UITableView*)tableView viewForHeaderInSection:(NSInteger)section{
-    UIView *view = [[UIView alloc]initWithFrame:CGRectMake(0, 0, self.view.bounds.size.width, 180)];
+    UIView *view = [[UIView alloc]initWithFrame:CGRectMake(0, 0, self.view.bounds.size.width, 150)];
     view.backgroundColor = [UIColor clearColor];
     UIButton *weatherButton = [UIButton buttonWithType:UIButtonTypeCustom];
-    weatherButton.frame = CGRectMake((view.bounds.size.width-80)/2, 75, 80, 30);
+    weatherButton.frame = CGRectMake(10, 75, 80, 30);
     [weatherButton setTitle:@"今日天气" forState:UIControlStateNormal];
     [weatherButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
     [weatherButton addTarget:self action:@selector(todayWeather:) forControlEvents:UIControlEventTouchUpInside];
