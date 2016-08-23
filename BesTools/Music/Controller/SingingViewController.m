@@ -9,6 +9,8 @@
 #import "SingingViewController.h"
 #import "UIImageView+WebCache.h"
 #import "ViewController.h"
+#define WIDTH [UIScreen mainScreen].bounds.size.width
+#define HEIGHT [UIScreen mainScreen].bounds.size.height
 @interface SingingViewController ()<UITableViewDelegate,UITableViewDataSource,AVAudioPlayerDelegate>
 
 @property (nonatomic, retain) NSTimer *timer;
@@ -36,8 +38,7 @@
     self.view.backgroundColor = [UIColor blackColor];
     self.lrcAll = [[NSMutableArray alloc]init];
     self.lrcTime = [[NSMutableArray alloc]init];
-   
-    
+
     self.playOrPause = NO;
     self.lycYesOrNo = NO;
     
@@ -252,47 +253,28 @@ if (ss< 10){
 
 //按钮
 - (void)creatBtn{
-    UIView *view = [[UIView alloc]initWithFrame:CGRectMake(3, 590, [UIScreen mainScreen].bounds.size.width - 6, 130)];
+    UIView *view = [[UIView alloc]initWithFrame:CGRectMake(5, HEIGHT-88, WIDTH-10, 88)];
     view.alpha = 0.6;
     view.backgroundColor = [UIColor whiteColor];
     view.layer.borderColor = [[UIColor blackColor]CGColor];
-    view.layer.borderWidth = 2;
-    view.layer.cornerRadius = 24;
+    view.layer.borderWidth = 1;
+    view.layer.cornerRadius = 15;
 //    按钮
-
     UIButton *btn1 = [UIButton buttonWithType:UIButtonTypeCustom];
-    
-    btn1.frame = CGRectMake(10, 5, 100, 100);
-    
-    
-   
-    
-    UIButton *btn2 = [UIButton buttonWithType:UIButtonTypeCustom];
-    
-    btn2.frame = CGRectMake(150, 20, 50, 50);
-    
-    
-  
-    
-    self.btn3 = [UIButton buttonWithType:UIButtonTypeCustom];
-    
-    self.btn3.frame = CGRectMake(240, 20, 50, 50);
-    
-
-    
-    UIButton *btn4 = [UIButton buttonWithType:UIButtonTypeCustom];
-    
-    btn4.frame = CGRectMake(320, 20, 50, 50);
-    
-//    添加背景图片
+    btn1.frame = CGRectMake(10, 15, 35, 35);
     [btn1 setBackgroundImage:[UIImage imageNamed:@"iconfont-yutoubaoicon"] forState:UIControlStateNormal];
     
-    [btn2 setBackgroundImage:[UIImage imageNamed:@"iconfont-bofangqishangyiqu"] forState:UIControlStateNormal];
+    UIButton *btn2 = [UIButton buttonWithType:UIButtonTypeCustom];
+    btn2.frame = CGRectMake(CGRectGetMaxX(btn1.frame)+15, 15, 35, 35);
+     [btn2 setBackgroundImage:[UIImage imageNamed:@"iconfont-bofangqishangyiqu"] forState:UIControlStateNormal];
     
+    self.btn3 = [UIButton buttonWithType:UIButtonTypeCustom];
+    self.btn3.frame = CGRectMake(CGRectGetMaxX(btn2.frame)+WIDTH*0.22, 15, 35, 35);
     [self.btn3 setBackgroundImage:[UIImage imageNamed:@"iconfont-zanting"] forState:UIControlStateNormal];
     
+    UIButton *btn4 = [UIButton buttonWithType:UIButtonTypeCustom];
+    btn4.frame = CGRectMake(CGRectGetMaxX(self.btn3.frame)+WIDTH*0.22, 15, 35, 35);
     [btn4 setBackgroundImage:[UIImage imageNamed:@"iconfont-bofangqixiayiqu"] forState:UIControlStateNormal];
-    
 //    给按钮添加事件
 //    播放
     [self.btn3 addTarget:self action:@selector(go) forControlEvents:UIControlEventTouchUpInside];
@@ -300,19 +282,12 @@ if (ss< 10){
     [btn2 addTarget:self action:@selector(back) forControlEvents:UIControlEventTouchUpInside];
     [btn1 addTarget:self action:@selector(too) forControlEvents:UIControlEventTouchUpInside];
     
-    self.slider = [[UISlider alloc]initWithFrame:CGRectMake(120, 90, 280, 20)];
+    self.slider = [[UISlider alloc]initWithFrame:CGRectMake(10, CGRectGetMaxY(btn1.frame)+12, WIDTH-30, 10)];
     
     self.slider.thumbTintColor = [UIColor blackColor];
-    
     self.slider.maximumValue = self.player.duration;
     self.slider.minimumValue = 0;
-   
-    
     [self.slider addTarget:self action:@selector(slider:) forControlEvents:UIControlEventTouchUpInside];
-    
-    
-
-
     
      [view addSubview:btn1];
      [view addSubview:btn2];
@@ -321,11 +296,9 @@ if (ss< 10){
      [view addSubview:self.slider];
     
 //     UIWindow *window = [[UIApplication sharedApplication].windows lastObject];
-    
-     [self.view addSubview:view];
+    [self.view addSubview:view];
     self.timer = [NSTimer scheduledTimerWithTimeInterval:0.9 target:self selector:@selector(timerTake) userInfo:nil repeats:YES];
     [self.timer fire];
-
 }
 - (void)timerTake{
     
@@ -382,7 +355,6 @@ if (ss< 10){
 - (void)too{
     
     //NSLog(@"再听一遍");
-    
     [self back];
     [self next];
     
@@ -707,7 +679,7 @@ if (ss< 10){
 //    //开启定时器
 //    [self.timer setFireDate:[NSDate distantPast]];
 //}
-//
+
 ////页面消失，进入后台不显示该页面，关闭定时器
 //-(void)viewDidDisappear:(BOOL)animated
 //{
