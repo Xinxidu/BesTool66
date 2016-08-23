@@ -13,6 +13,7 @@
 #import "WZFileTool.h"
 @implementation WZMainViewController
 -(void)viewDidLoad{
+    self.navigationController.navigationBarHidden = NO;
     [self configureData];
     [self configureViews];
     [[NSNotificationCenter defaultCenter]addObserver:self selector:@selector(cityAdded) name:@"CityChangedNotification" object:nil];
@@ -20,7 +21,7 @@
 
 -(void)configureData{
     self.citys = [WZFileTool readCitysFromFile];
-    self.totalPages = self.citys.count + 1;
+    self.totalPages = (int)self.citys.count + 1;
     self.curPage = 0;
     self.viewControllers = [NSMutableArray array];
     WZWeatherViewController *defalutViewController =[[WZWeatherViewController alloc]init];//
@@ -69,9 +70,8 @@
 }
 
 -(void)back{
-//    [self.navigationController.navigationBar setBackgroundColor:[UIColor orangeColor]];
     [self.navigationController popToRootViewControllerAnimated:YES];
-//    [self.navigationController.navigationBar setBackgroundColor:[UIColor orangeColor]];
+    self.navigationController.navigationBarHidden = YES;
 }
 -(void)dealloc{
     [[NSNotificationCenter defaultCenter]removeObserver:self name:@"CityChangedNotification" object:nil];

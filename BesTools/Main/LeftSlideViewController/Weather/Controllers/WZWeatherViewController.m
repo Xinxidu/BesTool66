@@ -51,7 +51,7 @@
     }
 }
 -(void)configureViews{
-    CGRect frame =  CGRectMake(0, 64, self.view.frame.size.width, self.view.frame.size.height-64);
+    CGRect frame =  CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height);
     self.backgroundImageView = [[UIImageView alloc]initWithFrame:frame];
     [self.view addSubview:self.backgroundImageView];
     // cityLabel

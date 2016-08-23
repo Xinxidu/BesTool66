@@ -10,7 +10,7 @@
 #import "AppDelegate.h"
 #import "OtherViewController.h"
 #import "ZYTabBarController.h"
-//#import "WZMainViewController.h"
+#import "WZMainViewController.h"
 
 @interface LeftViewController ()<UITableViewDataSource,UITableViewDelegate>
 
@@ -90,12 +90,10 @@
 }
 -(void)todayWeather:(UIButton*)button{
     NSLog(@"weather");
-//    [self.navigationController pushViewController:[[OtherViewController alloc]init] animated:YES];
-//    AppDelegate *tempAppDelegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
-//    WZMainViewController *vc = [[WZMainViewController alloc]init];
-//    [tempAppDelegate.LeftSlideVC closeLeftView];
-//    
-//    [tempAppDelegate.mainNavigationController pushViewController:vc animated:YES];
+    AppDelegate *tempAppDelegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
+    WZMainViewController *vc = [[WZMainViewController alloc]init];
+    [tempAppDelegate.LeftSlideVC closeLeftView];
+    [self.parentViewController.navigationController pushViewController:vc animated:YES];
 }
 -(void)chatQQ{
     if ([[UIApplication sharedApplication] canOpenURL:[NSURL URLWithString:@"mqq://"]]) {
