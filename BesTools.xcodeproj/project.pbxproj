@@ -67,6 +67,15 @@
 		A45DBB731D6ADF8E00B4AC2A /* ReadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A45DBB3A1D6ADF8E00B4AC2A /* ReadViewController.m */; };
 		A45DBB741D6ADF8E00B4AC2A /* TalkViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A45DBB3E1D6ADF8E00B4AC2A /* TalkViewController.m */; };
 		A45DBB771D6AE00100B4AC2A /* MusicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A45DBB761D6AE00100B4AC2A /* MusicViewController.m */; };
+		A499364D1D6AF0D0003C8A04 /* SingingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A499364C1D6AF0D0003C8A04 /* SingingViewController.m */; };
+		A49936551D6AF0E3003C8A04 /* MusicModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A49936501D6AF0E3003C8A04 /* MusicModel.m */; };
+		A49936561D6AF0E3003C8A04 /* TableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A49936541D6AF0E3003C8A04 /* TableViewCell.m */; };
+		A499365A1D6AF134003C8A04 /* NSArray+Log.m in Sources */ = {isa = PBXBuildFile; fileRef = A49936591D6AF134003C8A04 /* NSArray+Log.m */; };
+		A499365F1D6AF21F003C8A04 /* diaodiaodiao.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A499365B1D6AF21F003C8A04 /* diaodiaodiao.jpg */; };
+		A49936601D6AF21F003C8A04 /* iconfont-icon1.png in Resources */ = {isa = PBXBuildFile; fileRef = A499365C1D6AF21F003C8A04 /* iconfont-icon1.png */; };
+		A49936611D6AF21F003C8A04 /* iconfont-icon2.png in Resources */ = {isa = PBXBuildFile; fileRef = A499365D1D6AF21F003C8A04 /* iconfont-icon2.png */; };
+		A49936621D6AF21F003C8A04 /* jay.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A499365E1D6AF21F003C8A04 /* jay.jpg */; };
+		A49936641D6AFB55003C8A04 /* iconfont-diaozhenggeci.png in Resources */ = {isa = PBXBuildFile; fileRef = A49936631D6AFB55003C8A04 /* iconfont-diaozhenggeci.png */; };
 		C8243646E029343AE9DB9C32 /* libPods-BesTools.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A026D0734E41569235C5EE47 /* libPods-BesTools.a */; };
 /* End PBXBuildFile section */
 
@@ -203,6 +212,19 @@
 		A45DBB3E1D6ADF8E00B4AC2A /* TalkViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TalkViewController.m; sourceTree = "<group>"; };
 		A45DBB751D6AE00100B4AC2A /* MusicViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MusicViewController.h; sourceTree = "<group>"; };
 		A45DBB761D6AE00100B4AC2A /* MusicViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MusicViewController.m; sourceTree = "<group>"; };
+		A499364B1D6AF0D0003C8A04 /* SingingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SingingViewController.h; sourceTree = "<group>"; };
+		A499364C1D6AF0D0003C8A04 /* SingingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SingingViewController.m; sourceTree = "<group>"; };
+		A499364F1D6AF0E3003C8A04 /* MusicModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MusicModel.h; sourceTree = "<group>"; };
+		A49936501D6AF0E3003C8A04 /* MusicModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MusicModel.m; sourceTree = "<group>"; };
+		A49936531D6AF0E3003C8A04 /* TableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewCell.h; sourceTree = "<group>"; };
+		A49936541D6AF0E3003C8A04 /* TableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewCell.m; sourceTree = "<group>"; };
+		A49936581D6AF134003C8A04 /* NSArray+Log.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+Log.h"; sourceTree = "<group>"; };
+		A49936591D6AF134003C8A04 /* NSArray+Log.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Log.m"; sourceTree = "<group>"; };
+		A499365B1D6AF21F003C8A04 /* diaodiaodiao.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = diaodiaodiao.jpg; sourceTree = "<group>"; };
+		A499365C1D6AF21F003C8A04 /* iconfont-icon1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iconfont-icon1.png"; sourceTree = "<group>"; };
+		A499365D1D6AF21F003C8A04 /* iconfont-icon2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iconfont-icon2.png"; sourceTree = "<group>"; };
+		A499365E1D6AF21F003C8A04 /* jay.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = jay.jpg; sourceTree = "<group>"; };
+		A49936631D6AFB55003C8A04 /* iconfont-diaozhenggeci.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iconfont-diaozhenggeci.png"; sourceTree = "<group>"; };
 		A8C2C7CD01E2ED59F6E2A833 /* Pods-BesTools.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BesTools.release.xcconfig"; path = "Pods/Target Support Files/Pods-BesTools/Pods-BesTools.release.xcconfig"; sourceTree = "<group>"; };
 		FF1B2240F9998567088E1FDE /* Pods-BesTools.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BesTools.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BesTools/Pods-BesTools.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -516,6 +538,11 @@
 		A45DBAC41D6ADF8D00B4AC2A /* images */ = {
 			isa = PBXGroup;
 			children = (
+				A49936631D6AFB55003C8A04 /* iconfont-diaozhenggeci.png */,
+				A499365B1D6AF21F003C8A04 /* diaodiaodiao.jpg */,
+				A499365C1D6AF21F003C8A04 /* iconfont-icon1.png */,
+				A499365D1D6AF21F003C8A04 /* iconfont-icon2.png */,
+				A499365E1D6AF21F003C8A04 /* jay.jpg */,
 				A45DBAC51D6ADF8D00B4AC2A /* leftbackiamge.png */,
 				A45DBAC61D6ADF8D00B4AC2A /* menu@2x.png */,
 			);
@@ -565,6 +592,9 @@
 		A45DBB331D6ADF8E00B4AC2A /* Music */ = {
 			isa = PBXGroup;
 			children = (
+				A49936571D6AF134003C8A04 /* Tool */,
+				A499364E1D6AF0E3003C8A04 /* Model */,
+				A49936521D6AF0E3003C8A04 /* View */,
 				A45DBB341D6ADF8E00B4AC2A /* Controller */,
 			);
 			path = Music;
@@ -573,6 +603,8 @@
 		A45DBB341D6ADF8E00B4AC2A /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				A499364B1D6AF0D0003C8A04 /* SingingViewController.h */,
+				A499364C1D6AF0D0003C8A04 /* SingingViewController.m */,
 				A45DBB751D6AE00100B4AC2A /* MusicViewController.h */,
 				A45DBB761D6AE00100B4AC2A /* MusicViewController.m */,
 			);
@@ -611,6 +643,33 @@
 				A45DBB3E1D6ADF8E00B4AC2A /* TalkViewController.m */,
 			);
 			path = Controller;
+			sourceTree = "<group>";
+		};
+		A499364E1D6AF0E3003C8A04 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A499364F1D6AF0E3003C8A04 /* MusicModel.h */,
+				A49936501D6AF0E3003C8A04 /* MusicModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A49936521D6AF0E3003C8A04 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A49936531D6AF0E3003C8A04 /* TableViewCell.h */,
+				A49936541D6AF0E3003C8A04 /* TableViewCell.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A49936571D6AF134003C8A04 /* Tool */ = {
+			isa = PBXGroup;
+			children = (
+				A49936581D6AF134003C8A04 /* NSArray+Log.h */,
+				A49936591D6AF134003C8A04 /* NSArray+Log.m */,
+			);
+			path = Tool;
 			sourceTree = "<group>";
 		};
 		C6ADC778B07B9CEC5133B936 /* Frameworks */ = {
@@ -737,10 +796,15 @@
 				A424D6F51D65556800A6AE2A /* LaunchScreen.storyboard in Resources */,
 				A424D6F21D65556800A6AE2A /* Assets.xcassets in Resources */,
 				3BAB590B1D6AE75F008B696C /* WZForecastItemTableViewCell.xib in Resources */,
+				A49936601D6AF21F003C8A04 /* iconfont-icon1.png in Resources */,
 				A45DBB411D6ADF8E00B4AC2A /* menu@2x.png in Resources */,
 				3BAB590D1D6AE75F008B696C /* WZForecastTableViewCell.xib in Resources */,
 				A424D6F01D65556800A6AE2A /* Main.storyboard in Resources */,
+				A49936641D6AFB55003C8A04 /* iconfont-diaozhenggeci.png in Resources */,
+				A499365F1D6AF21F003C8A04 /* diaodiaodiao.jpg in Resources */,
+				A49936621D6AF21F003C8A04 /* jay.jpg in Resources */,
 				A45DBB401D6ADF8E00B4AC2A /* leftbackiamge.png in Resources */,
+				A49936611D6AF21F003C8A04 /* iconfont-icon2.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -829,9 +893,12 @@
 				3BAB59001D6AE75F008B696C /* JSONHTTPClient.m in Sources */,
 				3BAB58F51D6AE75F008B696C /* WZWeatherViewController.m in Sources */,
 				A45DBB6D1D6ADF8E00B4AC2A /* ZYNewViewController.m in Sources */,
+				A499364D1D6AF0D0003C8A04 /* SingingViewController.m in Sources */,
+				A49936551D6AF0E3003C8A04 /* MusicModel.m in Sources */,
 				A45DBB4E1D6ADF8E00B4AC2A /* OtherViewController.m in Sources */,
 				3BAB59041D6AE75F008B696C /* UIImage+ImageEffects.m in Sources */,
 				3BAB58F61D6AE75F008B696C /* WZIndex.m in Sources */,
+				A499365A1D6AF134003C8A04 /* NSArray+Log.m in Sources */,
 				3BAB58F41D6AE75F008B696C /* WZMainViewController.m in Sources */,
 				3BAB58F71D6AE75F008B696C /* WZResults.m in Sources */,
 				3BAB590C1D6AE75F008B696C /* WZForecastTableViewCell.m in Sources */,
@@ -844,6 +911,7 @@
 				A45DBB741D6ADF8E00B4AC2A /* TalkViewController.m in Sources */,
 				A45DBB481D6ADF8E00B4AC2A /* UIView_extra.m in Sources */,
 				3BAB59011D6AE75F008B696C /* JSONModel+networking.m in Sources */,
+				A49936561D6AF0E3003C8A04 /* TableViewCell.m in Sources */,
 				3BAB59031D6AE75F008B696C /* JSONValueTransformer.m in Sources */,
 				3BAB58FB1D6AE75F008B696C /* JSONModelArray.m in Sources */,
 				3BAB59071D6AE75F008B696C /* WZHttpTool.m in Sources */,

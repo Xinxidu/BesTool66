@@ -31,12 +31,14 @@
 - (void)drawRect:(CGRect)rect {
    self.plusBtn = [[ZYPathButton alloc]initWithCenterImage:[UIImage imageNamed:@"chooser-button-tab"]highlightedImage:[UIImage imageNamed:@"chooser-button-tab"]];
     self.plusBtn.delegate = self;
+    self.plusBtn.tag=100;
     [self setUpPathButton:self.plusBtn];
     self.plusBtn.ZYButtonCenter = CGPointMake(self.centerX, self.superview.height - self.height * 0.5 - 2 *ZYMagin );
     [self.plusBtn addPathItems:self.pathButtonArray];
     //必须加到父视图上
     [self.superview addSubview:self.plusBtn];
     UILabel *label = [[UILabel alloc]init];
+    label.tag=101;
     label.text = @"发布";
     label.font = [UIFont systemFontOfSize:13];
     [label sizeToFit];
