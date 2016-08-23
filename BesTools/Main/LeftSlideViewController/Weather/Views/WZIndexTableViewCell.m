@@ -49,7 +49,7 @@
             itemCell.indexTitleLabel.text = index.title;
             itemCell.indexDegreeLabel.text = index.zs;
             itemCell.indexDescLabel.text = index.des;
-            itemCell.indexPicImageView.image = [UIImage imageNamed:[WZWeatherTool getIndexPicWithRow:(int)indexPath.row]];
+            itemCell.indexPicImageView.image = [UIImage imageNamed:[WZWeatherTool getIndexPicWithRow:indexPath.row]];
         }
         
     }

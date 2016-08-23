@@ -21,11 +21,7 @@
 
 -(void)configureData{
     self.citys = [WZFileTool readCitysFromFile];
-<<<<<<< .merge_file_BKIVQg
-    self.totalPages = self.citys.count +1;
-=======
     self.totalPages = (int)self.citys.count + 1;
->>>>>>> .merge_file_c7PASs
     self.curPage = 0;
     self.viewControllers = [NSMutableArray array];
     WZWeatherViewController *defalutViewController =[[WZWeatherViewController alloc]init];//
@@ -46,12 +42,13 @@
     self.pageControl.numberOfPages = self.totalPages;
     self.pageControl.currentPage = self.curPage;
     self.navigationItem.titleView = self.pageControl;
-    //设置导航栏按钮
+//    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc]initWithImage:[UIImage imageNamed:@"gear"] style:UIBarButtonItemStyleDone target:self action:@selector(editCity)];
     UIBarButtonItem *anotherButton = [[UIBarButtonItem alloc]initWithTitle:@"返回" style:UIBarButtonItemStylePlain target:self action:@selector(back)];
     UIBarButtonItem *anotherButton2 = [[UIBarButtonItem alloc]initWithImage:[UIImage imageNamed:@"gear"] style:UIBarButtonItemStyleDone target:self action:@selector(editCity)];
     [self.navigationItem setLeftBarButtonItems:[NSArray arrayWithObjects: anotherButton,anotherButton2,nil]];
 
     self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc]initWithImage:[UIImage imageNamed:@"plus"] style:UIBarButtonItemStyleDone target:self action:@selector(addCity)];
+//    self.navigationItem.backBarButtonItem = [[UIBarButtonItem alloc]initWithTitle:@"返回" style:UIBarButtonItemStylePlain target:self action:@selector(back)];
     
     // 设置UIPageViewController的配置项
     NSDictionary *options =[NSDictionary dictionaryWithObject:[NSNumber numberWithInteger:UIPageViewControllerSpineLocationMin] forKey: UIPageViewControllerOptionSpineLocationKey];
@@ -73,12 +70,12 @@
 }
 
 -(void)back{
-    self.navigationController.navigationBarHidden = YES;
     [self.navigationController popToRootViewControllerAnimated:YES];
+    self.navigationController.navigationBarHidden = YES;
 }
-//-(void)dealloc{
-//    [[NSNotificationCenter defaultCenter]removeObserver:self name:@"CityChangedNotification" object:nil];
-//}
+-(void)dealloc{
+    [[NSNotificationCenter defaultCenter]removeObserver:self name:@"CityChangedNotification" object:nil];
+}
 
 -(void)cityAdded{
     [self configureData];

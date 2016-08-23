@@ -159,22 +159,16 @@
  */
 + (void) showAlertView: (NSString*) title andMessage: (NSString *) message
 {
-<<<<<<< .merge_file_9QLiKX
     dispatch_async(dispatch_get_main_queue() , ^{
-=======
 //    dispatch_async(dispatch_get_main_queue() , ^{
->>>>>>> .merge_file_iCYud6
 //        UIAlertView *alert = [[UIAlertView alloc] init];
 //        alert.title = title;
 //        alert.message = message;
 //        [alert addButtonWithTitle:@"确定"];
 //        [alert show];
 //        alert = nil;
-<<<<<<< .merge_file_9QLiKX
     });
-=======
 //    });
->>>>>>> .merge_file_iCYud6
 }
 
 /**
@@ -188,11 +182,8 @@
             andMessage: (NSString *) message
           withDelegate: (UIViewController<UIAlertViewDelegate> *) delegate
 {
-<<<<<<< .merge_file_9QLiKX
     dispatch_async(dispatch_get_main_queue() , ^{
-=======
 //    dispatch_async(dispatch_get_main_queue() , ^{
->>>>>>> .merge_file_iCYud6
 //        UIAlertView *alert = [[UIAlertView alloc] init];
 //        alert.title = title;
 //        alert.message = message;
@@ -201,11 +192,8 @@
 //        [alert addButtonWithTitle:@"确定"];
 //        [alert show];
 //        alert = nil;
-<<<<<<< .merge_file_9QLiKX
     });
-=======
 //    });
->>>>>>> .merge_file_iCYud6
 }
 
 
