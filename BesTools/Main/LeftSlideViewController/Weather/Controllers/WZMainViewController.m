@@ -21,7 +21,11 @@
 
 -(void)configureData{
     self.citys = [WZFileTool readCitysFromFile];
+<<<<<<< .merge_file_BKIVQg
     self.totalPages = self.citys.count +1;
+=======
+    self.totalPages = (int)self.citys.count + 1;
+>>>>>>> .merge_file_c7PASs
     self.curPage = 0;
     self.viewControllers = [NSMutableArray array];
     WZWeatherViewController *defalutViewController =[[WZWeatherViewController alloc]init];//

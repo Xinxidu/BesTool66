@@ -110,7 +110,7 @@
 
 
 }
-+(NSString *)getIndexPicWithRow:(NSInteger )row{
++(NSString *)getIndexPicWithRow:(int )row{
     switch (row) {
         case 0:
             return @"ic_lifeindex_clothes";

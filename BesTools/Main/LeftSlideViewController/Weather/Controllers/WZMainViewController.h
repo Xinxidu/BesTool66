@@ -14,7 +14,7 @@
 @property(nonatomic,strong) UIPageControl *pageControl;
 @property(nonatomic,strong) NSMutableArray *viewControllers;
 @property(nonatomic,assign) int curPage ;
-@property(nonatomic,assign) NSInteger totalPages ;
+@property(nonatomic,assign) int totalPages ;
 @property(nonatomic,strong) NSMutableArray *citys;
 
 

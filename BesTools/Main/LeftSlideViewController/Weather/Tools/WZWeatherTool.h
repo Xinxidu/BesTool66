@@ -11,6 +11,6 @@
 @interface WZWeatherTool : JSONModel
 +(NSString *)getBackgroundImageWithWeatherName:(NSString *)weatherName;
 +(NSString *)getWeatherPicWithWeatherName:(NSString *)weatherName;
-+(NSString *)getIndexPicWithRow:(NSInteger)row;
++(NSString *)getIndexPicWithRow:(int)row;
 +(NSString *)getPm25PicWithDegree:(int)degree;
 @end
