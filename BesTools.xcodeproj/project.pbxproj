@@ -72,9 +72,8 @@
 		A49936551D6AF0E3003C8A04 /* MusicModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A49936501D6AF0E3003C8A04 /* MusicModel.m */; };
 		A49936561D6AF0E3003C8A04 /* TableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A49936541D6AF0E3003C8A04 /* TableViewCell.m */; };
 		A499365A1D6AF134003C8A04 /* NSArray+Log.m in Sources */ = {isa = PBXBuildFile; fileRef = A49936591D6AF134003C8A04 /* NSArray+Log.m */; };
-		A49936601D6AF21F003C8A04 /* iconfont-icon1.png in Resources */ = {isa = PBXBuildFile; fileRef = A499365C1D6AF21F003C8A04 /* iconfont-icon1.png */; };
-		A49936611D6AF21F003C8A04 /* iconfont-icon2.png in Resources */ = {isa = PBXBuildFile; fileRef = A499365D1D6AF21F003C8A04 /* iconfont-icon2.png */; };
 		A4A6903D1D6C4733004CE97F /* geci.png in Resources */ = {isa = PBXBuildFile; fileRef = A4A6903C1D6C4733004CE97F /* geci.png */; };
+		A4CCA8B31D6D799200BD6EFC /* redo.png in Resources */ = {isa = PBXBuildFile; fileRef = A4CCA8B21D6D799200BD6EFC /* redo.png */; };
 		A4FD89DE1D6D412B00FC2BA7 /* musicBG.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = A4FD89DD1D6D412B00FC2BA7 /* musicBG.jpeg */; };
 		C8243646E029343AE9DB9C32 /* libPods-BesTools.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A026D0734E41569235C5EE47 /* libPods-BesTools.a */; };
 /* End PBXBuildFile section */
@@ -221,9 +220,8 @@
 		A49936541D6AF0E3003C8A04 /* TableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewCell.m; sourceTree = "<group>"; };
 		A49936581D6AF134003C8A04 /* NSArray+Log.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+Log.h"; sourceTree = "<group>"; };
 		A49936591D6AF134003C8A04 /* NSArray+Log.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Log.m"; sourceTree = "<group>"; };
-		A499365C1D6AF21F003C8A04 /* iconfont-icon1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iconfont-icon1.png"; sourceTree = "<group>"; };
-		A499365D1D6AF21F003C8A04 /* iconfont-icon2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iconfont-icon2.png"; sourceTree = "<group>"; };
 		A4A6903C1D6C4733004CE97F /* geci.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = geci.png; sourceTree = "<group>"; };
+		A4CCA8B21D6D799200BD6EFC /* redo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = redo.png; sourceTree = "<group>"; };
 		A4FD89DD1D6D412B00FC2BA7 /* musicBG.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = musicBG.jpeg; sourceTree = "<group>"; };
 		A8C2C7CD01E2ED59F6E2A833 /* Pods-BesTools.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BesTools.release.xcconfig"; path = "Pods/Target Support Files/Pods-BesTools/Pods-BesTools.release.xcconfig"; sourceTree = "<group>"; };
 		FF1B2240F9998567088E1FDE /* Pods-BesTools.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BesTools.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BesTools/Pods-BesTools.debug.xcconfig"; sourceTree = "<group>"; };
@@ -539,10 +537,9 @@
 		A45DBAC41D6ADF8D00B4AC2A /* images */ = {
 			isa = PBXGroup;
 			children = (
+				A4CCA8B21D6D799200BD6EFC /* redo.png */,
 				A4FD89DD1D6D412B00FC2BA7 /* musicBG.jpeg */,
 				A4A6903C1D6C4733004CE97F /* geci.png */,
-				A499365C1D6AF21F003C8A04 /* iconfont-icon1.png */,
-				A499365D1D6AF21F003C8A04 /* iconfont-icon2.png */,
 				A45DBAC51D6ADF8D00B4AC2A /* leftbackiamge.png */,
 				A45DBAC61D6ADF8D00B4AC2A /* menu@2x.png */,
 			);
@@ -793,15 +790,14 @@
 				A424D6F51D65556800A6AE2A /* LaunchScreen.storyboard in Resources */,
 				A424D6F21D65556800A6AE2A /* Assets.xcassets in Resources */,
 				A4A6903D1D6C4733004CE97F /* geci.png in Resources */,
-				A49936601D6AF21F003C8A04 /* iconfont-icon1.png in Resources */,
 				3B780F5A1D6BF79E006AF895 /* WZTitleTableViewCell.xib in Resources */,
 				A45DBB411D6ADF8E00B4AC2A /* menu@2x.png in Resources */,
 				A424D6F01D65556800A6AE2A /* Main.storyboard in Resources */,
 				A45DBB401D6ADF8E00B4AC2A /* leftbackiamge.png in Resources */,
-				A49936611D6AF21F003C8A04 /* iconfont-icon2.png in Resources */,
 				A4FD89DE1D6D412B00FC2BA7 /* musicBG.jpeg in Resources */,
 				3B780F561D6BF79E006AF895 /* WZIndexItemTableViewCell.xib in Resources */,
 				3B780F581D6BF79E006AF895 /* WZIndexTableViewCell.xib in Resources */,
+				A4CCA8B31D6D799200BD6EFC /* redo.png in Resources */,
 				3B780F361D6BF79E006AF895 /* address.plist in Resources */,
 				3B780F541D6BF79E006AF895 /* WZHeaderTableViewCell.xib in Resources */,
 				3B780F521D6BF79E006AF895 /* WZForecastTableViewCell.xib in Resources */,

@@ -17,7 +17,6 @@
 @property (nonatomic, copy) NSString *artists_name;
 @property (nonatomic, copy) NSString *name;
 @property (nonatomic, copy) NSString *lyric;
-
 + (instancetype)musicModelWithDic:(NSDictionary *)dict;
 
 
