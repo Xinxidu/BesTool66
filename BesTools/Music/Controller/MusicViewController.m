@@ -13,6 +13,8 @@
 #import <AVFoundation/AVFoundation.h>
 #import "TableViewCell.h"
 #import "ZYTabBarController.h"
+#define WIDTH [UIScreen mainScreen].bounds.size.width
+#define HEIGHT [UIScreen mainScreen].bounds.size.height
 @interface MusicViewController ()<UITableViewDelegate,UITableViewDataSource>
 @property (nonatomic, retain) UITableView *tableView;
 @property (nonatomic, retain) NSMutableArray *listArray;
@@ -65,15 +67,12 @@
 }
 - (void)creatTableView{
     
-    
     self.tableView = [[UITableView alloc]initWithFrame:[UIScreen mainScreen].bounds];
+    UIImageView *imageView = [[UIImageView alloc]initWithImage:[UIImage imageNamed:@"musicBG.jpeg"]];
     
-    UIImageView *imageView = [[UIImageView alloc]initWithImage:[UIImage imageNamed:@"diaodiaodiao.jpg"]];
-    
-    imageView.alpha = 0.7;
+    imageView.alpha = 0.8;
     
     imageView.frame = [UIScreen mainScreen].bounds;
-    
     
     [self.tableView setBackgroundView:imageView];
     
@@ -102,9 +101,6 @@
     
     model = [self.listArray objectAtIndex:indexPath.row];
     
-    
-    
-    
     //NSLog(@"%@",model.name);
     TableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell"];
     
@@ -114,32 +110,19 @@
         
     }
     cell.model = model;
-    
-    
-    
     //    cell.textLabel.text = model.name;
     UIView *view = [[UIView alloc]initWithFrame:cell.contentView.frame];
-    
-    //    加动画
     view.backgroundColor = [UIColor clearColor];
-    
-    UIImageView *imageViewWait = [[UIImageView alloc]initWithFrame:CGRectMake(200, 10, 150, 150)];
-    
-    imageViewWait.layer.cornerRadius = 75;
-    
-    imageViewWait.image = [UIImage imageNamed:@"iconfont-yinlemusic216.png"];
-    
-    
+    UIImageView *imageViewWait = [[UIImageView alloc]initWithFrame:CGRectMake(0, 0, WIDTH, 110)];
+    imageViewWait.layer.cornerRadius = 5;
+    imageViewWait.backgroundColor=[UIColor colorWithRed:149/255.0 green:171/255.0 blue:192/255.0 alpha:0.6];
     [view addSubview:imageViewWait];
-    
     cell.selectedBackgroundView = view;
-    
-    
     return cell;
     
 }
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
-    return 200;
+    return 110;
 }
 //- (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section{
 //
@@ -147,17 +130,11 @@
 //}
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     
-    
-    
-    
     self.SingVC.listArray = [[NSMutableArray alloc]init];
     
     self.SingVC.listArray = self.listArray;
     
-    
-    
     if (self.SingVC.i != indexPath.row) {
-        
         
         MusicModel *model = [[MusicModel alloc]init];
         
