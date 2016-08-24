@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3B77A7671D6D674100F5C696 /* ReadTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B77A7661D6D674100F5C696 /* ReadTableViewCell.m */; };
+		3B77A76A1D6D676D00F5C696 /* ReadListModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B77A7691D6D676D00F5C696 /* ReadListModel.m */; };
 		3B780F361D6BF79E006AF895 /* address.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3B780EE31D6BF79E006AF895 /* address.plist */; };
 		3B780F371D6BF79E006AF895 /* WZAddCityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B780EE61D6BF79E006AF895 /* WZAddCityViewController.m */; };
 		3B780F381D6BF79E006AF895 /* WZEditCityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B780EE81D6BF79E006AF895 /* WZEditCityViewController.m */; };
@@ -96,6 +98,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3B77A7651D6D674100F5C696 /* ReadTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReadTableViewCell.h; sourceTree = "<group>"; };
+		3B77A7661D6D674100F5C696 /* ReadTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReadTableViewCell.m; sourceTree = "<group>"; };
+		3B77A7681D6D676D00F5C696 /* ReadListModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReadListModel.h; sourceTree = "<group>"; };
+		3B77A7691D6D676D00F5C696 /* ReadListModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReadListModel.m; sourceTree = "<group>"; };
 		3B780EE31D6BF79E006AF895 /* address.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = address.plist; sourceTree = "<group>"; };
 		3B780EE51D6BF79E006AF895 /* WZAddCityViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WZAddCityViewController.h; sourceTree = "<group>"; };
 		3B780EE61D6BF79E006AF895 /* WZAddCityViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WZAddCityViewController.m; sourceTree = "<group>"; };
@@ -621,6 +627,10 @@
 			children = (
 				A45DBB391D6ADF8E00B4AC2A /* ReadViewController.h */,
 				A45DBB3A1D6ADF8E00B4AC2A /* ReadViewController.m */,
+				3B77A7651D6D674100F5C696 /* ReadTableViewCell.h */,
+				3B77A7661D6D674100F5C696 /* ReadTableViewCell.m */,
+				3B77A7681D6D676D00F5C696 /* ReadListModel.h */,
+				3B77A7691D6D676D00F5C696 /* ReadListModel.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -876,6 +886,7 @@
 				3B780F381D6BF79E006AF895 /* WZEditCityViewController.m in Sources */,
 				3B780F421D6BF79E006AF895 /* JSONModelError.m in Sources */,
 				3B780F441D6BF79E006AF895 /* JSONAPI.m in Sources */,
+				3B77A76A1D6D676D00F5C696 /* ReadListModel.m in Sources */,
 				A45DBB6F1D6ADF8E00B4AC2A /* ZYPathItemButton.m in Sources */,
 				3B780F451D6BF79E006AF895 /* JSONHTTPClient.m in Sources */,
 				A45DBB491D6ADF8E00B4AC2A /* LeftViewController.m in Sources */,
@@ -918,6 +929,7 @@
 				3B780F551D6BF79E006AF895 /* WZIndexItemTableViewCell.m in Sources */,
 				A45DBB5F1D6ADF8E00B4AC2A /* UIView+LBExtension.m in Sources */,
 				3B780F491D6BF79E006AF895 /* UIImage+ImageEffects.m in Sources */,
+				3B77A7671D6D674100F5C696 /* ReadTableViewCell.m in Sources */,
 				3B780F371D6BF79E006AF895 /* WZAddCityViewController.m in Sources */,
 				3B780F571D6BF79E006AF895 /* WZIndexTableViewCell.m in Sources */,
 				A45DBB711D6ADF8E00B4AC2A /* ZYTabBarController.m in Sources */,
