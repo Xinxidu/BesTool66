@@ -50,7 +50,7 @@
     //音量
    // [self volume];
     [self lrcShow];
-    [self creatSegment];
+    [self createSegment];
     
 }
 
@@ -67,7 +67,7 @@
 -(void)lrcShow{
     UIButton *rightBtn = [[UIButton alloc]initWithFrame:CGRectMake(0,0,30,30)];
     
-    [rightBtn setImage:[UIImage imageNamed:@"iconfont-diaozhenggeci"]forState:UIControlStateNormal];
+    [rightBtn setImage:[UIImage imageNamed:@"geci"]forState:UIControlStateNormal];
     
     [rightBtn addTarget:self action:@selector(btnR) forControlEvents:UIControlEventTouchUpInside];
     
@@ -83,9 +83,9 @@
     model = [self takeModel];
     
 //    调用背景
-    [self creatScrollViewBack];
-    [self creatScrollLeftView];
-    [self creatScrollRightView:model.blurPicUrl];
+    [self createScrollViewBack];
+    [self createScrollLeftView];
+    [self createScrollRightView:model.blurPicUrl];
 //    调用光盘方法
     self.picImageView = [[UIImageView alloc]initWithFrame:CGRectMake(0, 0, 200, 200)];
     [self creatPicture:model.picUrl];
@@ -197,7 +197,6 @@ if (ss< 10){
 
 - (void)musicplay:(NSString *)str{
 
-    
 //    播放器运行
     NSString *urlStr = [NSString stringWithFormat:@"%@",str];
     
@@ -258,7 +257,7 @@ if (ss< 10){
     
     self.slider = [[UISlider alloc]initWithFrame:CGRectMake(10, CGRectGetMaxY(btn1.frame)+12, WIDTH-30, 10)];
     
-    self.slider.thumbTintColor = [UIColor blackColor];
+    self.slider.thumbTintColor = [UIColor blueColor];
     self.slider.maximumValue = self.player.duration;
     self.slider.minimumValue = 0;
     [self.slider addTarget:self action:@selector(slider:) forControlEvents:UIControlEventTouchUpInside];
@@ -349,7 +348,7 @@ if (ss< 10){
 - (void)creatTableView{
 
     self.tableView = [[UITableView alloc]
-    initWithFrame:CGRectMake([UIScreen mainScreen].bounds.size.width + 30, 290, 350, 200)];
+    initWithFrame:CGRectMake([UIScreen mainScreen].bounds.size.width + 30, CGRectGetMaxY(self.picImageView.frame)+5, 350, 180)];
     
     self.tableView.backgroundColor = [UIColor clearColor];
     
@@ -357,7 +356,6 @@ if (ss< 10){
     self.tableView.delegate = self;
     [self.scrollView addSubview:self.tableView];
     
-  
 }
 //协议方法
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
@@ -366,9 +364,7 @@ if (ss< 10){
 }
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
     
-   
     return self.lrcAll.count;
-    
 }
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell"];
@@ -423,7 +419,6 @@ if (ss< 10){
     
     ani.duration = 5;
     
-    
     [self.picImageView.layer addAnimation:ani forKey:nil];
     
      [self.picImageView.layer setMasksToBounds:YES];
@@ -432,7 +427,7 @@ if (ss< 10){
     
 }
 //Scroll music 里面调用
-- (void)creatScrollViewBack{
+- (void)createScrollViewBack{
      self.scrollView = [[UIScrollView alloc]initWithFrame:CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, 736)];
     self.scrollView.contentOffset = CGPointMake([UIScreen mainScreen].bounds.size.width, 0);
     self.scrollView.pagingEnabled = YES;
@@ -445,7 +440,7 @@ if (ss< 10){
     self.scrollView.backgroundColor = [UIColor blackColor];
     [self.view addSubview:self.scrollView];
 }
-- (void)creatScrollLeftView{
+- (void)createScrollLeftView{
     
     UIImageView *imageViewFirst = [[UIImageView alloc]initWithFrame:CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, 750)];
     
@@ -453,7 +448,7 @@ if (ss< 10){
     
     [self.scrollView addSubview:imageViewFirst];
 }
-- (void)creatScrollRightView:(NSString *)str{
+- (void)createScrollRightView:(NSString *)str{
 
     //播放背景图片
     self.imageViewSceond = [[UIImageView alloc]initWithFrame:CGRectMake([UIScreen mainScreen].bounds.size.width, 0, [UIScreen mainScreen].bounds.size.width, 750)];
@@ -498,9 +493,6 @@ if (ss< 10){
 //    UIBarButtonItem *goBack = [[UIBarButtonItem alloc]initWithBarButtonSystemItem:UIBarButtonSystemItemReply target:self action:@selector(goBackClick)];
 //    
 //    self.navigationItem.backBarButtonItem = goBack;
-    
-    
-    
     
     NSArray *array = [[NSArray alloc]init];
     
@@ -574,7 +566,7 @@ if (ss< 10){
 }
 
 //声道
-- (void)creatSegment{
+- (void)createSegment{
     UISegmentedControl *segment = [[UISegmentedControl alloc]initWithItems:@[@"左声道",@"立体声",@"右声道"]];
     segment.frame = CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, 45);
     [segment addTarget:self action:@selector(segmentClick:) forControlEvents:UIControlEventValueChanged];
