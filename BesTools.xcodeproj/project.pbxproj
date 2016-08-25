@@ -47,6 +47,7 @@
 		3B780F581D6BF79E006AF895 /* WZIndexTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3B780F311D6BF79E006AF895 /* WZIndexTableViewCell.xib */; };
 		3B780F591D6BF79E006AF895 /* WZTitleTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B780F331D6BF79E006AF895 /* WZTitleTableViewCell.m */; };
 		3B780F5A1D6BF79E006AF895 /* WZTitleTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3B780F341D6BF79E006AF895 /* WZTitleTableViewCell.xib */; };
+		3B7DB8F71D6EC0CE004BC09C /* BaseTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B7DB8F61D6EC0CE004BC09C /* BaseTableView.m */; };
 		A424D6E71D65556800A6AE2A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A424D6E61D65556800A6AE2A /* main.m */; };
 		A424D6F01D65556800A6AE2A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A424D6EE1D65556800A6AE2A /* Main.storyboard */; };
 		A424D6F21D65556800A6AE2A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A424D6F11D65556800A6AE2A /* Assets.xcassets */; };
@@ -174,6 +175,8 @@
 		3B780F331D6BF79E006AF895 /* WZTitleTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WZTitleTableViewCell.m; sourceTree = "<group>"; };
 		3B780F341D6BF79E006AF895 /* WZTitleTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WZTitleTableViewCell.xib; sourceTree = "<group>"; };
 		3B780F351D6BF79E006AF895 /* WZConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WZConstants.h; sourceTree = "<group>"; };
+		3B7DB8F51D6EC0CE004BC09C /* BaseTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseTableView.h; sourceTree = "<group>"; };
+		3B7DB8F61D6EC0CE004BC09C /* BaseTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseTableView.m; sourceTree = "<group>"; };
 		A026D0734E41569235C5EE47 /* libPods-BesTools.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BesTools.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A424D6E21D65556800A6AE2A /* BesTools.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BesTools.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A424D6E61D65556800A6AE2A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -628,6 +631,8 @@
 		A45DBB381D6ADF8E00B4AC2A /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				3B7DB8F51D6EC0CE004BC09C /* BaseTableView.h */,
+				3B7DB8F61D6EC0CE004BC09C /* BaseTableView.m */,
 				A45DBB391D6ADF8E00B4AC2A /* ReadViewController.h */,
 				A45DBB3A1D6ADF8E00B4AC2A /* ReadViewController.m */,
 				3B77A7651D6D674100F5C696 /* ReadTableViewCell.h */,
@@ -916,6 +921,7 @@
 				3B780F431D6BF79E006AF895 /* NSArray+JSONModel.m in Sources */,
 				A45DBB481D6ADF8E00B4AC2A /* UIView_extra.m in Sources */,
 				A49936561D6AF0E3003C8A04 /* TableViewCell.m in Sources */,
+				3B7DB8F71D6EC0CE004BC09C /* BaseTableView.m in Sources */,
 				3B780F4F1D6BF79E006AF895 /* WZForecastItemTableViewCell.m in Sources */,
 				A45DBB421D6ADF8E00B4AC2A /* AppDelegate.m in Sources */,
 				3B780F4E1D6BF79E006AF895 /* WZWeatherTool.m in Sources */,

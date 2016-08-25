@@ -5,6 +5,7 @@ target 'BesTools' do
 pod 'SDWebImage'
 pod 'AFNetworking'
 pod 'SDWebImage'
+pod 'MJRefresh'
 
 end
 

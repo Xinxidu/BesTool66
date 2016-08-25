@@ -20,19 +20,22 @@
     // Do any additional setup after loading the view.
     self.view.backgroundColor = [UIColor whiteColor];
     self.title = @"猎奇奇闻";
-    NSLog(@"1111%@",_url);
-    _webView = [[UIWebView alloc]init];
-    _webView.frame = CGRectMake(0, 0, self.view.bounds.size.width, self.view.bounds.size.height);
-    _webView.delegate = self;
-    _webView.scrollView.bounces = NO;
-    [self.view addSubview:_webView];
+    [self createWebView];
     [self requestData];
+    //刷新控件
     _activity = [[UIActivityIndicatorView alloc]init];
     [_activity setCenter:self.view.center];
     [_activity setActivityIndicatorViewStyle:UIActivityIndicatorViewStyleGray];
     _activity.color = [UIColor redColor];
     [self.view addSubview:_activity];
     [_activity startAnimating];
+}
+-(void)createWebView{
+    _webView = [[UIWebView alloc]init];
+    _webView.frame = CGRectMake(0, 0, self.view.bounds.size.width, self.view.bounds.size.height);
+    _webView.delegate = self;
+    _webView.scrollView.bounces = NO;
+    [self.view addSubview:_webView];
 }
 -(void)requestData{
     NSURLRequest *request = [NSURLRequest requestWithURL:[NSURL URLWithString:_url]];
@@ -42,9 +45,26 @@
 -(void)webViewDidFinishLoad:(UIWebView *)webView{
     [_activity stopAnimating];
 }
+//-(void)viewWillAppear:(BOOL)animated{
+//
+//    self.tabBarController.tabBar.hidden = YES;
+//    self.hidesBottomBarWhenPushed = YES;
+//    UIImageView *image = (UIImageView *)[self.tabBarController.view viewWithTag:100];
+//    image.hidden = YES;
+//}
 -(void)viewDidAppear:(BOOL)animated{
-//    [_activity stopAnimating];
+    self.hidesBottomBarWhenPushed = YES;
+    self.tabBarController.tabBar.hidden = YES;
+
+    UIImageView *image = (UIImageView *)[self.tabBarController.view viewWithTag:100];
+    image.hidden = YES;
 }
+-(void)viewWillDisappear:(BOOL)animated{
+    self.tabBarController.tabBar.hidden = NO;
+    UIImageView *image = (UIImageView *)[self.tabBarController.view viewWithTag:100];
+    image.hidden = NO;
+}
+
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
