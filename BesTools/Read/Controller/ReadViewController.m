@@ -77,7 +77,8 @@
                 ReadListModel *model = [[ReadListModel alloc]init];
                 model.Description = dict[@"description"];
                 model.title = dict[@"title"];
-                model.ctime = dict[@"ctime"];
+                NSArray* array = [dict[@"ctime"] componentsSeparatedByString:@" "];
+                model.ctime = array[0];
                 model.picUrl = dict[@"picUrl"];
                 model.detailurl = dict[@"url"];
                 [_dataArray addObject:model];
@@ -109,7 +110,6 @@
     return cell;
 }
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
-    NSLog(@"选中了%ld",indexPath.row);
     ReadDetailViewController *detail = [[ReadDetailViewController alloc]init];
     ReadListModel *model = _dataArray[indexPath.row];
     detail.url = model.detailurl;
