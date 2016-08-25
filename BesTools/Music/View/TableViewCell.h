@@ -13,9 +13,6 @@
 @property (nonatomic, retain) UIImageView *imageViewPic;
 @property (nonatomic, retain) UILabel *label;
 @property (nonatomic, retain) UILabel *deqLabel;
-
-@property (nonatomic, retain) MusicModel *model;
-
-
-
+//刷新cell
+- (void)setModel:(MusicModel *)model;
 @end

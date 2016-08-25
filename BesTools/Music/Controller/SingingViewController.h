@@ -15,12 +15,11 @@
 @property (nonatomic, retain) NSMutableArray *listArray;;
 @property (nonatomic, assign) NSInteger i;
 @property (nonatomic, retain) AVAudioPlayer *player;
-
-
 @property (nonatomic, retain) UIButton *btn3;
 @property (nonatomic, assign) BOOL playOrPause;
 @property (nonatomic, assign) BOOL lycYesOrNo;
-@property (nonatomic, retain) UITableView *tableView;
+@property (nonatomic, retain) UITableView *lrcTableView;//小歌词界面
+@property (nonatomic, retain) UITableView *bigLrcTableView;//大歌词界面
 @property (nonatomic, retain) UIImageView *imageViewSceond;
 @property (nonatomic, retain) UIScrollView *scrollView;
 @property (nonatomic, retain) UIImageView *picImageView;
@@ -32,6 +31,6 @@
 
 
 - (void)musicplay:(NSString *)str;
-- (void)creatLrc:(NSString *)str;
-- (void)creatPicture:(NSString *)str;
+- (void)createLrc:(NSString *)str;
+- (void)createPicture:(NSString *)str;
 @end
