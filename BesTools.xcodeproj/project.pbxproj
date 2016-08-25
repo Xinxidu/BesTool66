@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		3B77A7671D6D674100F5C696 /* ReadTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B77A7661D6D674100F5C696 /* ReadTableViewCell.m */; };
 		3B77A76A1D6D676D00F5C696 /* ReadListModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B77A7691D6D676D00F5C696 /* ReadListModel.m */; };
+		3B77A7701D6D9D6300F5C696 /* ReadDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B77A76F1D6D9D6300F5C696 /* ReadDetailViewController.m */; };
 		3B780F361D6BF79E006AF895 /* address.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3B780EE31D6BF79E006AF895 /* address.plist */; };
 		3B780F371D6BF79E006AF895 /* WZAddCityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B780EE61D6BF79E006AF895 /* WZAddCityViewController.m */; };
 		3B780F381D6BF79E006AF895 /* WZEditCityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B780EE81D6BF79E006AF895 /* WZEditCityViewController.m */; };
@@ -103,6 +104,8 @@
 		3B77A7661D6D674100F5C696 /* ReadTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReadTableViewCell.m; sourceTree = "<group>"; };
 		3B77A7681D6D676D00F5C696 /* ReadListModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReadListModel.h; sourceTree = "<group>"; };
 		3B77A7691D6D676D00F5C696 /* ReadListModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReadListModel.m; sourceTree = "<group>"; };
+		3B77A76E1D6D9D6300F5C696 /* ReadDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReadDetailViewController.h; sourceTree = "<group>"; };
+		3B77A76F1D6D9D6300F5C696 /* ReadDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReadDetailViewController.m; sourceTree = "<group>"; };
 		3B780EE31D6BF79E006AF895 /* address.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = address.plist; sourceTree = "<group>"; };
 		3B780EE51D6BF79E006AF895 /* WZAddCityViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WZAddCityViewController.h; sourceTree = "<group>"; };
 		3B780EE61D6BF79E006AF895 /* WZAddCityViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WZAddCityViewController.m; sourceTree = "<group>"; };
@@ -634,6 +637,8 @@
 				3B77A7661D6D674100F5C696 /* ReadTableViewCell.m */,
 				3B77A7681D6D676D00F5C696 /* ReadListModel.h */,
 				3B77A7691D6D676D00F5C696 /* ReadListModel.m */,
+				3B77A76E1D6D9D6300F5C696 /* ReadDetailViewController.h */,
+				3B77A76F1D6D9D6300F5C696 /* ReadDetailViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -888,6 +893,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3B780F381D6BF79E006AF895 /* WZEditCityViewController.m in Sources */,
+				3B77A7701D6D9D6300F5C696 /* ReadDetailViewController.m in Sources */,
 				3B780F421D6BF79E006AF895 /* JSONModelError.m in Sources */,
 				3B780F441D6BF79E006AF895 /* JSONAPI.m in Sources */,
 				3B77A76A1D6D676D00F5C696 /* ReadListModel.m in Sources */,

@@ -55,7 +55,7 @@
     HomeVC.view.backgroundColor = [UIColor grayColor];
     
     ReadViewController *ReadVC = [[ReadViewController alloc] init];
-    [self setUpOneChildVcWithVc:ReadVC Image:@"fish_normal" selectedImage:@"fish_highlight" title:@"阅读"];
+    [self setUpOneChildVcWithVc:ReadVC Image:@"fish_normal" selectedImage:@"fish_highlight" title:@"奇闻"];
     
     
     TalkViewController *TalkVC = [[TalkViewController alloc] init];

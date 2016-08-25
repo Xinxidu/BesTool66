@@ -10,4 +10,8 @@
 
 @interface ReadTableViewCell : UITableViewCell
 
+@property (strong,nonatomic) UILabel *ctimeLabel;
+@property (strong,nonatomic) UILabel *DescriptionLabel;
+@property (strong,nonatomic) UIImageView *picUrlImageView;
+@property (strong,nonatomic) UILabel *titleLabel;
 @end

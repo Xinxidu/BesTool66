@@ -9,9 +9,9 @@
 #import <Foundation/Foundation.h>
 
 @interface ReadListModel : NSObject
-@property (assign,nonatomic) NSString *ctime;
-@property (assign,nonatomic) NSString *Description;
-@property (assign,nonatomic) NSString *picUrl;
-@property (assign,nonatomic) NSString *title;
-@property (assign,nonatomic) NSString *url;
+@property (nonatomic,copy) NSString *ctime;
+@property (nonatomic,copy) NSString *Description;
+@property (nonatomic,copy) NSString *picUrl;
+@property (nonatomic,copy) NSString *title;
+@property (nonatomic,copy) NSString *detailurl;
 @end

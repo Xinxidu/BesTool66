@@ -4,6 +4,7 @@ target 'BesTools' do
 
 pod 'SDWebImage'
 pod 'AFNetworking'
+pod 'SDWebImage'
 
 end
 
