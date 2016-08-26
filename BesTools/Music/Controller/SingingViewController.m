@@ -14,43 +14,38 @@
 @interface SingingViewController ()<UITableViewDelegate,UITableViewDataSource,AVAudioPlayerDelegate>
 
 @property (nonatomic, retain) NSTimer *timer;
-
-
-
-
-
-
+@property (strong,nonatomic) UIButton *previousBtn;
 @end
 
 @implementation SingingViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
 //    右滑返回
-//    self.navigationController.interactivePopGestureRecognizer.enabled = YES;
+    self.navigationController.interactivePopGestureRecognizer.enabled = YES;
 //    同时显示left 和 back item
 //    ViewController *root = [[ViewController alloc]init];
-//    
 //    root.deleGate = self;
     self.navigationItem.leftItemsSupplementBackButton = YES;
-//    self.navigationItem.leftBarButtonItem=[[UIBarButtonItem alloc]initWithTitle:@"音乐" style:UIBarButtonItemStylePlain target:self action:@selector(back:)];
     self.view.backgroundColor = [UIColor blackColor];
     self.lrcAll = [[NSMutableArray alloc]init];
     self.lrcTime = [[NSMutableArray alloc]init];
-
     self.playOrPause = NO;
     self.lycYesOrNo = NO;
-    
-    [self creatPage];
-    
-    [self creatTableView];
+    [self createPage];
+    //创建歌词
+    [self createTableView];
+    //创建大页面歌词
+    [self createBigTableView];
     //创建播放按钮
-    [self creatBtn];
+    [self createBtn];
+    //创建时间进度条
+    [self createSlider];
     //音量
    // [self volume];
+    //导航栏右侧歌词开关
     [self lrcShow];
-    [self creatSegment];
+    [self createSegment];
     
 }
 
@@ -64,10 +59,11 @@
     UIImageView *image = (UIImageView *)[self.tabBarController.view viewWithTag:100];
     image.hidden = NO;
 }
+//导航栏右侧歌词开关
 -(void)lrcShow{
     UIButton *rightBtn = [[UIButton alloc]initWithFrame:CGRectMake(0,0,30,30)];
     
-    [rightBtn setImage:[UIImage imageNamed:@"iconfont-diaozhenggeci"]forState:UIControlStateNormal];
+    [rightBtn setImage:[UIImage imageNamed:@"geci"]forState:UIControlStateNormal];
     
     [rightBtn addTarget:self action:@selector(btnR) forControlEvents:UIControlEventTouchUpInside];
     
@@ -78,27 +74,25 @@
 //    [self.navigationController popViewControllerAnimated:YES];
 //}
 //铺页面
-- (void)creatPage{
+- (void)createPage{
     MusicModel *model = [[MusicModel alloc]init];
     model = [self takeModel];
-    
 //    调用背景
-    [self creatScrollViewBack];
-    [self creatScrollLeftView];
-    [self creatScrollRightView:model.blurPicUrl];
+    [self createScrollViewBack];
+    [self createScrollLeftView];
+    [self createScrollRightView:model.blurPicUrl];
 //    调用光盘方法
     self.picImageView = [[UIImageView alloc]initWithFrame:CGRectMake(0, 0, 200, 200)];
-    [self creatPicture:model.picUrl];
+    [self createPicture:model.picUrl];
 //调用播放器
 //    [self musicplay:model.mp3Url];
  // 歌名 navgationBar 标题
     self.navigationItem.title = model.name;
 //   调用歌词
-    [self creatLrc:model.lyric];
+    [self createLrc:model.lyric];
     
 }
 //把传过来的model解析
-
 - (MusicModel *)takeModel{
     
     MusicModel *model = [[MusicModel alloc]init];
@@ -108,7 +102,7 @@
     return model;
 }
 //歌词
-- (void)creatLrc:(NSString *)str{
+- (void)createLrc:(NSString *)str{
     NSArray *array = [str componentsSeparatedByString:@"\n"];
     
     for (int i = 0; i < [array count]; i++) {
@@ -144,60 +138,50 @@
 }
 
 - (void)time{
-int hh= 0,mm = 0,ss = 0;
-
-NSString *mmStr= nil;
-
-NSString *ssStr= nil;
-
-hh = self.player.currentTime / 360;
-
-mm = (self.player.currentTime -hh * 360)/ 60;
-
-ss = (int)self.player.currentTime % 60;
-
-if (mm< 10){
-    
-    mmStr= [NSString stringWithFormat:@"0%d",mm];
-    
-} else {
-    
-    mmStr= [NSString stringWithFormat:@"%d",mm];
-    
-}
-
-if (ss< 10){
-    
-    ssStr= [NSString stringWithFormat:@"0%d",ss];
-    
-} else {
-    
-    ssStr= [NSString stringWithFormat:@"%d",ss];
-    
-}
-    NSString *currTime0 = [mmStr stringByAppendingString:@":"];
-    self.currTime = [currTime0 stringByAppendingString:ssStr];
-    
- 
-    if (self.lrcTime != nil&&self.lrcAll != nil) {
-        for (int i = 0; i < self.lrcTime.count; i++) {
-         
-            if ([self.lrcTime[i] isEqualToString:self.currTime]) {
-                
-                NSIndexPath *indexPath = [NSIndexPath indexPathForRow:i inSection:0];
-                
-                [self.tableView selectRowAtIndexPath:indexPath animated:YES scrollPosition:UITableViewScrollPositionMiddle];
-              
+    int hh= 0,mm = 0,ss = 0;
+    NSString *mmStr= nil;
+    NSString *ssStr= nil;
+    hh = self.player.currentTime / 360;
+    mm = (self.player.currentTime -hh * 360)/ 60;
+    ss = (int)self.player.currentTime % 60;
+    if (mm< 10){
+        
+        mmStr= [NSString stringWithFormat:@"0%d",mm];
+        
+    } else {
+        
+        mmStr= [NSString stringWithFormat:@"%d",mm];
+        
+    }
+    if (ss< 10){
+        
+        ssStr= [NSString stringWithFormat:@"0%d",ss];
+        
+    } else {
+        
+        ssStr= [NSString stringWithFormat:@"%d",ss];
+        
+    }
+        NSString *currTime0 = [mmStr stringByAppendingString:@":"];
+        self.currTime = [currTime0 stringByAppendingString:ssStr];
+        if (self.lrcTime != nil&&self.lrcAll != nil) {
+            for (int i = 0; i < self.lrcTime.count; i++) {
+             
+                if ([self.lrcTime[i] isEqualToString:self.currTime]) {
+                    
+                    NSIndexPath *indexPath = [NSIndexPath indexPathForRow:i inSection:0];
+                    
+                    [self.lrcTableView selectRowAtIndexPath:indexPath animated:YES scrollPosition:UITableViewScrollPositionMiddle];
+                    [self.bigLrcTableView selectRowAtIndexPath:indexPath animated:YES scrollPosition:UITableViewScrollPositionMiddle];
+                }
             }
         }
-    }
 
-}
+    }
 //音乐播放器
 
 - (void)musicplay:(NSString *)str{
 
-    
 //    播放器运行
     NSString *urlStr = [NSString stringWithFormat:@"%@",str];
     
@@ -214,20 +198,16 @@ if (ss< 10){
 //    self.player = [[AVAudioPlayer alloc] initWithContentsOfURL:fileURL error:nil];
     
     self.player = [[AVAudioPlayer alloc]initWithData:audioData error:nil];
-    
     [self.player prepareToPlay];
-    
     self.player.delegate = self;
-    
-    self.player.volume = 8;
-    
+    self.player.volume = 3;//默认音量
     [self.player play];
 
 }
 
 //按钮
-- (void)creatBtn{
-    UIView *view = [[UIView alloc]initWithFrame:CGRectMake(5, HEIGHT-88, WIDTH-10, 88)];
+- (void)createBtn{
+    UIView *view = [[UIView alloc]initWithFrame:CGRectMake(5, HEIGHT-88, WIDTH-10, 68)];
     view.alpha = 0.6;
     view.backgroundColor = [UIColor whiteColor];
     view.layer.borderColor = [[UIColor blackColor]CGColor];
@@ -235,15 +215,13 @@ if (ss< 10){
     view.layer.cornerRadius = 15;
 //    按钮
     UIButton *btn1 = [UIButton buttonWithType:UIButtonTypeCustom];
-    btn1.frame = CGRectMake(10, 15, 35, 35);
-    [btn1 setBackgroundImage:[UIImage imageNamed:@"iconfont-yutoubaoicon"] forState:UIControlStateNormal];
-    
-    UIButton *btn2 = [UIButton buttonWithType:UIButtonTypeCustom];
-    btn2.frame = CGRectMake(CGRectGetMaxX(btn1.frame)+15, 15, 35, 35);
-     [btn2 setBackgroundImage:[UIImage imageNamed:@"iconfont-bofangqishangyiqu"] forState:UIControlStateNormal];
-    
+    btn1.frame = CGRectMake(10, 18, 30, 30);
+    [btn1 setBackgroundImage:[UIImage imageNamed:@"redo"] forState:UIControlStateNormal];
+    self.previousBtn = [UIButton buttonWithType:UIButtonTypeCustom];
+    self.previousBtn.frame = CGRectMake(CGRectGetMaxX(btn1.frame)+15, 15, 35, 35);
+     [self.previousBtn setBackgroundImage:[UIImage imageNamed:@"iconfont-bofangqishangyiqu"] forState:UIControlStateNormal];
     self.btn3 = [UIButton buttonWithType:UIButtonTypeCustom];
-    self.btn3.frame = CGRectMake(CGRectGetMaxX(btn2.frame)+WIDTH*0.22, 15, 35, 35);
+    self.btn3.frame = CGRectMake(CGRectGetMaxX(self.previousBtn.frame)+WIDTH*0.22, 15, 35, 35);
     [self.btn3 setBackgroundImage:[UIImage imageNamed:@"iconfont-zanting"] forState:UIControlStateNormal];
     
     UIButton *btn4 = [UIButton buttonWithType:UIButtonTypeCustom];
@@ -252,32 +230,32 @@ if (ss< 10){
 //    给按钮添加事件
 //    播放
     [self.btn3 addTarget:self action:@selector(go) forControlEvents:UIControlEventTouchUpInside];
+    [self.previousBtn addTarget:self action:@selector(back) forControlEvents:UIControlEventTouchUpInside];
     [btn4 addTarget:self action:@selector(next) forControlEvents:UIControlEventTouchUpInside];
-    [btn2 addTarget:self action:@selector(back) forControlEvents:UIControlEventTouchUpInside];
-    [btn1 addTarget:self action:@selector(too) forControlEvents:UIControlEventTouchUpInside];
-    
-    self.slider = [[UISlider alloc]initWithFrame:CGRectMake(10, CGRectGetMaxY(btn1.frame)+12, WIDTH-30, 10)];
-    
-    self.slider.thumbTintColor = [UIColor blackColor];
-    self.slider.maximumValue = self.player.duration;
-    self.slider.minimumValue = 0;
-    [self.slider addTarget:self action:@selector(slider:) forControlEvents:UIControlEventTouchUpInside];
-    
+//    [btn1 addTarget:self action:@selector(too) forControlEvents:UIControlEventTouchUpInside];
      [view addSubview:btn1];
-     [view addSubview:btn2];
+     [view addSubview:self.previousBtn];
      [view addSubview:self.btn3];
      [view addSubview:btn4];
-     [view addSubview:self.slider];
-    
 //     UIWindow *window = [[UIApplication sharedApplication].windows lastObject];
     [self.view addSubview:view];
+    
+}
+
+//时间进度
+-(void)createSlider{
+    self.slider = [[UISlider alloc]initWithFrame:CGRectMake(30, HEIGHT-128, WIDTH-60, 10)];
+    self.slider.thumbTintColor = [UIColor blueColor];
+    self.slider.maximumValue = self.player.duration;
+    self.slider.minimumValue = 0;
+    [self.view addSubview:self.slider];
+    [self.slider addTarget:self action:@selector(slider:) forControlEvents:UIControlEventTouchUpInside];
     self.timer = [NSTimer scheduledTimerWithTimeInterval:0.9 target:self selector:@selector(timerTake) userInfo:nil repeats:YES];
     [self.timer fire];
 }
-- (void)timerTake{
-    
-   self.slider.value = self.player.currentTime;
 
+- (void)timerTake{
+    self.slider.value = self.player.currentTime;
     [self time];
 }
 - (void)go{
@@ -285,17 +263,11 @@ if (ss< 10){
            [self.player play];
         self.playOrPause = NO;
         [self.btn3 setBackgroundImage:[UIImage imageNamed:@"iconfont-zanting"] forState:UIControlStateNormal];
-        
     }else{
         [self.player pause];
         self.playOrPause = YES;
            [self.btn3 setBackgroundImage:[UIImage imageNamed:@"iconfont-bofangqibofang"] forState:UIControlStateNormal];
     }
-    
- 
-    
-
-    
     
 }
 - (void)next{
@@ -309,30 +281,37 @@ if (ss< 10){
     [self.imageViewSceond sd_setImageWithURL:[NSURL URLWithString:model.blurPicUrl]];
     [self.picImageView sd_setImageWithURL:[NSURL URLWithString:model.picUrl]];
     [self musicplay:model.mp3Url];
-    [self creatLrc:model.lyric];
-    [self.tableView reloadData];
+    [self createLrc:model.lyric];
+    [self.lrcTableView reloadData];
+    [self.bigLrcTableView reloadData];
+    self.previousBtn.enabled=YES;
 }
 - (void)back{
-    self.i = self.i - 1;
-    MusicModel *model = [[MusicModel alloc]init];
-    model = [self takeModel];
-    self.lrcAll = [[NSMutableArray alloc]init];
-    self.lrcTime = [[NSMutableArray alloc]init];
-    self.navigationItem.title = model.name;
-    [self.imageViewSceond sd_setImageWithURL:[NSURL URLWithString:model.blurPicUrl]];
-    [self.picImageView sd_setImageWithURL:[NSURL URLWithString:model.picUrl]];
-    [self musicplay:model.mp3Url];
-    [self creatLrc:model.lyric];
-    [self.tableView reloadData];
+    if (self.i==0) {
+        self.previousBtn.enabled=NO;
+    }else{
+        self.i = self.i - 1;
+        MusicModel *model = [[MusicModel alloc]init];
+        model = [self takeModel];
+        self.lrcAll = [[NSMutableArray alloc]init];
+        self.lrcTime = [[NSMutableArray alloc]init];
+        self.navigationItem.title = model.name;
+        [self.imageViewSceond sd_setImageWithURL:[NSURL URLWithString:model.blurPicUrl]];
+        [self.picImageView sd_setImageWithURL:[NSURL URLWithString:model.picUrl]];
+        [self musicplay:model.mp3Url];
+        [self createLrc:model.lyric];
+        [self.lrcTableView reloadData];
+        [self.bigLrcTableView reloadData];
+        self.previousBtn.enabled=YES;
+    }
 }
 //需要修改
-- (void)too{
-    
-    //NSLog(@"再听一遍");
-    [self back];
-    [self next];
-    
-}
+//- (void)too{
+//    //NSLog(@"再听一遍");
+//    [self back];
+//    [self next];
+//    
+//}
 //slider触发事件
 - (void)slider:(UISlider *)slider{
     
@@ -346,18 +325,21 @@ if (ss< 10){
     
 }
 //铺tableView 在ScrollView 上面
-- (void)creatTableView{
+- (void)createTableView{
 
-    self.tableView = [[UITableView alloc]
-    initWithFrame:CGRectMake([UIScreen mainScreen].bounds.size.width + 30, 290, 350, 200)];
-    
-    self.tableView.backgroundColor = [UIColor clearColor];
-    
-    self.tableView.dataSource = self;
-    self.tableView.delegate = self;
-    [self.scrollView addSubview:self.tableView];
-    
-  
+    self.lrcTableView = [[UITableView alloc]
+    initWithFrame:CGRectMake(WIDTH + 30, CGRectGetMaxY(self.picImageView.frame)+10, WIDTH-60, 160)];
+    self.lrcTableView.backgroundColor = [UIColor clearColor];
+    self.lrcTableView.dataSource = self;
+    self.lrcTableView.delegate = self;
+    [self.scrollView addSubview:self.lrcTableView];
+}
+- (void)createBigTableView{
+    self.bigLrcTableView = [[UITableView alloc]initWithFrame:CGRectMake(30, 58, WIDTH-60, 0.58*HEIGHT)];
+    self.bigLrcTableView.backgroundColor = [UIColor clearColor];
+    self.bigLrcTableView.dataSource=self;
+    self.bigLrcTableView.delegate=self;
+    [self.scrollView addSubview:self.bigLrcTableView];
 }
 //协议方法
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
@@ -366,9 +348,7 @@ if (ss< 10){
 }
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
     
-   
     return self.lrcAll.count;
-    
 }
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell"];
@@ -406,7 +386,7 @@ if (ss< 10){
     return cell;
 }
 //光盘 music 里面调用
-- (void)creatPicture:(NSString *)str{
+- (void)createPicture:(NSString *)str{
    
     self.picImageView.center = CGPointMake([UIScreen mainScreen].bounds.size.width + WIDTH/2, 120);
     
@@ -423,7 +403,6 @@ if (ss< 10){
     
     ani.duration = 5;
     
-    
     [self.picImageView.layer addAnimation:ani forKey:nil];
     
      [self.picImageView.layer setMasksToBounds:YES];
@@ -432,7 +411,7 @@ if (ss< 10){
     
 }
 //Scroll music 里面调用
-- (void)creatScrollViewBack{
+- (void)createScrollViewBack{
      self.scrollView = [[UIScrollView alloc]initWithFrame:CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, 736)];
     self.scrollView.contentOffset = CGPointMake([UIScreen mainScreen].bounds.size.width, 0);
     self.scrollView.pagingEnabled = YES;
@@ -445,7 +424,7 @@ if (ss< 10){
     self.scrollView.backgroundColor = [UIColor blackColor];
     [self.view addSubview:self.scrollView];
 }
-- (void)creatScrollLeftView{
+- (void)createScrollLeftView{
     
     UIImageView *imageViewFirst = [[UIImageView alloc]initWithFrame:CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, 750)];
     
@@ -453,7 +432,7 @@ if (ss< 10){
     
     [self.scrollView addSubview:imageViewFirst];
 }
-- (void)creatScrollRightView:(NSString *)str{
+- (void)createScrollRightView:(NSString *)str{
 
     //播放背景图片
     self.imageViewSceond = [[UIImageView alloc]initWithFrame:CGRectMake([UIScreen mainScreen].bounds.size.width, 0, [UIScreen mainScreen].bounds.size.width, 750)];
@@ -473,96 +452,24 @@ if (ss< 10){
     [self.scrollView addSubview:self.imageViewSceond];
 
 }
-//音量按钮
-- (void)volume{
-//    控制声音大小的两个按钮
-    UIButton *leftOneButton = [[UIButton alloc]initWithFrame:CGRectMake(0,0,30,30)];
-    
-    [leftOneButton setImage:[UIImage imageNamed:@"iconfont-icon1"]forState:UIControlStateNormal];
-    
-    [leftOneButton addTarget:self action:@selector(btnA) forControlEvents:UIControlEventTouchUpInside];
-    
-    UIBarButtonItem *leftOneItem = [[UIBarButtonItem alloc]initWithCustomView:leftOneButton];
-    
 
-    UIButton *leftTwoButton = [[UIButton alloc]initWithFrame:CGRectMake(0,0,30,30)];
-    
-    [leftTwoButton setImage:[UIImage imageNamed:@"iconfont-icon2"]forState:UIControlStateNormal];
-    
-    [leftTwoButton addTarget:self action:@selector(btnL) forControlEvents:UIControlEventTouchUpInside];
-    
-    UIBarButtonItem *leftTwoItem = [[UIBarButtonItem alloc]initWithCustomView:leftTwoButton];
-    
-//    返回按钮
-
-//    UIBarButtonItem *goBack = [[UIBarButtonItem alloc]initWithBarButtonSystemItem:UIBarButtonSystemItemReply target:self action:@selector(goBackClick)];
-//    
-//    self.navigationItem.backBarButtonItem = goBack;
-    
-    
-    
-    
-    NSArray *array = [[NSArray alloc]init];
-    
-    array = @[leftOneItem,leftTwoItem];
-    
-    self.navigationItem.leftBarButtonItems = array;
-    
-}
-- (void)btnA{
-   // NSLog(@"+");
-    if (self.player.volume > 100) {
-   
-    }else{
-        self.player.volume = self.player.volume + 1;
-    }
-    self.alert = [UIAlertController alertControllerWithTitle:@"音量" message:[NSString stringWithFormat:@"%d",(int)self.player.volume] preferredStyle:1];
-    
-    [self presentViewController:self.alert animated:YES completion:^{
-        
-        
-    }];
-    NSTimer *timeVolume = [NSTimer scheduledTimerWithTimeInterval:1 target:self selector:@selector(timeVolumeGo) userInfo:nil repeats:NO];
-    [timeVolume fire];
-}
-- (void)timeVolumeGo{
-    //NSLog(@"弹框消失");
-    [self.alert dismissViewControllerAnimated:YES completion:^{
-        
-    }];
-}
-- (void)btnL{
-    //NSLog(@"-");
-    if (self.player.volume < 0) {
-        
-        self.player.volume = 0;
-    }else{
-        
-        self.player.volume = self.player.volume - 1;
-
-    }
-    self.alert = [UIAlertController alertControllerWithTitle:@"音量" message:[NSString stringWithFormat:@"%d",(int)self.player.volume] preferredStyle:1];
-    
-    [self presentViewController:self.alert animated:YES completion:^{
-        
-    }];
-    
-    NSTimer *timeVolume = [NSTimer scheduledTimerWithTimeInterval:1 target:self selector:@selector(timeVolumeGo) userInfo:nil repeats:NO];
-    [timeVolume fire];
-
-}
+//歌词显示与关闭
 - (void)btnR{
     if (self.lycYesOrNo == NO) {
-        self.tableView.alpha = 0;
+        self.lrcTableView.alpha = 0;
+        self.bigLrcTableView.alpha = 0;
         self.lycYesOrNo = YES;
         
     }else if (self.lycYesOrNo == YES){
         
-        self.tableView.alpha = 1;
+        self.lrcTableView.alpha = 1;
+        self.bigLrcTableView.alpha = 1;
         self.lycYesOrNo = NO;
     }
     
+    
 }
+
 - (void)goBackClick{
 //    [self.navigationController popToRootViewControllerAnimated:YES];
     [self.player stop];
@@ -574,7 +481,7 @@ if (ss< 10){
 }
 
 //声道
-- (void)creatSegment{
+- (void)createSegment{
     UISegmentedControl *segment = [[UISegmentedControl alloc]initWithItems:@[@"左声道",@"立体声",@"右声道"]];
     segment.frame = CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, 45);
     [segment addTarget:self action:@selector(segmentClick:) forControlEvents:UIControlEventValueChanged];
@@ -598,7 +505,6 @@ if (ss< 10){
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-
 /*
 #pragma mark - Navigation
 
