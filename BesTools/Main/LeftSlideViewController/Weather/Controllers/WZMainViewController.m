@@ -70,8 +70,9 @@
 }
 
 -(void)back{
-    [self.navigationController popToRootViewControllerAnimated:YES];
-    self.navigationController.navigationBarHidden = YES;
+//    [self.navigationController popToRootViewControllerAnimated:YES];
+    [self dismissViewControllerAnimated:YES completion:nil];
+//    self.navigationController.navigationBarHidden = YES;
 }
 -(void)dealloc{
     [[NSNotificationCenter defaultCenter]removeObserver:self name:@"CityChangedNotification" object:nil];

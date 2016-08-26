@@ -14,6 +14,7 @@
 #import "ReadViewController.h"
 #import "HomeViewController.h"
 #import "AppDelegate.h"
+#import "WZMainViewController.h"
 
 @interface ZYTabBarController ()<ZYTabBarDelegate>
 @property (strong,nonatomic)ZYTabBarController *zy;
@@ -120,9 +121,14 @@
 - (void)pathButton:(ZYPathButton *)ZYPathButton clickItemButtonAtIndex:(NSUInteger)itemButtonIndex {
     NSLog(@" 点中了第%ld个按钮" , itemButtonIndex);
     UINavigationController *Vc = [[UINavigationController alloc]initWithRootViewController:[ZYNewViewController new]];
+    UINavigationController *Vc1 = [[UINavigationController alloc]initWithRootViewController:[WZMainViewController new]];
   //  Vc.view.backgroundColor = [self randomColor];
     Vc.view.backgroundColor = [UIColor whiteColor];
-    [self presentViewController:Vc animated:YES completion:nil];    
+    if (itemButtonIndex == 2) {//跳转到天气页面
+        [self presentViewController:Vc1 animated:YES completion:nil];
+    }else{
+        [self presentViewController:Vc animated:YES completion:nil];
+    }
 }
 
 @end

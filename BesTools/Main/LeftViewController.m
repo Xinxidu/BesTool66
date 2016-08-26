@@ -13,7 +13,9 @@
 #import "WZMainViewController.h"
 
 @interface LeftViewController ()<UITableViewDataSource,UITableViewDelegate>
-
+{
+    UIImageView *_headImageView;
+}
 @end
 
 @implementation LeftViewController
@@ -56,9 +58,9 @@
     }else if (indexPath.row == 3){
         cell.textLabel.text = @"个性装扮";
     }else if (indexPath.row == 4){
-        cell.textLabel.text = @"我的收藏";
+        cell.textLabel.text = @"分享APP";
     }else if (indexPath.row == 5){
-        cell.textLabel.text = @"我的相册";
+        cell.textLabel.text = @"关于我们";
     }else if (indexPath.row == 6){
         cell.textLabel.text = @"联系QQ";
     }
@@ -80,21 +82,21 @@
 - (UIView*)tableView:(UITableView*)tableView viewForHeaderInSection:(NSInteger)section{
     UIView *view = [[UIView alloc]initWithFrame:CGRectMake(0, 0, self.view.bounds.size.width, 150)];
     view.backgroundColor = [UIColor clearColor];
-    UIButton *weatherButton = [UIButton buttonWithType:UIButtonTypeCustom];
-    weatherButton.frame = CGRectMake(10, 75, 80, 30);
-    [weatherButton setTitle:@"今日天气" forState:UIControlStateNormal];
-    [weatherButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
-    [weatherButton addTarget:self action:@selector(todayWeather:) forControlEvents:UIControlEventTouchUpInside];
-    [view addSubview:weatherButton];
+    //------ 头像 ------
+    _headImageView = [[UIImageView alloc]initWithFrame:CGRectMake(10, 40, 80, 80)];
+    _headImageView.layer.borderColor = [UIColor colorWithRed:55/255.0 green:134/255.0 blue:226/255.0 alpha:1].CGColor;
+    _headImageView.layer.masksToBounds = YES;
+    _headImageView.layer.cornerRadius = 40;
+    _headImageView.image = [UIImage imageNamed:@"login_user"];
+    [view addSubview:_headImageView];
+    UIButton *loginButton = [UIButton buttonWithType:UIButtonTypeCustom];
+    loginButton.frame = CGRectMake(95, 65, 80, 30);
+    [loginButton setTitle:@"未登录" forState:UIControlStateNormal];
+    [loginButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+    [view addSubview:loginButton];
     return view;
 }
--(void)todayWeather:(UIButton*)button{
-    NSLog(@"weather");
-    AppDelegate *tempAppDelegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
-    WZMainViewController *vc = [[WZMainViewController alloc]init];
-    [tempAppDelegate.LeftSlideVC closeLeftView];
-    [self.parentViewController.navigationController pushViewController:vc animated:YES];
-}
+//联系QQ
 -(void)chatQQ{
     if ([[UIApplication sharedApplication] canOpenURL:[NSURL URLWithString:@"mqq://"]]) {
         NSString *url = [NSString stringWithFormat:@"mqq://im/chat?chat_type=wpa&uin=1129530686&version=1&src_type=web"];
