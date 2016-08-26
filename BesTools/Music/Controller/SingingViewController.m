@@ -27,7 +27,7 @@
 //    ViewController *root = [[ViewController alloc]init];
 //    root.deleGate = self;
     self.navigationItem.leftItemsSupplementBackButton = YES;
-    self.view.backgroundColor = [UIColor blackColor];
+    self.view.backgroundColor = [UIColor whiteColor];
     self.lrcAll = [[NSMutableArray alloc]init];
     self.lrcTime = [[NSMutableArray alloc]init];
     self.playOrPause = NO;
@@ -309,8 +309,7 @@
 //- (void)too{
 //    //NSLog(@"再听一遍");
 //    [self back];
-//    [self next];
-//    
+//    [self next];    
 //}
 //slider触发事件
 - (void)slider:(UISlider *)slider{
@@ -319,6 +318,7 @@
     self.player.currentTime = slider.value;
     NSTimer *timerOnce = [NSTimer scheduledTimerWithTimeInterval:2 target:self selector:@selector(timerOnce) userInfo:nil repeats:NO];
     [timerOnce fire];
+    
 }
 - (void)timerOnce{
     [self.timer setFireDate:[NSDate distantPast]];
@@ -412,24 +412,19 @@
 }
 //Scroll music 里面调用
 - (void)createScrollViewBack{
-     self.scrollView = [[UIScrollView alloc]initWithFrame:CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, 736)];
+    self.scrollView = [[UIScrollView alloc]initWithFrame:CGRectMake(0, 0, WIDTH, HEIGHT)];
     self.scrollView.contentOffset = CGPointMake([UIScreen mainScreen].bounds.size.width, 0);
     self.scrollView.pagingEnabled = YES;
-    
     self.scrollView.bounces = NO;
     self.scrollView.showsHorizontalScrollIndicator = NO;
-    
-    self.scrollView.contentSize = CGSizeMake([UIScreen mainScreen].bounds.size.width * 2, 0);
-    
-    self.scrollView.backgroundColor = [UIColor blackColor];
+    self.scrollView.contentSize = CGSizeMake(WIDTH * 2, 0);
+    self.scrollView.backgroundColor = [UIColor clearColor];
     [self.view addSubview:self.scrollView];
 }
 - (void)createScrollLeftView{
     
     UIImageView *imageViewFirst = [[UIImageView alloc]initWithFrame:CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, 750)];
-    
-    imageViewFirst.image = [UIImage imageNamed:@"bake.jpg"];
-    
+    //imageViewFirst.image = [UIImage imageNamed:@"bake.jpg"];
     [self.scrollView addSubview:imageViewFirst];
 }
 - (void)createScrollRightView:(NSString *)str{
@@ -447,7 +442,6 @@
     //    effectView.alpha = 0.8;
     //
     //    [self.imageViewSceond addSubview:effectView];
-    
     //    ----------
     [self.scrollView addSubview:self.imageViewSceond];
 
@@ -518,7 +512,7 @@
 //-(void)viewWillAppear:(BOOL)animated
 //{
 //    //开启定时器
-//    [self.timer setFireDate:[NSDate distantPast]];
+//   [self.timer setFireDate:[NSDate distantPast]];
 //}
 
 ////页面消失，进入后台不显示该页面，关闭定时器
