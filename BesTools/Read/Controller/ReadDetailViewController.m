@@ -45,17 +45,9 @@
 -(void)webViewDidFinishLoad:(UIWebView *)webView{
     [_activity stopAnimating];
 }
-//-(void)viewWillAppear:(BOOL)animated{
-//
-//    self.tabBarController.tabBar.hidden = YES;
-//    self.hidesBottomBarWhenPushed = YES;
-//    UIImageView *image = (UIImageView *)[self.tabBarController.view viewWithTag:100];
-//    image.hidden = YES;
-//}
--(void)viewDidAppear:(BOOL)animated{
-    self.hidesBottomBarWhenPushed = YES;
-    self.tabBarController.tabBar.hidden = YES;
+-(void)viewWillAppear:(BOOL)animated{
 
+    self.tabBarController.tabBar.hidden = YES;
     UIImageView *image = (UIImageView *)[self.tabBarController.view viewWithTag:100];
     image.hidden = YES;
 }

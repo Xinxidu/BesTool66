@@ -58,7 +58,7 @@
     NSURLSessionConfiguration *configuration = [NSURLSessionConfiguration defaultSessionConfiguration];
     AFURLSessionManager *manager = [[AFURLSessionManager alloc] initWithSessionConfiguration:configuration];
     //http://api.avatardata.cn/QiWenNews/Query?key=176bac8fb44a47b1bfe07a964a2d4e5b&page=1&rows=10
-    NSURL *URL = [NSURL URLWithString:[NSString stringWithFormat:@"http://api.avatardata.cn/QiWenNews/Query?key=176bac8fb44a47b1bfe07a964a2d4e5b&page=%d&rows=10",_page]];
+    NSURL *URL = [NSURL URLWithString:[NSString stringWithFormat:@"http://api.avatardata.cn/QiWenNews/Query?key=f7b62aa50fdb432aa007f67c29aead9d&page=%d&rows=10",_page]];
     NSURLRequest *request = [NSURLRequest requestWithURL:URL];
     
     NSURLSessionDataTask *dataTask = [manager dataTaskWithRequest:request completionHandler:^(NSURLResponse *response, id responseObject, NSError *error) {
