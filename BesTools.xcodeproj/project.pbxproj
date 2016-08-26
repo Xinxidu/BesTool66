@@ -48,6 +48,10 @@
 		3B780F591D6BF79E006AF895 /* WZTitleTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B780F331D6BF79E006AF895 /* WZTitleTableViewCell.m */; };
 		3B780F5A1D6BF79E006AF895 /* WZTitleTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3B780F341D6BF79E006AF895 /* WZTitleTableViewCell.xib */; };
 		3B7DB8F71D6EC0CE004BC09C /* BaseTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B7DB8F61D6EC0CE004BC09C /* BaseTableView.m */; };
+		3B888B8B1D702378007A829F /* LocationDetailVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B888B831D702378007A829F /* LocationDetailVC.m */; };
+		3B888B8C1D702378007A829F /* MapPoiTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B888B851D702378007A829F /* MapPoiTableView.m */; };
+		3B888B8E1D702378007A829F /* SearchResultTableVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B888B8A1D702378007A829F /* SearchResultTableVC.m */; };
+		3B888BB01D703323007A829F /* LocationMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B888BAF1D703323007A829F /* LocationMainViewController.m */; };
 		A424D6E71D65556800A6AE2A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A424D6E61D65556800A6AE2A /* main.m */; };
 		A424D6F01D65556800A6AE2A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A424D6EE1D65556800A6AE2A /* Main.storyboard */; };
 		A424D6F21D65556800A6AE2A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A424D6F11D65556800A6AE2A /* Assets.xcassets */; };
@@ -177,6 +181,24 @@
 		3B780F351D6BF79E006AF895 /* WZConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WZConstants.h; sourceTree = "<group>"; };
 		3B7DB8F51D6EC0CE004BC09C /* BaseTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseTableView.h; sourceTree = "<group>"; };
 		3B7DB8F61D6EC0CE004BC09C /* BaseTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseTableView.m; sourceTree = "<group>"; };
+		3B888B801D702337007A829F /* APIKey.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = APIKey.h; path = Main/Location/APIKey.h; sourceTree = "<group>"; };
+		3B888B811D702337007A829F /* appDefine.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = appDefine.pch; path = Main/Location/appDefine.pch; sourceTree = "<group>"; };
+		3B888B821D702378007A829F /* LocationDetailVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocationDetailVC.h; sourceTree = "<group>"; };
+		3B888B831D702378007A829F /* LocationDetailVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocationDetailVC.m; sourceTree = "<group>"; };
+		3B888B841D702378007A829F /* MapPoiTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapPoiTableView.h; sourceTree = "<group>"; };
+		3B888B851D702378007A829F /* MapPoiTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapPoiTableView.m; sourceTree = "<group>"; };
+		3B888B891D702378007A829F /* SearchResultTableVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchResultTableVC.h; sourceTree = "<group>"; };
+		3B888B8A1D702378007A829F /* SearchResultTableVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchResultTableVC.m; sourceTree = "<group>"; };
+		3B888B951D7027C8007A829F /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		3B888B971D7027DD007A829F /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		3B888B991D7027E8007A829F /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		3B888B9B1D7027F1007A829F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		3B888B9D1D7027FC007A829F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		3B888B9F1D702804007A829F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		3B888BA11D70284E007A829F /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
+		3B888BA31D702858007A829F /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		3B888BAE1D703323007A829F /* LocationMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LocationMainViewController.h; path = UISearchController/LocationMainViewController.h; sourceTree = "<group>"; };
+		3B888BAF1D703323007A829F /* LocationMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LocationMainViewController.m; path = UISearchController/LocationMainViewController.m; sourceTree = "<group>"; };
 		A026D0734E41569235C5EE47 /* libPods-BesTools.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BesTools.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A424D6E21D65556800A6AE2A /* BesTools.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BesTools.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A424D6E61D65556800A6AE2A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -448,6 +470,29 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
+		3B888B7F1D702150007A829F /* Location */ = {
+			isa = PBXGroup;
+			children = (
+				3B888BAE1D703323007A829F /* LocationMainViewController.h */,
+				3B888BAF1D703323007A829F /* LocationMainViewController.m */,
+				3B888B821D702378007A829F /* LocationDetailVC.h */,
+				3B888B831D702378007A829F /* LocationDetailVC.m */,
+				3B888B841D702378007A829F /* MapPoiTableView.h */,
+				3B888B851D702378007A829F /* MapPoiTableView.m */,
+				3B888B861D702378007A829F /* UISearchController */,
+			);
+			path = Location;
+			sourceTree = "<group>";
+		};
+		3B888B861D702378007A829F /* UISearchController */ = {
+			isa = PBXGroup;
+			children = (
+				3B888B891D702378007A829F /* SearchResultTableVC.h */,
+				3B888B8A1D702378007A829F /* SearchResultTableVC.m */,
+			);
+			path = UISearchController;
+			sourceTree = "<group>";
+		};
 		3BAB589F1D6AE75F008B696C /* Weather */ = {
 			isa = PBXGroup;
 			children = (
@@ -498,6 +543,8 @@
 				A424D6F11D65556800A6AE2A /* Assets.xcassets */,
 				A424D6F31D65556800A6AE2A /* LaunchScreen.storyboard */,
 				A424D6F61D65556800A6AE2A /* Info.plist */,
+				3B888B801D702337007A829F /* APIKey.h */,
+				3B888B811D702337007A829F /* appDefine.pch */,
 				A424D6E51D65556800A6AE2A /* Supporting Files */,
 			);
 			path = BesTools;
@@ -561,6 +608,7 @@
 		A45DBAC71D6ADF8D00B4AC2A /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				3B888B7F1D702150007A829F /* Location */,
 				3BAB589F1D6AE75F008B696C /* Weather */,
 				A45DBAC81D6ADF8D00B4AC2A /* AppDelegate.h */,
 				A45DBAC91D6ADF8D00B4AC2A /* AppDelegate.m */,
@@ -692,6 +740,14 @@
 		C6ADC778B07B9CEC5133B936 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				3B888BA31D702858007A829F /* libz.tbd */,
+				3B888BA11D70284E007A829F /* libc++.tbd */,
+				3B888B9F1D702804007A829F /* UIKit.framework */,
+				3B888B9D1D7027FC007A829F /* Foundation.framework */,
+				3B888B9B1D7027F1007A829F /* CoreGraphics.framework */,
+				3B888B991D7027E8007A829F /* CoreLocation.framework */,
+				3B888B971D7027DD007A829F /* SystemConfiguration.framework */,
+				3B888B951D7027C8007A829F /* Security.framework */,
 				A026D0734E41569235C5EE47 /* libPods-BesTools.a */,
 			);
 			name = Frameworks;
@@ -768,8 +824,6 @@
 					A424D6E11D65556800A6AE2A = {
 						CreatedOnToolsVersion = 7.3.1;
 						DevelopmentTeam = 34585F6SJP;
-						DevelopmentTeam = R9DE87BJ5L;
-						DevelopmentTeam = V28AGEWQRE;
 					};
 					A424D6FA1D65556800A6AE2A = {
 						CreatedOnToolsVersion = 7.3.1;
@@ -811,11 +865,7 @@
 				3B780F501D6BF79E006AF895 /* WZForecastItemTableViewCell.xib in Resources */,
 				A424D6F51D65556800A6AE2A /* LaunchScreen.storyboard in Resources */,
 				A424D6F21D65556800A6AE2A /* Assets.xcassets in Resources */,
-
-				A49936601D6AF21F003C8A04 /* iconfont-icon1.png in Resources */,
-
 				A4A6903D1D6C4733004CE97F /* geci.png in Resources */,
-
 				3B780F5A1D6BF79E006AF895 /* WZTitleTableViewCell.xib in Resources */,
 				A45DBB411D6ADF8E00B4AC2A /* menu@2x.png in Resources */,
 				A424D6F01D65556800A6AE2A /* Main.storyboard in Resources */,
@@ -907,6 +957,7 @@
 				A45DBB6F1D6ADF8E00B4AC2A /* ZYPathItemButton.m in Sources */,
 				3B780F451D6BF79E006AF895 /* JSONHTTPClient.m in Sources */,
 				A45DBB491D6ADF8E00B4AC2A /* LeftViewController.m in Sources */,
+				3B888BB01D703323007A829F /* LocationMainViewController.m in Sources */,
 				A424D6E71D65556800A6AE2A /* main.m in Sources */,
 				3B780F3A1D6BF79E006AF895 /* WZWeatherViewController.m in Sources */,
 				A45DBB3F1D6ADF8E00B4AC2A /* HomeViewController.m in Sources */,
@@ -915,6 +966,7 @@
 				A499364D1D6AF0D0003C8A04 /* SingingViewController.m in Sources */,
 				A49936551D6AF0E3003C8A04 /* MusicModel.m in Sources */,
 				A45DBB4E1D6ADF8E00B4AC2A /* OtherViewController.m in Sources */,
+				3B888B8C1D702378007A829F /* MapPoiTableView.m in Sources */,
 				A499365A1D6AF134003C8A04 /* NSArray+Log.m in Sources */,
 				3B780F3F1D6BF79E006AF895 /* JSONModel.m in Sources */,
 				A45DBB6E1D6ADF8E00B4AC2A /* ZYPathButton.m in Sources */,
@@ -924,7 +976,9 @@
 				3B780F391D6BF79E006AF895 /* WZMainViewController.m in Sources */,
 				3B780F481D6BF79E006AF895 /* JSONValueTransformer.m in Sources */,
 				3B780F4D1D6BF79E006AF895 /* WZLocationTool.m in Sources */,
+				3B888B8E1D702378007A829F /* SearchResultTableVC.m in Sources */,
 				3B780F431D6BF79E006AF895 /* NSArray+JSONModel.m in Sources */,
+				3B888B8B1D702378007A829F /* LocationDetailVC.m in Sources */,
 				A45DBB481D6ADF8E00B4AC2A /* UIView_extra.m in Sources */,
 				A49936561D6AF0E3003C8A04 /* TableViewCell.m in Sources */,
 				3B7DB8F71D6EC0CE004BC09C /* BaseTableView.m in Sources */,
@@ -1099,9 +1153,13 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/BesTools/Main/Location",
+				);
 				INFOPLIST_FILE = BesTools/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.test.BesTools;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jj.GDMapPoiDem;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 			};
@@ -1114,9 +1172,13 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/BesTools/Main/Location",
+				);
 				INFOPLIST_FILE = BesTools/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.test.BesTools;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jj.GDMapPoiDem;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 			};
