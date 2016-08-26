@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "A0DD99F7E506ECC15F7AE96ECAFE157F"
+               BlueprintIdentifier = "E92ADC43ECAF427FFB82BA01BAF9AED6"
                BuildableName = "libPods-BesTools.a"
                BlueprintName = "Pods-BesTools"
                ReferencedContainer = "container:Pods.xcodeproj">
@@ -45,7 +45,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "A0DD99F7E506ECC15F7AE96ECAFE157F"
+            BlueprintIdentifier = "E92ADC43ECAF427FFB82BA01BAF9AED6"
             BuildableName = "libPods-BesTools.a"
             BlueprintName = "Pods-BesTools"
             ReferencedContainer = "container:Pods.xcodeproj">
@@ -63,7 +63,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "A0DD99F7E506ECC15F7AE96ECAFE157F"
+            BlueprintIdentifier = "E92ADC43ECAF427FFB82BA01BAF9AED6"
             BuildableName = "libPods-BesTools.a"
             BlueprintName = "Pods-BesTools"
             ReferencedContainer = "container:Pods.xcodeproj">

@@ -767,11 +767,8 @@
 				TargetAttributes = {
 					A424D6E11D65556800A6AE2A = {
 						CreatedOnToolsVersion = 7.3.1;
-<<<<<<< HEAD
 						DevelopmentTeam = R9DE87BJ5L;
-=======
 						DevelopmentTeam = V28AGEWQRE;
->>>>>>> 00d1fd5924c4e93ff0f5008641ab77ac5d6af1fa
 					};
 					A424D6FA1D65556800A6AE2A = {
 						CreatedOnToolsVersion = 7.3.1;
@@ -813,11 +810,11 @@
 				3B780F501D6BF79E006AF895 /* WZForecastItemTableViewCell.xib in Resources */,
 				A424D6F51D65556800A6AE2A /* LaunchScreen.storyboard in Resources */,
 				A424D6F21D65556800A6AE2A /* Assets.xcassets in Resources */,
-<<<<<<< HEAD
+
 				A49936601D6AF21F003C8A04 /* iconfont-icon1.png in Resources */,
-=======
+
 				A4A6903D1D6C4733004CE97F /* geci.png in Resources */,
->>>>>>> 00d1fd5924c4e93ff0f5008641ab77ac5d6af1fa
+
 				3B780F5A1D6BF79E006AF895 /* WZTitleTableViewCell.xib in Resources */,
 				A45DBB411D6ADF8E00B4AC2A /* menu@2x.png in Resources */,
 				A424D6F01D65556800A6AE2A /* Main.storyboard in Resources */,
@@ -929,10 +926,7 @@
 				3B780F431D6BF79E006AF895 /* NSArray+JSONModel.m in Sources */,
 				A45DBB481D6ADF8E00B4AC2A /* UIView_extra.m in Sources */,
 				A49936561D6AF0E3003C8A04 /* TableViewCell.m in Sources */,
-<<<<<<< HEAD
-=======
 				3B7DB8F71D6EC0CE004BC09C /* BaseTableView.m in Sources */,
->>>>>>> 00d1fd5924c4e93ff0f5008641ab77ac5d6af1fa
 				3B780F4F1D6BF79E006AF895 /* WZForecastItemTableViewCell.m in Sources */,
 				A45DBB421D6ADF8E00B4AC2A /* AppDelegate.m in Sources */,
 				3B780F4E1D6BF79E006AF895 /* WZWeatherTool.m in Sources */,
