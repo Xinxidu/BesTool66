@@ -753,7 +753,7 @@
 				TargetAttributes = {
 					A424D6E11D65556800A6AE2A = {
 						CreatedOnToolsVersion = 7.3.1;
-						DevelopmentTeam = 34585F6SJP;
+						DevelopmentTeam = R9DE87BJ5L;
 					};
 					A424D6FA1D65556800A6AE2A = {
 						CreatedOnToolsVersion = 7.3.1;
@@ -795,7 +795,6 @@
 				3B780F501D6BF79E006AF895 /* WZForecastItemTableViewCell.xib in Resources */,
 				A424D6F51D65556800A6AE2A /* LaunchScreen.storyboard in Resources */,
 				A424D6F21D65556800A6AE2A /* Assets.xcassets in Resources */,
-				3BAB590B1D6AE75F008B696C /* WZForecastItemTableViewCell.xib in Resources */,
 				A49936601D6AF21F003C8A04 /* iconfont-icon1.png in Resources */,
 				3B780F5A1D6BF79E006AF895 /* WZTitleTableViewCell.xib in Resources */,
 				A45DBB411D6ADF8E00B4AC2A /* menu@2x.png in Resources */,
@@ -896,15 +895,7 @@
 				A499364D1D6AF0D0003C8A04 /* SingingViewController.m in Sources */,
 				A49936551D6AF0E3003C8A04 /* MusicModel.m in Sources */,
 				A45DBB4E1D6ADF8E00B4AC2A /* OtherViewController.m in Sources */,
-				3BAB59041D6AE75F008B696C /* UIImage+ImageEffects.m in Sources */,
-				3BAB58F61D6AE75F008B696C /* WZIndex.m in Sources */,
 				A499365A1D6AF134003C8A04 /* NSArray+Log.m in Sources */,
-				3BAB58F41D6AE75F008B696C /* WZMainViewController.m in Sources */,
-				3BAB58F71D6AE75F008B696C /* WZResults.m in Sources */,
-				3BAB590C1D6AE75F008B696C /* WZForecastTableViewCell.m in Sources */,
-				3BAB59121D6AE75F008B696C /* WZIndexTableViewCell.m in Sources */,
-				3BAB59101D6AE75F008B696C /* WZIndexItemTableViewCell.m in Sources */,
-				3BAB58F21D6AE75F008B696C /* WZAddCityViewController.m in Sources */,
 				3B780F3F1D6BF79E006AF895 /* JSONModel.m in Sources */,
 				A45DBB6E1D6ADF8E00B4AC2A /* ZYPathButton.m in Sources */,
 				3B780F3E1D6BF79E006AF895 /* WZWeatherData.m in Sources */,
@@ -915,12 +906,7 @@
 				3B780F4D1D6BF79E006AF895 /* WZLocationTool.m in Sources */,
 				3B780F431D6BF79E006AF895 /* NSArray+JSONModel.m in Sources */,
 				A45DBB481D6ADF8E00B4AC2A /* UIView_extra.m in Sources */,
-				3BAB59011D6AE75F008B696C /* JSONModel+networking.m in Sources */,
 				A49936561D6AF0E3003C8A04 /* TableViewCell.m in Sources */,
-				3BAB59031D6AE75F008B696C /* JSONValueTransformer.m in Sources */,
-				3BAB58FB1D6AE75F008B696C /* JSONModelArray.m in Sources */,
-				3BAB59071D6AE75F008B696C /* WZHttpTool.m in Sources */,
-				3BAB59051D6AE75F008B696C /* UIImageView+LBBlurredImage.m in Sources */,
 				3B780F4F1D6BF79E006AF895 /* WZForecastItemTableViewCell.m in Sources */,
 				A45DBB421D6ADF8E00B4AC2A /* AppDelegate.m in Sources */,
 				3B780F4E1D6BF79E006AF895 /* WZWeatherTool.m in Sources */,
@@ -1090,10 +1076,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = BesTools/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.test.BesTools;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -1103,10 +1091,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = BesTools/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.test.BesTools;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
