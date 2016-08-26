@@ -12,13 +12,13 @@
 #import "ReadTableViewCell.h"
 #import <UIImageView+WebCache.h>
 #import "ReadDetailViewController.h"
+
 #define WIDTH [UIScreen mainScreen].bounds.size.width
 #define HEIGHT [UIScreen mainScreen].bounds.size.height
 @interface ReadViewController ()<UIWebViewDelegate,UITableViewDelegate,UITableViewDataSource>
-@property (strong,nonatomic) UIWebView *readWebView;
-@property (strong,nonatomic) UITableView *tableView;
+@property (strong,nonatomic) BaseTableView *tableView;
 @property (strong,nonatomic) NSMutableArray *dataArray;
-@property (nonatomic,strong)UIActivityIndicatorView *activity;
+@property (nonatomic,assign)int page;
 
 @end
 
@@ -29,46 +29,63 @@
     // Do any additional setup after loading the view.
     self.view.backgroundColor = [UIColor grayColor];
     _dataArray = [[NSMutableArray alloc]init];
-    [self createReadWebView];
-    [self readWebViewRequest];
-    _activity = [[UIActivityIndicatorView alloc]init];
-    [_activity setCenter:self.view.center];
-    [_activity setActivityIndicatorViewStyle:UIActivityIndicatorViewStyleGray];
-    _activity.color = [UIColor redColor];
-    [self.view addSubview:_activity];
-    [_activity startAnimating];
+    _page = 1;
+    [self createReadTableView];
 
 }
--(void)createReadWebView{
-    _tableView = [[UITableView alloc]initWithFrame:CGRectMake(0, 0, WIDTH, HEIGHT)];
+-(void)createReadTableView{
+    _tableView = [[BaseTableView alloc]initWithFrame:CGRectMake(0, 0, WIDTH, HEIGHT)];
     _tableView.delegate = self;
     _tableView.dataSource = self;
+    self.tableView.tableFooterView = [UIView new];
+    self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
     [self.view addSubview:_tableView];
+//    [self readTableViewRequest];
+    __weak ReadViewController* blockSelf = self;
+    [_tableView setRequestData:^{
+        [blockSelf readTableViewRequest:NO];
+    }];
+    [_tableView setUpToLoadMore:^{
+        [blockSelf readTableViewRequest:YES];
+    }];
 }
--(void)readWebViewRequest{
+-(void)readTableViewRequest:(BOOL)isUp{
+    if (isUp == YES) {
+        _page++;
+    }else{
+        _page = 1;
+    }
     NSURLSessionConfiguration *configuration = [NSURLSessionConfiguration defaultSessionConfiguration];
     AFURLSessionManager *manager = [[AFURLSessionManager alloc] initWithSessionConfiguration:configuration];
-    
-    NSURL *URL = [NSURL URLWithString:@"http://api.avatardata.cn/QiWenNews/Query?key=176bac8fb44a47b1bfe07a964a2d4e5b&page=1&rows=10"];
+    //http://api.avatardata.cn/QiWenNews/Query?key=176bac8fb44a47b1bfe07a964a2d4e5b&page=1&rows=10
+    NSURL *URL = [NSURL URLWithString:[NSString stringWithFormat:@"http://api.avatardata.cn/QiWenNews/Query?key=176bac8fb44a47b1bfe07a964a2d4e5b&page=%d&rows=10",_page]];
     NSURLRequest *request = [NSURLRequest requestWithURL:URL];
     
     NSURLSessionDataTask *dataTask = [manager dataTaskWithRequest:request completionHandler:^(NSURLResponse *response, id responseObject, NSError *error) {
         if (error) {
             NSLog(@"Error: %@", error);
+            [_tableView endrefresh];
         } else {
+            if (isUp == YES) {
+                
+            }else{
+                [_dataArray removeAllObjects];
+            }
 //            NSLog(@"%@ %@", response, responseObject);
             NSArray *array = responseObject[@"result"];
             for (NSDictionary *dict in array) {
                 ReadListModel *model = [[ReadListModel alloc]init];
                 model.Description = dict[@"description"];
                 model.title = dict[@"title"];
-                model.ctime = dict[@"ctime"];
+                NSArray* array = [dict[@"ctime"] componentsSeparatedByString:@" "];
+                model.ctime = array[0];
                 model.picUrl = dict[@"picUrl"];
                 model.detailurl = dict[@"url"];
                 [_dataArray addObject:model];
                 
             }
             [_tableView reloadData];
+            [_tableView endrefresh];
         }
     }];
     [dataTask resume];
@@ -93,7 +110,6 @@
     return cell;
 }
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
-    NSLog(@"选中了%ld",indexPath.row);
     ReadDetailViewController *detail = [[ReadDetailViewController alloc]init];
     ReadListModel *model = _dataArray[indexPath.row];
     detail.url = model.detailurl;
@@ -102,12 +118,6 @@
 }
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
     return 90;
-}
-//判断tabview是否加载到最后一行，停止刷新
--(void)tableView:(UITableView *)tableView willDisplayCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath{
-    if([indexPath row] == ((NSIndexPath*)[[tableView indexPathsForVisibleRows] lastObject]).row){
-        [_activity stopAnimating];//停止刷新
-    }
 }
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
