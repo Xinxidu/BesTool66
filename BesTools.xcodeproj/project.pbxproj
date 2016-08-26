@@ -768,6 +768,8 @@
 					A424D6E11D65556800A6AE2A = {
 						CreatedOnToolsVersion = 7.3.1;
 						DevelopmentTeam = 34585F6SJP;
+						DevelopmentTeam = R9DE87BJ5L;
+						DevelopmentTeam = V28AGEWQRE;
 					};
 					A424D6FA1D65556800A6AE2A = {
 						CreatedOnToolsVersion = 7.3.1;
@@ -809,7 +811,11 @@
 				3B780F501D6BF79E006AF895 /* WZForecastItemTableViewCell.xib in Resources */,
 				A424D6F51D65556800A6AE2A /* LaunchScreen.storyboard in Resources */,
 				A424D6F21D65556800A6AE2A /* Assets.xcassets in Resources */,
+
+				A49936601D6AF21F003C8A04 /* iconfont-icon1.png in Resources */,
+
 				A4A6903D1D6C4733004CE97F /* geci.png in Resources */,
+
 				3B780F5A1D6BF79E006AF895 /* WZTitleTableViewCell.xib in Resources */,
 				A45DBB411D6ADF8E00B4AC2A /* menu@2x.png in Resources */,
 				A424D6F01D65556800A6AE2A /* Main.storyboard in Resources */,

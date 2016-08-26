@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "E92ADC43ECAF427FFB82BA01BAF9AED6"
-               BuildableName = "libPods-BesTools.a"
-               BlueprintName = "Pods-BesTools"
+               BlueprintIdentifier = "70BC44266C6FFE30D2C57129458E070B"
+               BuildableName = "libMJRefresh.a"
+               BlueprintName = "MJRefresh"
                ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -45,9 +45,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "E92ADC43ECAF427FFB82BA01BAF9AED6"
-            BuildableName = "libPods-BesTools.a"
-            BlueprintName = "Pods-BesTools"
+            BlueprintIdentifier = "70BC44266C6FFE30D2C57129458E070B"
+            BuildableName = "libMJRefresh.a"
+            BlueprintName = "MJRefresh"
             ReferencedContainer = "container:Pods.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -63,9 +63,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "E92ADC43ECAF427FFB82BA01BAF9AED6"
-            BuildableName = "libPods-BesTools.a"
-            BlueprintName = "Pods-BesTools"
+            BlueprintIdentifier = "70BC44266C6FFE30D2C57129458E070B"
+            BuildableName = "libMJRefresh.a"
+            BlueprintName = "MJRefresh"
             ReferencedContainer = "container:Pods.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
