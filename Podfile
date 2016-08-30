@@ -10,6 +10,9 @@ pod 'MBProgressHUD'
 pod 'Reachability'
 pod 'AMap2DMap'
 pod 'AMapSearch'
+pod 'CocoaLumberjack'
+pod 'Mantle'
+pod 'TOWebViewController'
 
 end
 

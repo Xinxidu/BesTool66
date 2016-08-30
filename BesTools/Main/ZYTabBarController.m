@@ -12,10 +12,10 @@
 #import "MusicViewController.h"
 #import "TalkViewController.h"
 #import "ReadViewController.h"
-#import "HomeViewController.h"
 #import "AppDelegate.h"
 #import "WZMainViewController.h"//天气
 #import "LocationMainViewController.h"//地图
+#import "HomePageViewController.h"
 
 @interface ZYTabBarController ()<ZYTabBarDelegate>
 @property (strong,nonatomic)ZYTabBarController *zy;
@@ -52,7 +52,7 @@
     
 }
 - (void)setUpAllChildVc {
-    HomeViewController *HomeVC = [[HomeViewController alloc] init];
+    HomePageViewController *HomeVC = [[HomePageViewController alloc] init];
     [self setUpOneChildVcWithVc:HomeVC Image:@"home_normal" selectedImage:@"home_highlight" title:@"首页"];
     HomeVC.view.backgroundColor = [UIColor grayColor];
     

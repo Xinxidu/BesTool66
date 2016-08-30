@@ -1,27 +1,37 @@
 //
-//  HomeViewController.m
-//  BesTools
+//  BaseViewController.m
+//  ZhihuDaily
 //
-//  Created by Aaron Lee on 16/8/18.
-//  Copyright © 2016年 Aaron Lee. All rights reserved.
+//  Created by 钟武 on 16/8/15.
+//  Copyright © 2016年 钟武. All rights reserved.
 //
 
-#import "HomeViewController.h"
+#import "BaseViewController.h"
 
-@interface HomeViewController ()
+@interface BaseViewController ()
 
 @end
 
-@implementation HomeViewController
+@implementation BaseViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    
+    [self.navigationController setNavigationBarHidden:YES];
+    [self setAutomaticallyAdjustsScrollViewInsets:NO];
+    
+    [self initUI];
+    [self initData];
+}
+
+- (void)initUI{
+}
+
+- (void)initData{
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
 /*
