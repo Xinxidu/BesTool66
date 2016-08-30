@@ -52,6 +52,10 @@
 		3B888B8C1D702378007A829F /* MapPoiTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B888B851D702378007A829F /* MapPoiTableView.m */; };
 		3B888B8E1D702378007A829F /* SearchResultTableVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B888B8A1D702378007A829F /* SearchResultTableVC.m */; };
 		3B888BB01D703323007A829F /* LocationMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B888BAF1D703323007A829F /* LocationMainViewController.m */; };
+		3BBE0D791D75644500AE2C1A /* DateView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BBE0D721D75644500AE2C1A /* DateView.m */; };
+		3BBE0D7A1D75644500AE2C1A /* HistoryTodayModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BBE0D741D75644500AE2C1A /* HistoryTodayModel.m */; };
+		3BBE0D7B1D75644500AE2C1A /* HistoryTodayTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BBE0D761D75644500AE2C1A /* HistoryTodayTableViewCell.m */; };
+		3BBE0D7C1D75644500AE2C1A /* HistoyrTodayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BBE0D781D75644500AE2C1A /* HistoyrTodayViewController.m */; };
 		A424D6E71D65556800A6AE2A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A424D6E61D65556800A6AE2A /* main.m */; };
 		A424D6F01D65556800A6AE2A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A424D6EE1D65556800A6AE2A /* Main.storyboard */; };
 		A424D6F21D65556800A6AE2A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A424D6F11D65556800A6AE2A /* Assets.xcassets */; };
@@ -245,6 +249,14 @@
 		3B888BA31D702858007A829F /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		3B888BAE1D703323007A829F /* LocationMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LocationMainViewController.h; path = UISearchController/LocationMainViewController.h; sourceTree = "<group>"; };
 		3B888BAF1D703323007A829F /* LocationMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LocationMainViewController.m; path = UISearchController/LocationMainViewController.m; sourceTree = "<group>"; };
+		3BBE0D711D75644500AE2C1A /* DateView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DateView.h; sourceTree = "<group>"; };
+		3BBE0D721D75644500AE2C1A /* DateView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DateView.m; sourceTree = "<group>"; };
+		3BBE0D731D75644500AE2C1A /* HistoryTodayModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HistoryTodayModel.h; sourceTree = "<group>"; };
+		3BBE0D741D75644500AE2C1A /* HistoryTodayModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HistoryTodayModel.m; sourceTree = "<group>"; };
+		3BBE0D751D75644500AE2C1A /* HistoryTodayTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HistoryTodayTableViewCell.h; sourceTree = "<group>"; };
+		3BBE0D761D75644500AE2C1A /* HistoryTodayTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HistoryTodayTableViewCell.m; sourceTree = "<group>"; };
+		3BBE0D771D75644500AE2C1A /* HistoyrTodayViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HistoyrTodayViewController.h; sourceTree = "<group>"; };
+		3BBE0D781D75644500AE2C1A /* HistoyrTodayViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HistoyrTodayViewController.m; sourceTree = "<group>"; };
 		A026D0734E41569235C5EE47 /* libPods-BesTools.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BesTools.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A424D6E21D65556800A6AE2A /* BesTools.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BesTools.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A424D6E61D65556800A6AE2A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -645,6 +657,21 @@
 			path = LeftSlideViewController/Weather;
 			sourceTree = "<group>";
 		};
+		3BBE0D701D75642300AE2C1A /* HistoryToday */ = {
+			isa = PBXGroup;
+			children = (
+				3BBE0D711D75644500AE2C1A /* DateView.h */,
+				3BBE0D721D75644500AE2C1A /* DateView.m */,
+				3BBE0D731D75644500AE2C1A /* HistoryTodayModel.h */,
+				3BBE0D741D75644500AE2C1A /* HistoryTodayModel.m */,
+				3BBE0D751D75644500AE2C1A /* HistoryTodayTableViewCell.h */,
+				3BBE0D761D75644500AE2C1A /* HistoryTodayTableViewCell.m */,
+				3BBE0D771D75644500AE2C1A /* HistoyrTodayViewController.h */,
+				3BBE0D781D75644500AE2C1A /* HistoyrTodayViewController.m */,
+			);
+			path = HistoryToday;
+			sourceTree = "<group>";
+		};
 		A424D6D91D65556800A6AE2A = {
 			isa = PBXGroup;
 			children = (
@@ -996,6 +1023,7 @@
 		A45DBAC71D6ADF8D00B4AC2A /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				3BBE0D701D75642300AE2C1A /* HistoryToday */,
 				3B888B7F1D702150007A829F /* Location */,
 				3BAB589F1D6AE75F008B696C /* Weather */,
 				A45DBAC81D6ADF8D00B4AC2A /* AppDelegate.h */,
@@ -1385,6 +1413,7 @@
 				3B780F4D1D6BF79E006AF895 /* WZLocationTool.m in Sources */,
 				A42BDCD91D7523F2006508C2 /* DetailNewsResponseModel.m in Sources */,
 				A42BDCD21D7523F2006508C2 /* HomeTopNewsCircularView.m in Sources */,
+				3BBE0D7C1D75644500AE2C1A /* HistoyrTodayViewController.m in Sources */,
 				3B888B8E1D702378007A829F /* SearchResultTableVC.m in Sources */,
 				3B780F431D6BF79E006AF895 /* NSArray+JSONModel.m in Sources */,
 				A42BDCF51D7523F2006508C2 /* PushAnimator.m in Sources */,
@@ -1412,6 +1441,7 @@
 				3B780F531D6BF79E006AF895 /* WZHeaderTableViewCell.m in Sources */,
 				A42BDCF81D7523F2006508C2 /* NSObject+DeallocBlock.m in Sources */,
 				A45DBB701D6ADF8E00B4AC2A /* ZYTabBar.m in Sources */,
+				3BBE0D791D75644500AE2C1A /* DateView.m in Sources */,
 				3B780F3B1D6BF79E006AF895 /* WZIndex.m in Sources */,
 				A42BDCD31D7523F2006508C2 /* NavBarView.m in Sources */,
 				3B780F591D6BF79E006AF895 /* WZTitleTableViewCell.m in Sources */,
@@ -1421,6 +1451,7 @@
 				3B780F411D6BF79E006AF895 /* JSONModelClassProperty.m in Sources */,
 				A42BDCF71D7523F2006508C2 /* DeallocBlockExecutor.m in Sources */,
 				3B780F401D6BF79E006AF895 /* JSONModelArray.m in Sources */,
+				3BBE0D7A1D75644500AE2C1A /* HistoryTodayModel.m in Sources */,
 				A45DBB471D6ADF8E00B4AC2A /* LeftSlideViewController.m in Sources */,
 				3B780F471D6BF79E006AF895 /* JSONKeyMapper.m in Sources */,
 				A42BDCD51D7523F2006508C2 /* HTTPClient.m in Sources */,
@@ -1428,6 +1459,7 @@
 				3B780F461D6BF79E006AF895 /* JSONModel+networking.m in Sources */,
 				A42BDCF61D7523F2006508C2 /* WeakTarget.m in Sources */,
 				3B780F551D6BF79E006AF895 /* WZIndexItemTableViewCell.m in Sources */,
+				3BBE0D7B1D75644500AE2C1A /* HistoryTodayTableViewCell.m in Sources */,
 				A42BDCE51D7523F2006508C2 /* DetailNewsHeaderView.m in Sources */,
 				A45DBB5F1D6ADF8E00B4AC2A /* UIView+LBExtension.m in Sources */,
 				A42BDCF31D7523F2006508C2 /* UIView+Additions.m in Sources */,
@@ -1592,7 +1624,7 @@
 					"$(PROJECT_DIR)/BesTools/Main/Location",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = /Users/aaronlee/Desktop/BesTool/BesTools/Main/Location/appDefine.pch;
+				GCC_PREFIX_HEADER = /Users/jr/Desktop/8.30/BesTools/Main/Location/appDefine.pch;
 				INFOPLIST_FILE = BesTools/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.jj.GDMapPoiDem;
@@ -1613,7 +1645,7 @@
 					"$(PROJECT_DIR)/BesTools/Main/Location",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = /Users/aaronlee/Desktop/BesTool/BesTools/Main/Location/appDefine.pch;
+				GCC_PREFIX_HEADER = /Users/jr/Desktop/8.30/BesTools/Main/Location/appDefine.pch;
 				INFOPLIST_FILE = BesTools/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.jj.GDMapPoiDem;

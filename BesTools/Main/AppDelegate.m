@@ -35,12 +35,10 @@
     if ([APIKey length] == 0)
     {
         NSString *reason = [NSString stringWithFormat:@"apiKey为空，请检查key是否正确设置。"];
-        
-        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"提示" message:reason delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil, nil];
-        
-        [alert show];
-        NSLog(@"88888");
-    }
+        UIAlertController *alertController = [UIAlertController alertControllerWithTitle:@"提示" message:reason preferredStyle:UIAlertControllerStyleAlert];
+        UIAlertAction *action = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault handler:nil];
+        [alertController addAction:action];
+        [[UIApplication sharedApplication].keyWindow.rootViewController presentViewController:alertController animated:YES completion:nil];    }
     
     [AMapServices sharedServices].apiKey = (NSString *)APIKey;
 }

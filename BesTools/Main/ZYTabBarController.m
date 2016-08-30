@@ -16,6 +16,7 @@
 #import "WZMainViewController.h"//天气
 #import "LocationMainViewController.h"//地图
 #import "HomePageViewController.h"
+#import "HistoyrTodayViewController.h"
 
 @interface ZYTabBarController ()<ZYTabBarDelegate>
 @property (strong,nonatomic)ZYTabBarController *zy;
@@ -36,7 +37,7 @@
 //    ZYPathItemButton *itemButton_1 = [[ZYPathItemButton alloc]initWithImage:[UIImage imageNamed:@"chooser-moment-icon-music"]highlightedImage:[UIImage imageNamed:@"chooser-moment-icon-music-highlighted"]backgroundImage:[UIImage imageNamed:@"chooser-moment-button"]backgroundHighlightedImage:[UIImage imageNamed:@"chooser-moment-button-highlighted"]];
     ZYPathItemButton *itemButton_2 = [[ZYPathItemButton alloc]initWithImage:[UIImage imageNamed:@"chooser-moment-icon-place"]highlightedImage:[UIImage imageNamed:@"chooser-moment-icon-place-highlighted"]backgroundImage:[UIImage imageNamed:@"chooser-moment-button"]backgroundHighlightedImage:[UIImage imageNamed:@"chooser-moment-button-highlighted"]];
     
-    ZYPathItemButton *itemButton_3 = [[ZYPathItemButton alloc]initWithImage:[UIImage imageNamed:@"chooser-moment-icon-camera"]highlightedImage:[UIImage imageNamed:@"chooser-moment-icon-camera-highlighted"]backgroundImage:[UIImage imageNamed:@"chooser-moment-button"]backgroundHighlightedImage:[UIImage imageNamed:@"chooser-moment-button-highlighted"]];
+    ZYPathItemButton *itemButton_3 = [[ZYPathItemButton alloc]initWithImage:[UIImage imageNamed:@"today"]highlightedImage:[UIImage imageNamed:@"today"]backgroundImage:[UIImage imageNamed:@"chooser-moment-button"]backgroundHighlightedImage:[UIImage imageNamed:@"chooser-moment-button-highlighted"]];
     
 //    ZYPathItemButton *itemButton_4 = [[ZYPathItemButton alloc]initWithImage:[UIImage imageNamed:@"chooser-moment-icon-thought"]highlightedImage:[UIImage imageNamed:@"chooser-moment-icon-thought-highlighted"]backgroundImage:[UIImage imageNamed:@"chooser-moment-button"]backgroundHighlightedImage:[UIImage imageNamed:@"chooser-moment-button-highlighted"]];
     
@@ -124,6 +125,7 @@
     UINavigationController *Vc = [[UINavigationController alloc]initWithRootViewController:[ZYNewViewController new]];
     UINavigationController *Vc1 = [[UINavigationController alloc]initWithRootViewController:[WZMainViewController new]];
     UINavigationController *Vc2 = [[UINavigationController alloc]initWithRootViewController:[LocationMainViewController new]];
+        UINavigationController *Vc3 = [[UINavigationController alloc]initWithRootViewController:[HistoyrTodayViewController new]];
   //  Vc.view.backgroundColor = [self randomColor];
     Vc.view.backgroundColor = [UIColor whiteColor];
     if (itemButtonIndex == 0) {
@@ -132,7 +134,7 @@
     if (itemButtonIndex == 2) {//跳转到天气页面
         [self presentViewController:Vc1 animated:YES completion:nil];
     }else{
-        [self presentViewController:Vc animated:YES completion:nil];
+        [self presentViewController:Vc3 animated:YES completion:nil];
     }
 }
 
