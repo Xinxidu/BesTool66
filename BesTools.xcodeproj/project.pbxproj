@@ -1239,7 +1239,7 @@
 				TargetAttributes = {
 					A424D6E11D65556800A6AE2A = {
 						CreatedOnToolsVersion = 7.3.1;
-						DevelopmentTeam = 34585F6SJP;
+						DevelopmentTeam = V28AGEWQRE;
 					};
 					A424D6FA1D65556800A6AE2A = {
 						CreatedOnToolsVersion = 7.3.1;
@@ -1627,7 +1627,7 @@
 				GCC_PREFIX_HEADER = "$(SRCROOT)/BesTools/BesTools-PrefixHeader.pch";
 				INFOPLIST_FILE = BesTools/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.jj.GDMapPoiDem;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jj.GDMapPoiDem1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 			};
@@ -1648,7 +1648,7 @@
 				GCC_PREFIX_HEADER = "$(SRCROOT)/BesTools/BesTools-PrefixHeader.pch";
 				INFOPLIST_FILE = BesTools/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.jj.GDMapPoiDem;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jj.GDMapPoiDem1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 			};
