@@ -106,6 +106,10 @@
 		A42BDCFB1D7523F2006508C2 /* CircularView.m in Sources */ = {isa = PBXBuildFile; fileRef = A42BDCCD1D7523F2006508C2 /* CircularView.m */; };
 		A42BDCFE1D752A5B006508C2 /* UIView+Theme.m in Sources */ = {isa = PBXBuildFile; fileRef = A42BDCFD1D752A5B006508C2 /* UIView+Theme.m */; };
 		A42BDD021D75607D006508C2 /* LeftMenuTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A42BDD011D75607D006508C2 /* LeftMenuTableViewCell.m */; };
+		A42BDD0D1D75877D006508C2 /* DateView.m in Sources */ = {isa = PBXBuildFile; fileRef = A42BDD061D75877D006508C2 /* DateView.m */; };
+		A42BDD0E1D75877D006508C2 /* HistoryTodayModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A42BDD081D75877D006508C2 /* HistoryTodayModel.m */; };
+		A42BDD0F1D75877D006508C2 /* HistoryTodayTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A42BDD0A1D75877D006508C2 /* HistoryTodayTableViewCell.m */; };
+		A42BDD101D75877D006508C2 /* HistoyrTodayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A42BDD0C1D75877D006508C2 /* HistoyrTodayViewController.m */; };
 		A45DBB401D6ADF8E00B4AC2A /* leftbackiamge.png in Resources */ = {isa = PBXBuildFile; fileRef = A45DBAC51D6ADF8D00B4AC2A /* leftbackiamge.png */; };
 		A45DBB411D6ADF8E00B4AC2A /* menu@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A45DBAC61D6ADF8D00B4AC2A /* menu@2x.png */; };
 		A45DBB421D6ADF8E00B4AC2A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A45DBAC91D6ADF8D00B4AC2A /* AppDelegate.m */; };
@@ -353,6 +357,14 @@
 		A42BDD001D75607D006508C2 /* LeftMenuTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeftMenuTableViewCell.h; sourceTree = "<group>"; };
 		A42BDD011D75607D006508C2 /* LeftMenuTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LeftMenuTableViewCell.m; sourceTree = "<group>"; };
 		A42BDD031D758496006508C2 /* BesTools-PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BesTools-PrefixHeader.pch"; sourceTree = "<group>"; };
+		A42BDD051D75877D006508C2 /* DateView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DateView.h; sourceTree = "<group>"; };
+		A42BDD061D75877D006508C2 /* DateView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DateView.m; sourceTree = "<group>"; };
+		A42BDD071D75877D006508C2 /* HistoryTodayModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HistoryTodayModel.h; sourceTree = "<group>"; };
+		A42BDD081D75877D006508C2 /* HistoryTodayModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HistoryTodayModel.m; sourceTree = "<group>"; };
+		A42BDD091D75877D006508C2 /* HistoryTodayTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HistoryTodayTableViewCell.h; sourceTree = "<group>"; };
+		A42BDD0A1D75877D006508C2 /* HistoryTodayTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HistoryTodayTableViewCell.m; sourceTree = "<group>"; };
+		A42BDD0B1D75877D006508C2 /* HistoyrTodayViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HistoyrTodayViewController.h; sourceTree = "<group>"; };
+		A42BDD0C1D75877D006508C2 /* HistoyrTodayViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HistoyrTodayViewController.m; sourceTree = "<group>"; };
 		A45DBAC51D6ADF8D00B4AC2A /* leftbackiamge.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = leftbackiamge.png; sourceTree = "<group>"; };
 		A45DBAC61D6ADF8D00B4AC2A /* menu@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "menu@2x.png"; sourceTree = "<group>"; };
 		A45DBAC81D6ADF8D00B4AC2A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -969,6 +981,21 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		A42BDD041D75877D006508C2 /* HistoryToday */ = {
+			isa = PBXGroup;
+			children = (
+				A42BDD051D75877D006508C2 /* DateView.h */,
+				A42BDD061D75877D006508C2 /* DateView.m */,
+				A42BDD071D75877D006508C2 /* HistoryTodayModel.h */,
+				A42BDD081D75877D006508C2 /* HistoryTodayModel.m */,
+				A42BDD091D75877D006508C2 /* HistoryTodayTableViewCell.h */,
+				A42BDD0A1D75877D006508C2 /* HistoryTodayTableViewCell.m */,
+				A42BDD0B1D75877D006508C2 /* HistoyrTodayViewController.h */,
+				A42BDD0C1D75877D006508C2 /* HistoyrTodayViewController.m */,
+			);
+			path = HistoryToday;
+			sourceTree = "<group>";
+		};
 		A45DBAC01D6ADF8D00B4AC2A /* Home */ = {
 			isa = PBXGroup;
 			children = (
@@ -996,6 +1023,7 @@
 		A45DBAC71D6ADF8D00B4AC2A /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				A42BDD041D75877D006508C2 /* HistoryToday */,
 				3B888B7F1D702150007A829F /* Location */,
 				3BAB589F1D6AE75F008B696C /* Weather */,
 				A45DBAC81D6ADF8D00B4AC2A /* AppDelegate.h */,
@@ -1385,6 +1413,7 @@
 				3B780F481D6BF79E006AF895 /* JSONValueTransformer.m in Sources */,
 				3B780F4D1D6BF79E006AF895 /* WZLocationTool.m in Sources */,
 				A42BDCD91D7523F2006508C2 /* DetailNewsResponseModel.m in Sources */,
+				A42BDD101D75877D006508C2 /* HistoyrTodayViewController.m in Sources */,
 				A42BDCD21D7523F2006508C2 /* HomeTopNewsCircularView.m in Sources */,
 				3B888B8E1D702378007A829F /* SearchResultTableVC.m in Sources */,
 				3B780F431D6BF79E006AF895 /* NSArray+JSONModel.m in Sources */,
@@ -1412,6 +1441,7 @@
 				3B780F531D6BF79E006AF895 /* WZHeaderTableViewCell.m in Sources */,
 				A42BDCF81D7523F2006508C2 /* NSObject+DeallocBlock.m in Sources */,
 				A45DBB701D6ADF8E00B4AC2A /* ZYTabBar.m in Sources */,
+				A42BDD0D1D75877D006508C2 /* DateView.m in Sources */,
 				3B780F3B1D6BF79E006AF895 /* WZIndex.m in Sources */,
 				A42BDCD31D7523F2006508C2 /* NavBarView.m in Sources */,
 				3B780F591D6BF79E006AF895 /* WZTitleTableViewCell.m in Sources */,
@@ -1421,6 +1451,7 @@
 				3B780F411D6BF79E006AF895 /* JSONModelClassProperty.m in Sources */,
 				A42BDCF71D7523F2006508C2 /* DeallocBlockExecutor.m in Sources */,
 				3B780F401D6BF79E006AF895 /* JSONModelArray.m in Sources */,
+				A42BDD0E1D75877D006508C2 /* HistoryTodayModel.m in Sources */,
 				A45DBB471D6ADF8E00B4AC2A /* LeftSlideViewController.m in Sources */,
 				3B780F471D6BF79E006AF895 /* JSONKeyMapper.m in Sources */,
 				A42BDCD51D7523F2006508C2 /* HTTPClient.m in Sources */,
@@ -1428,6 +1459,7 @@
 				3B780F461D6BF79E006AF895 /* JSONModel+networking.m in Sources */,
 				A42BDCF61D7523F2006508C2 /* WeakTarget.m in Sources */,
 				3B780F551D6BF79E006AF895 /* WZIndexItemTableViewCell.m in Sources */,
+				A42BDD0F1D75877D006508C2 /* HistoryTodayTableViewCell.m in Sources */,
 				A42BDCE51D7523F2006508C2 /* DetailNewsHeaderView.m in Sources */,
 				A45DBB5F1D6ADF8E00B4AC2A /* UIView+LBExtension.m in Sources */,
 				A42BDCF31D7523F2006508C2 /* UIView+Additions.m in Sources */,
