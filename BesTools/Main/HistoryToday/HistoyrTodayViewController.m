@@ -12,6 +12,7 @@
 #import <AFNetworking.h>
 #import "HistoryTodayModel.h"
 #import "HistoryTodayTableViewCell.h"
+#import "HistoryDetailViewController.h"
 
 #define HEIGHT CGRectGetHeight(self.view.bounds)
 #define WIDTH CGRectGetWidth(self.view.bounds)
@@ -44,7 +45,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     self.title = @"历史上的今天";
-    [self.navigationController.navigationBar setTitleTextAttributes:@{NSFontAttributeName:[UIFont systemFontOfSize:18.0],NSForegroundColorAttributeName:GOLD}];
+    [self.navigationController.navigationBar setTitleTextAttributes:@{NSFontAttributeName:[UIFont systemFontOfSize:18.0],NSForegroundColorAttributeName:[UIColor whiteColor]}];
     self.view.backgroundColor = [UIColor whiteColor];
     self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"返回" style:UIBarButtonItemStylePlain target:self action:@selector(back)];
     self.navigationController.navigationBar.tintColor = [UIColor whiteColor];
@@ -120,7 +121,7 @@
 //    [_tableView setUpToLoadMore:^{
 //        [blockSelf readTableViewRequest:YES];
 //    }];
-
+#pragma mark 请求数据列表
 }
 -(void)readTableViewRequest:(BOOL)isUp{
     NSLog(@"调用了,%@",_urlString);
@@ -180,6 +181,12 @@
 }
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
     return 80;
+}
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    HistoryDetailViewController *detail = [[HistoryDetailViewController alloc]init];
+    HistoryTodayModel *model = _HistorydataArray[indexPath.row];
+    detail.ID = model.e_id;
+    [self.navigationController pushViewController:detail animated:YES];
 }
 #pragma mark 日历按钮点击事件
 - (void)calendarClick:(UIButton *)sender{

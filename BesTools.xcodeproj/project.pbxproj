@@ -56,6 +56,7 @@
 		3BBE0D7A1D75644500AE2C1A /* HistoryTodayModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BBE0D741D75644500AE2C1A /* HistoryTodayModel.m */; };
 		3BBE0D7B1D75644500AE2C1A /* HistoryTodayTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BBE0D761D75644500AE2C1A /* HistoryTodayTableViewCell.m */; };
 		3BBE0D7C1D75644500AE2C1A /* HistoyrTodayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BBE0D781D75644500AE2C1A /* HistoyrTodayViewController.m */; };
+		3BBE0D7F1D7566FE00AE2C1A /* HistoryDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BBE0D7E1D7566FE00AE2C1A /* HistoryDetailViewController.m */; };
 		A424D6E71D65556800A6AE2A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A424D6E61D65556800A6AE2A /* main.m */; };
 		A424D6F01D65556800A6AE2A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A424D6EE1D65556800A6AE2A /* Main.storyboard */; };
 		A424D6F21D65556800A6AE2A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A424D6F11D65556800A6AE2A /* Assets.xcassets */; };
@@ -257,6 +258,8 @@
 		3BBE0D761D75644500AE2C1A /* HistoryTodayTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HistoryTodayTableViewCell.m; sourceTree = "<group>"; };
 		3BBE0D771D75644500AE2C1A /* HistoyrTodayViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HistoyrTodayViewController.h; sourceTree = "<group>"; };
 		3BBE0D781D75644500AE2C1A /* HistoyrTodayViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HistoyrTodayViewController.m; sourceTree = "<group>"; };
+		3BBE0D7D1D7566FE00AE2C1A /* HistoryDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HistoryDetailViewController.h; sourceTree = "<group>"; };
+		3BBE0D7E1D7566FE00AE2C1A /* HistoryDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HistoryDetailViewController.m; sourceTree = "<group>"; };
 		A026D0734E41569235C5EE47 /* libPods-BesTools.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BesTools.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A424D6E21D65556800A6AE2A /* BesTools.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BesTools.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A424D6E61D65556800A6AE2A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -668,6 +671,8 @@
 				3BBE0D761D75644500AE2C1A /* HistoryTodayTableViewCell.m */,
 				3BBE0D771D75644500AE2C1A /* HistoyrTodayViewController.h */,
 				3BBE0D781D75644500AE2C1A /* HistoyrTodayViewController.m */,
+				3BBE0D7D1D7566FE00AE2C1A /* HistoryDetailViewController.h */,
+				3BBE0D7E1D7566FE00AE2C1A /* HistoryDetailViewController.m */,
 			);
 			path = HistoryToday;
 			sourceTree = "<group>";
@@ -1382,6 +1387,7 @@
 				A42BDCF21D7523F2006508C2 /* UINavigationBar+BackgroundColor.m in Sources */,
 				A45DBB6F1D6ADF8E00B4AC2A /* ZYPathItemButton.m in Sources */,
 				3B780F451D6BF79E006AF895 /* JSONHTTPClient.m in Sources */,
+				3BBE0D7F1D7566FE00AE2C1A /* HistoryDetailViewController.m in Sources */,
 				A45DBB491D6ADF8E00B4AC2A /* LeftViewController.m in Sources */,
 				A42BDCDE1D7523F2006508C2 /* SingleThemeResponseModel.m in Sources */,
 				A42BDCFA1D7523F2006508C2 /* CircularCollectionViewCell.m in Sources */,
