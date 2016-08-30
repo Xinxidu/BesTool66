@@ -6,6 +6,10 @@ pod 'SDWebImage'
 pod 'AFNetworking'
 pod 'SDWebImage'
 pod 'MJRefresh'
+pod 'MBProgressHUD'
+pod 'Reachability'
+pod 'AMap2DMap'
+pod 'AMapSearch'
 
 end
 

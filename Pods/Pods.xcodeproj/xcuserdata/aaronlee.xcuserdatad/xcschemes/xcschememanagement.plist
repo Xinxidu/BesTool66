@@ -9,12 +9,37 @@
 			<key>orderHint</key>
 			<integer>3</integer>
 		</dict>
+		<key>CocoaLumberjack.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>4</integer>
+		</dict>
+		<key>MBProgressHUD.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>6</integer>
+		</dict>
+		<key>MJRefresh.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>7</integer>
+		</dict>
+		<key>Mantle.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>5</integer>
+		</dict>
 		<key>Pods-BesTools.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 			<key>orderHint</key>
 			<integer>1</integer>
+		</dict>
+		<key>Reachability.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>10</integer>
 		</dict>
 		<key>SDWebImage.xcscheme</key>
 		<dict>
@@ -23,10 +48,25 @@
 			<key>orderHint</key>
 			<integer>2</integer>
 		</dict>
+		<key>TOWebViewController-TOWebViewControllerLocalizable.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>9</integer>
+		</dict>
+		<key>TOWebViewController.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>8</integer>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
 		<key>22520E41B3C15C134C2E6E12C618A2B7</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>6886A98A3D7654A556FADDB5CD508E48</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -56,7 +96,22 @@
 			<key>primary</key>
 			<true/>
 		</dict>
+		<key>AB809B5E7A8ACB5D0C1CEBA274905C1C</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>ACECB5C5E7FECA5DC8EE7B58DCB7015D</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>CEF775B77D926496983E6B920A1E3372</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>D058B89EB3B3DF45457A2DCD3971AFFE</key>
 		<dict>
 			<key>primary</key>
 			<true/>

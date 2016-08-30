@@ -8,6 +8,8 @@
 #import "AppDelegate.h"
 #import "ZYTabBarController.h"
 #import "LeftViewController.h"
+#import "APIKey.h"
+#import <AMapFoundationKit/AMapFoundationKit.h>
 @interface AppDelegate ()
 
 @end
@@ -24,7 +26,23 @@
     mainNav.navigationBarHidden = YES;
     self.window.rootViewController = mainNav;
     [[UINavigationBar appearance] setBarTintColor:[UIColor orangeColor]];
+    
+    [self configureAPIKey];
     return YES;
+}
+- (void)configureAPIKey
+{
+    if ([APIKey length] == 0)
+    {
+        NSString *reason = [NSString stringWithFormat:@"apiKey为空，请检查key是否正确设置。"];
+        
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"提示" message:reason delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil, nil];
+        
+        [alert show];
+        NSLog(@"88888");
+    }
+    
+    [AMapServices sharedServices].apiKey = (NSString *)APIKey;
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application {
