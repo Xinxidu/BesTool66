@@ -8,76 +8,131 @@
 
 #import "LeftViewController.h"
 #import "AppDelegate.h"
+#import "LeftMenuTableViewCell.h"
 #import "OtherViewController.h"
 #import "ZYTabBarController.h"
 #import "WZMainViewController.h"
-
+#import "SingleThemeResponseModel.h"
+#import "ThemeDailyViewController.h"
+#import "ThemesListResponseModel.h"
 @interface LeftViewController ()<UITableViewDataSource,UITableViewDelegate>
 {
     UIImageView *_headImageView;
 }
+@property (strong, nonatomic) NSMutableArray<SingleThemeResponseModel *> *dataArray;
+@property (assign, nonatomic) NSInteger selectedIndex;
+@property (strong, nonatomic) ThemeDailyViewController *themeDailyViewController;
 @end
 
 @implementation LeftViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    _dataArray = [NSMutableArray arrayWithCapacity:14];
+    _selectedIndex = 0;
     // Do any additional setup after loading the view.
     UIImageView *imageview = [[UIImageView alloc]initWithFrame:self.view.frame];
     imageview.image = [UIImage imageNamed:@"leftbackiamge"];
     [self.view addSubview:imageview];
-    
-    UITableView *tableview = [[UITableView alloc]init];
-    self.tableview = tableview;
-    tableview.frame = self.view.bounds;
-    tableview.dataSource = self;
-    tableview.delegate = self;
-    tableview.separatorStyle = UITableViewCellSeparatorStyleNone;
-    [self.view addSubview:tableview];
+    [self loadData];
+    [self loadUI];
 }
+-(void)loadUI{
+    //self.view.themeMap = @{kThemeMapKeyColorName : @"left_menu_bg"};
+    self.tableview=[[UITableView alloc]init];
+    _tableview.frame = CGRectMake(0, 0, self.view.frame.size.width, 500);
+    _tableview.dataSource = self;
+    _tableview.delegate = self;
+    _tableview.separatorStyle = UITableViewCellSeparatorStyleNone;
+    [self.view addSubview:self.tableview];
+    [self.tableview registerClass:[LeftMenuTableViewCell class] forCellReuseIdentifier:@"cell"];
+}
+-(void)loadData{
+    SingleThemeResponseModel *homeModel = [[SingleThemeResponseModel alloc] initWithDictionary:@{@"name":@"首页",@"themeID":@(-1)} error:nil];
+    [_dataArray addObject:homeModel];
+    
+    [[HTTPClient sharedInstance] getThemesListWithSuccess:^(NSURLSessionDataTask *task,BaseResponseModel *model){
+        ThemesListResponseModel *themesModel = (ThemesListResponseModel *)model;
+        [self.dataArray addObjectsFromArray:themesModel.others];
+        //NSLog(@"_dataArray=======%@",_dataArray);
+        [self.tableview reloadData];
+    }fail:^(NSURLSessionDataTask *task, BaseResponseModel *model){
+        
+    }];
+}
+
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
-    return 7;
+    return _dataArray.count;
 }
 -(UITableViewCell*)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
-    static NSString *id = @"id";
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:id];
-    if (cell == nil) {
-        cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:id];
+    LeftMenuTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell"];
+    if (cell==nil) {
+        cell=[[LeftMenuTableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"cell"];
     }
     cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
-    cell.textLabel.font = [UIFont systemFontOfSize:20.0];
-    cell.backgroundColor = [UIColor clearColor];
-    cell.textLabel.textColor = [UIColor whiteColor];
+    SingleThemeResponseModel *singleModel = self.dataArray[indexPath.row];
+    cell.textLabel.text = singleModel.name;
     
     if (indexPath.row == 0) {
-        cell.textLabel.text = @"开通会员";
-    }else if (indexPath.row == 1){
-        cell.textLabel.text = @"QQ钱包";
-    }else if (indexPath.row == 2){
-        cell.textLabel.text = @"网上营业厅";
-    }else if (indexPath.row == 3){
-        cell.textLabel.text = @"个性装扮";
-    }else if (indexPath.row == 4){
-        cell.textLabel.text = @"分享APP";
-    }else if (indexPath.row == 5){
-        cell.textLabel.text = @"关于我们";
-    }else if (indexPath.row == 6){
-        cell.textLabel.text = @"联系QQ";
+        [cell.imageView setImage:[UIImage imageNamed:@"Menu_Icon_Home"]];
     }
+    else
+        [cell.imageView setImage:nil];
+    
+    if (_selectedIndex == indexPath.row) {
+        [tableView selectRowAtIndexPath:indexPath animated:YES scrollPosition:UITableViewScrollPositionNone];
+    }
+    
     return cell;
 }
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(nonnull NSIndexPath *)indexPath{
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    _selectedIndex = indexPath.row;
+    if (indexPath.row != 0) {
+        if (self.themeDailyViewController) {
+            self.themeDailyViewController.themeID = _dataArray[indexPath.row].themeID;
+            self.themeDailyViewController.titleName = _dataArray[indexPath.row].name;
+            self.themeDailyViewController.sideMenuViewController = self.sideMenuController;
+            [self.themeDailyViewController reloadData];
+        }
+        else{
+            self.themeDailyViewController = [ThemeDailyViewController new];
+            self.themeDailyViewController.themeID = _dataArray[indexPath.row].themeID;
+            self.themeDailyViewController.titleName = _dataArray[indexPath.row].name;
+            self.themeDailyViewController.sideMenuViewController = self.sideMenuController;
+        }
+    }
+    else{
+      NSLog(@"%ld",indexPath.row);
+    }
     AppDelegate *tempAppDelegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
     [tempAppDelegate.LeftSlideVC closeLeftView];
-    if (indexPath.row == 6) {
-        [self chatQQ];//联系QQ
-    }else{
-        [self.navigationController pushViewController:[[OtherViewController alloc] init] animated:YES];
-    }
 }
 - (CGFloat)tableView:(UITableView*)tableView heightForHeaderInSection:(NSInteger)section{
     return 150;
+}
+
+- (CGFloat)tableView:(UITableView*)tableView heightForFooterInSection:(NSInteger)section{
+    return 50;
+}
+- (UIView*)tableView:(UITableView *)tableView viewForFooterInSection:(NSInteger)section{
+    UIView *view = [[UIView alloc]initWithFrame:CGRectMake(0, 0, self.view.bounds.size.width, 50)];
+    view.backgroundColor = [UIColor clearColor];
+    //------ 设置 ------
+    UIButton *collectBtn = [UIButton buttonWithType:UIButtonTypeCustom];
+    collectBtn.frame = CGRectMake(100, 10, 35, 35);
+    [collectBtn setImage:[UIImage imageNamed:@"Menu_Icon_Collect"] forState:UIControlStateNormal];
+    UIButton *messageBtn = [UIButton buttonWithType:UIButtonTypeCustom];
+    messageBtn.frame = CGRectMake(140, 10, 35, 35);
+    [messageBtn setImage:[UIImage imageNamed:@"Menu_Icon_Message"] forState:UIControlStateNormal];
+    [messageBtn addTarget:self action:@selector(chatQQ) forControlEvents:UIControlEventTouchUpInside];
+    UIButton *setBtn = [UIButton buttonWithType:UIButtonTypeCustom];
+    setBtn.frame = CGRectMake(180, 10, 35, 35);
+    [setBtn setImage:[UIImage imageNamed:@"Menu_Icon_Setting"] forState:UIControlStateNormal];
+    [view addSubview:collectBtn];
+    [view addSubview:messageBtn];
+    [view addSubview:setBtn];
+    return view;
 }
 - (UIView*)tableView:(UITableView*)tableView viewForHeaderInSection:(NSInteger)section{
     UIView *view = [[UIView alloc]initWithFrame:CGRectMake(0, 0, self.view.bounds.size.width, 150)];

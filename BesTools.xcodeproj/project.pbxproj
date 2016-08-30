@@ -52,11 +52,8 @@
 		3B888B8C1D702378007A829F /* MapPoiTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B888B851D702378007A829F /* MapPoiTableView.m */; };
 		3B888B8E1D702378007A829F /* SearchResultTableVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B888B8A1D702378007A829F /* SearchResultTableVC.m */; };
 		3B888BB01D703323007A829F /* LocationMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B888BAF1D703323007A829F /* LocationMainViewController.m */; };
-		3BBE0D791D75644500AE2C1A /* DateView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BBE0D721D75644500AE2C1A /* DateView.m */; };
-		3BBE0D7A1D75644500AE2C1A /* HistoryTodayModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BBE0D741D75644500AE2C1A /* HistoryTodayModel.m */; };
-		3BBE0D7B1D75644500AE2C1A /* HistoryTodayTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BBE0D761D75644500AE2C1A /* HistoryTodayTableViewCell.m */; };
-		3BBE0D7C1D75644500AE2C1A /* HistoyrTodayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BBE0D781D75644500AE2C1A /* HistoyrTodayViewController.m */; };
 		3BBE0D7F1D7566FE00AE2C1A /* HistoryDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BBE0D7E1D7566FE00AE2C1A /* HistoryDetailViewController.m */; };
+		3BBE0D851D758ABE00AE2C1A /* HistoryDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BBE0D841D758ABE00AE2C1A /* HistoryDetailViewController.m */; };
 		A424D6E71D65556800A6AE2A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A424D6E61D65556800A6AE2A /* main.m */; };
 		A424D6F01D65556800A6AE2A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A424D6EE1D65556800A6AE2A /* Main.storyboard */; };
 		A424D6F21D65556800A6AE2A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A424D6F11D65556800A6AE2A /* Assets.xcassets */; };
@@ -110,6 +107,11 @@
 		A42BDCFA1D7523F2006508C2 /* CircularCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A42BDCCB1D7523F2006508C2 /* CircularCollectionViewCell.m */; };
 		A42BDCFB1D7523F2006508C2 /* CircularView.m in Sources */ = {isa = PBXBuildFile; fileRef = A42BDCCD1D7523F2006508C2 /* CircularView.m */; };
 		A42BDCFE1D752A5B006508C2 /* UIView+Theme.m in Sources */ = {isa = PBXBuildFile; fileRef = A42BDCFD1D752A5B006508C2 /* UIView+Theme.m */; };
+		A42BDD021D75607D006508C2 /* LeftMenuTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A42BDD011D75607D006508C2 /* LeftMenuTableViewCell.m */; };
+		A42BDD0D1D75877D006508C2 /* DateView.m in Sources */ = {isa = PBXBuildFile; fileRef = A42BDD061D75877D006508C2 /* DateView.m */; };
+		A42BDD0E1D75877D006508C2 /* HistoryTodayModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A42BDD081D75877D006508C2 /* HistoryTodayModel.m */; };
+		A42BDD0F1D75877D006508C2 /* HistoryTodayTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A42BDD0A1D75877D006508C2 /* HistoryTodayTableViewCell.m */; };
+		A42BDD101D75877D006508C2 /* HistoyrTodayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A42BDD0C1D75877D006508C2 /* HistoyrTodayViewController.m */; };
 		A45DBB401D6ADF8E00B4AC2A /* leftbackiamge.png in Resources */ = {isa = PBXBuildFile; fileRef = A45DBAC51D6ADF8D00B4AC2A /* leftbackiamge.png */; };
 		A45DBB411D6ADF8E00B4AC2A /* menu@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A45DBAC61D6ADF8D00B4AC2A /* menu@2x.png */; };
 		A45DBB421D6ADF8E00B4AC2A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A45DBAC91D6ADF8D00B4AC2A /* AppDelegate.m */; };
@@ -118,7 +120,6 @@
 		A45DBB491D6ADF8E00B4AC2A /* LeftViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A45DBAD91D6ADF8D00B4AC2A /* LeftViewController.m */; };
 		A45DBB4E1D6ADF8E00B4AC2A /* OtherViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A45DBAE41D6ADF8D00B4AC2A /* OtherViewController.m */; };
 		A45DBB5F1D6ADF8E00B4AC2A /* UIView+LBExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = A45DBB121D6ADF8E00B4AC2A /* UIView+LBExtension.m */; };
-		A45DBB601D6ADF8E00B4AC2A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A45DBB141D6ADF8E00B4AC2A /* ViewController.m */; };
 		A45DBB6D1D6ADF8E00B4AC2A /* ZYNewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A45DBB2A1D6ADF8E00B4AC2A /* ZYNewViewController.m */; };
 		A45DBB6E1D6ADF8E00B4AC2A /* ZYPathButton.m in Sources */ = {isa = PBXBuildFile; fileRef = A45DBB2C1D6ADF8E00B4AC2A /* ZYPathButton.m */; };
 		A45DBB6F1D6ADF8E00B4AC2A /* ZYPathItemButton.m in Sources */ = {isa = PBXBuildFile; fileRef = A45DBB2E1D6ADF8E00B4AC2A /* ZYPathItemButton.m */; };
@@ -233,7 +234,6 @@
 		3B7DB8F51D6EC0CE004BC09C /* BaseTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseTableView.h; sourceTree = "<group>"; };
 		3B7DB8F61D6EC0CE004BC09C /* BaseTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseTableView.m; sourceTree = "<group>"; };
 		3B888B801D702337007A829F /* APIKey.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = APIKey.h; path = Main/Location/APIKey.h; sourceTree = "<group>"; };
-		3B888B811D702337007A829F /* appDefine.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = appDefine.pch; path = Main/Location/appDefine.pch; sourceTree = "<group>"; };
 		3B888B821D702378007A829F /* LocationDetailVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocationDetailVC.h; sourceTree = "<group>"; };
 		3B888B831D702378007A829F /* LocationDetailVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocationDetailVC.m; sourceTree = "<group>"; };
 		3B888B841D702378007A829F /* MapPoiTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapPoiTableView.h; sourceTree = "<group>"; };
@@ -250,16 +250,9 @@
 		3B888BA31D702858007A829F /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		3B888BAE1D703323007A829F /* LocationMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LocationMainViewController.h; path = UISearchController/LocationMainViewController.h; sourceTree = "<group>"; };
 		3B888BAF1D703323007A829F /* LocationMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LocationMainViewController.m; path = UISearchController/LocationMainViewController.m; sourceTree = "<group>"; };
-		3BBE0D711D75644500AE2C1A /* DateView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DateView.h; sourceTree = "<group>"; };
-		3BBE0D721D75644500AE2C1A /* DateView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DateView.m; sourceTree = "<group>"; };
-		3BBE0D731D75644500AE2C1A /* HistoryTodayModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HistoryTodayModel.h; sourceTree = "<group>"; };
-		3BBE0D741D75644500AE2C1A /* HistoryTodayModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HistoryTodayModel.m; sourceTree = "<group>"; };
-		3BBE0D751D75644500AE2C1A /* HistoryTodayTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HistoryTodayTableViewCell.h; sourceTree = "<group>"; };
-		3BBE0D761D75644500AE2C1A /* HistoryTodayTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HistoryTodayTableViewCell.m; sourceTree = "<group>"; };
-		3BBE0D771D75644500AE2C1A /* HistoyrTodayViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HistoyrTodayViewController.h; sourceTree = "<group>"; };
-		3BBE0D781D75644500AE2C1A /* HistoyrTodayViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HistoyrTodayViewController.m; sourceTree = "<group>"; };
-		3BBE0D7D1D7566FE00AE2C1A /* HistoryDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HistoryDetailViewController.h; sourceTree = "<group>"; };
 		3BBE0D7E1D7566FE00AE2C1A /* HistoryDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HistoryDetailViewController.m; sourceTree = "<group>"; };
+		3BBE0D831D758ABE00AE2C1A /* HistoryDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HistoryDetailViewController.h; sourceTree = "<group>"; };
+		3BBE0D841D758ABE00AE2C1A /* HistoryDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HistoryDetailViewController.m; sourceTree = "<group>"; };
 		A026D0734E41569235C5EE47 /* libPods-BesTools.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BesTools.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A424D6E21D65556800A6AE2A /* BesTools.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BesTools.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A424D6E61D65556800A6AE2A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -366,6 +359,17 @@
 		A42BDCCD1D7523F2006508C2 /* CircularView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CircularView.m; sourceTree = "<group>"; };
 		A42BDCFC1D752A5B006508C2 /* UIView+Theme.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Theme.h"; sourceTree = "<group>"; };
 		A42BDCFD1D752A5B006508C2 /* UIView+Theme.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Theme.m"; sourceTree = "<group>"; };
+		A42BDD001D75607D006508C2 /* LeftMenuTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeftMenuTableViewCell.h; sourceTree = "<group>"; };
+		A42BDD011D75607D006508C2 /* LeftMenuTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LeftMenuTableViewCell.m; sourceTree = "<group>"; };
+		A42BDD031D758496006508C2 /* BesTools-PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BesTools-PrefixHeader.pch"; sourceTree = "<group>"; };
+		A42BDD051D75877D006508C2 /* DateView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DateView.h; sourceTree = "<group>"; };
+		A42BDD061D75877D006508C2 /* DateView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DateView.m; sourceTree = "<group>"; };
+		A42BDD071D75877D006508C2 /* HistoryTodayModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HistoryTodayModel.h; sourceTree = "<group>"; };
+		A42BDD081D75877D006508C2 /* HistoryTodayModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HistoryTodayModel.m; sourceTree = "<group>"; };
+		A42BDD091D75877D006508C2 /* HistoryTodayTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HistoryTodayTableViewCell.h; sourceTree = "<group>"; };
+		A42BDD0A1D75877D006508C2 /* HistoryTodayTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HistoryTodayTableViewCell.m; sourceTree = "<group>"; };
+		A42BDD0B1D75877D006508C2 /* HistoyrTodayViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HistoyrTodayViewController.h; sourceTree = "<group>"; };
+		A42BDD0C1D75877D006508C2 /* HistoyrTodayViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HistoyrTodayViewController.m; sourceTree = "<group>"; };
 		A45DBAC51D6ADF8D00B4AC2A /* leftbackiamge.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = leftbackiamge.png; sourceTree = "<group>"; };
 		A45DBAC61D6ADF8D00B4AC2A /* menu@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "menu@2x.png"; sourceTree = "<group>"; };
 		A45DBAC81D6ADF8D00B4AC2A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -380,8 +384,6 @@
 		A45DBAE41D6ADF8D00B4AC2A /* OtherViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OtherViewController.m; sourceTree = "<group>"; };
 		A45DBB111D6ADF8E00B4AC2A /* UIView+LBExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+LBExtension.h"; sourceTree = "<group>"; };
 		A45DBB121D6ADF8E00B4AC2A /* UIView+LBExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+LBExtension.m"; sourceTree = "<group>"; };
-		A45DBB131D6ADF8E00B4AC2A /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		A45DBB141D6ADF8E00B4AC2A /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		A45DBB291D6ADF8E00B4AC2A /* ZYNewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYNewViewController.h; sourceTree = "<group>"; };
 		A45DBB2A1D6ADF8E00B4AC2A /* ZYNewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZYNewViewController.m; sourceTree = "<group>"; };
 		A45DBB2B1D6ADF8E00B4AC2A /* ZYPathButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYPathButton.h; sourceTree = "<group>"; };
@@ -660,23 +662,6 @@
 			path = LeftSlideViewController/Weather;
 			sourceTree = "<group>";
 		};
-		3BBE0D701D75642300AE2C1A /* HistoryToday */ = {
-			isa = PBXGroup;
-			children = (
-				3BBE0D711D75644500AE2C1A /* DateView.h */,
-				3BBE0D721D75644500AE2C1A /* DateView.m */,
-				3BBE0D731D75644500AE2C1A /* HistoryTodayModel.h */,
-				3BBE0D741D75644500AE2C1A /* HistoryTodayModel.m */,
-				3BBE0D751D75644500AE2C1A /* HistoryTodayTableViewCell.h */,
-				3BBE0D761D75644500AE2C1A /* HistoryTodayTableViewCell.m */,
-				3BBE0D771D75644500AE2C1A /* HistoyrTodayViewController.h */,
-				3BBE0D781D75644500AE2C1A /* HistoyrTodayViewController.m */,
-				3BBE0D7D1D7566FE00AE2C1A /* HistoryDetailViewController.h */,
-				3BBE0D7E1D7566FE00AE2C1A /* HistoryDetailViewController.m */,
-			);
-			path = HistoryToday;
-			sourceTree = "<group>";
-		};
 		A424D6D91D65556800A6AE2A = {
 			isa = PBXGroup;
 			children = (
@@ -713,7 +698,6 @@
 				A424D6F31D65556800A6AE2A /* LaunchScreen.storyboard */,
 				A424D6F61D65556800A6AE2A /* Info.plist */,
 				3B888B801D702337007A829F /* APIKey.h */,
-				3B888B811D702337007A829F /* appDefine.pch */,
 				A424D6E51D65556800A6AE2A /* Supporting Files */,
 			);
 			path = BesTools;
@@ -723,6 +707,7 @@
 			isa = PBXGroup;
 			children = (
 				A424D6E61D65556800A6AE2A /* main.m */,
+				A42BDD031D758496006508C2 /* BesTools-PrefixHeader.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -1001,6 +986,23 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		A42BDD041D75877D006508C2 /* HistoryToday */ = {
+			isa = PBXGroup;
+			children = (
+				3BBE0D831D758ABE00AE2C1A /* HistoryDetailViewController.h */,
+				3BBE0D841D758ABE00AE2C1A /* HistoryDetailViewController.m */,
+				A42BDD051D75877D006508C2 /* DateView.h */,
+				A42BDD061D75877D006508C2 /* DateView.m */,
+				A42BDD071D75877D006508C2 /* HistoryTodayModel.h */,
+				A42BDD081D75877D006508C2 /* HistoryTodayModel.m */,
+				A42BDD091D75877D006508C2 /* HistoryTodayTableViewCell.h */,
+				A42BDD0A1D75877D006508C2 /* HistoryTodayTableViewCell.m */,
+				A42BDD0B1D75877D006508C2 /* HistoyrTodayViewController.h */,
+				A42BDD0C1D75877D006508C2 /* HistoyrTodayViewController.m */,
+			);
+			path = HistoryToday;
+			sourceTree = "<group>";
+		};
 		A45DBAC01D6ADF8D00B4AC2A /* Home */ = {
 			isa = PBXGroup;
 			children = (
@@ -1028,7 +1030,7 @@
 		A45DBAC71D6ADF8D00B4AC2A /* Main */ = {
 			isa = PBXGroup;
 			children = (
-				3BBE0D701D75642300AE2C1A /* HistoryToday */,
+				A42BDD041D75877D006508C2 /* HistoryToday */,
 				3B888B7F1D702150007A829F /* Location */,
 				3BAB589F1D6AE75F008B696C /* Weather */,
 				A45DBAC81D6ADF8D00B4AC2A /* AppDelegate.h */,
@@ -1040,8 +1042,6 @@
 				A45DBAE41D6ADF8D00B4AC2A /* OtherViewController.m */,
 				A45DBB111D6ADF8E00B4AC2A /* UIView+LBExtension.h */,
 				A45DBB121D6ADF8E00B4AC2A /* UIView+LBExtension.m */,
-				A45DBB131D6ADF8E00B4AC2A /* ViewController.h */,
-				A45DBB141D6ADF8E00B4AC2A /* ViewController.m */,
 				A45DBB291D6ADF8E00B4AC2A /* ZYNewViewController.h */,
 				A45DBB2A1D6ADF8E00B4AC2A /* ZYNewViewController.m */,
 				A45DBB2B1D6ADF8E00B4AC2A /* ZYPathButton.h */,
@@ -1059,6 +1059,8 @@
 		A45DBAD31D6ADF8D00B4AC2A /* LeftSlideViewController */ = {
 			isa = PBXGroup;
 			children = (
+				A42BDD001D75607D006508C2 /* LeftMenuTableViewCell.h */,
+				A42BDD011D75607D006508C2 /* LeftMenuTableViewCell.m */,
 				A45DBAD41D6ADF8D00B4AC2A /* LeftSlideViewController.h */,
 				A45DBAD51D6ADF8D00B4AC2A /* LeftSlideViewController.m */,
 				A45DBAD61D6ADF8D00B4AC2A /* UIView_extra.h */,
@@ -1377,9 +1379,11 @@
 				A42BDCE11D7523F2006508C2 /* ThemesListResponseModel.m in Sources */,
 				3B77A7701D6D9D6300F5C696 /* ReadDetailViewController.m in Sources */,
 				3B780F421D6BF79E006AF895 /* JSONModelError.m in Sources */,
+				3BBE0D851D758ABE00AE2C1A /* HistoryDetailViewController.m in Sources */,
 				A42BDCD61D7523F2006508C2 /* HTTPManager.m in Sources */,
 				A42BDCED1D7523F2006508C2 /* ThemeEditorTableHeaderView.m in Sources */,
 				3B780F441D6BF79E006AF895 /* JSONAPI.m in Sources */,
+				A42BDD021D75607D006508C2 /* LeftMenuTableViewCell.m in Sources */,
 				A42BDCE71D7523F2006508C2 /* ThemeDailyViewController.m in Sources */,
 				3B77A76A1D6D676D00F5C696 /* ReadListModel.m in Sources */,
 				A42BDCDA1D7523F2006508C2 /* LatestNewsResponseModel.m in Sources */,
@@ -1418,8 +1422,8 @@
 				3B780F481D6BF79E006AF895 /* JSONValueTransformer.m in Sources */,
 				3B780F4D1D6BF79E006AF895 /* WZLocationTool.m in Sources */,
 				A42BDCD91D7523F2006508C2 /* DetailNewsResponseModel.m in Sources */,
+				A42BDD101D75877D006508C2 /* HistoyrTodayViewController.m in Sources */,
 				A42BDCD21D7523F2006508C2 /* HomeTopNewsCircularView.m in Sources */,
-				3BBE0D7C1D75644500AE2C1A /* HistoyrTodayViewController.m in Sources */,
 				3B888B8E1D702378007A829F /* SearchResultTableVC.m in Sources */,
 				3B780F431D6BF79E006AF895 /* NSArray+JSONModel.m in Sources */,
 				A42BDCF51D7523F2006508C2 /* PushAnimator.m in Sources */,
@@ -1439,7 +1443,6 @@
 				A45DBB421D6ADF8E00B4AC2A /* AppDelegate.m in Sources */,
 				3B780F4E1D6BF79E006AF895 /* WZWeatherTool.m in Sources */,
 				A42BDCE31D7523F2006508C2 /* NewsDetailViewController.m in Sources */,
-				A45DBB601D6ADF8E00B4AC2A /* ViewController.m in Sources */,
 				A42BDCDF1D7523F2006508C2 /* ThemeDetailResponseModel.m in Sources */,
 				A45DBB771D6AE00100B4AC2A /* MusicViewController.m in Sources */,
 				A42BDCEF1D7523F2006508C2 /* BaseViewController.m in Sources */,
@@ -1447,7 +1450,7 @@
 				3B780F531D6BF79E006AF895 /* WZHeaderTableViewCell.m in Sources */,
 				A42BDCF81D7523F2006508C2 /* NSObject+DeallocBlock.m in Sources */,
 				A45DBB701D6ADF8E00B4AC2A /* ZYTabBar.m in Sources */,
-				3BBE0D791D75644500AE2C1A /* DateView.m in Sources */,
+				A42BDD0D1D75877D006508C2 /* DateView.m in Sources */,
 				3B780F3B1D6BF79E006AF895 /* WZIndex.m in Sources */,
 				A42BDCD31D7523F2006508C2 /* NavBarView.m in Sources */,
 				3B780F591D6BF79E006AF895 /* WZTitleTableViewCell.m in Sources */,
@@ -1457,7 +1460,7 @@
 				3B780F411D6BF79E006AF895 /* JSONModelClassProperty.m in Sources */,
 				A42BDCF71D7523F2006508C2 /* DeallocBlockExecutor.m in Sources */,
 				3B780F401D6BF79E006AF895 /* JSONModelArray.m in Sources */,
-				3BBE0D7A1D75644500AE2C1A /* HistoryTodayModel.m in Sources */,
+				A42BDD0E1D75877D006508C2 /* HistoryTodayModel.m in Sources */,
 				A45DBB471D6ADF8E00B4AC2A /* LeftSlideViewController.m in Sources */,
 				3B780F471D6BF79E006AF895 /* JSONKeyMapper.m in Sources */,
 				A42BDCD51D7523F2006508C2 /* HTTPClient.m in Sources */,
@@ -1465,7 +1468,7 @@
 				3B780F461D6BF79E006AF895 /* JSONModel+networking.m in Sources */,
 				A42BDCF61D7523F2006508C2 /* WeakTarget.m in Sources */,
 				3B780F551D6BF79E006AF895 /* WZIndexItemTableViewCell.m in Sources */,
-				3BBE0D7B1D75644500AE2C1A /* HistoryTodayTableViewCell.m in Sources */,
+				A42BDD0F1D75877D006508C2 /* HistoryTodayTableViewCell.m in Sources */,
 				A42BDCE51D7523F2006508C2 /* DetailNewsHeaderView.m in Sources */,
 				A45DBB5F1D6ADF8E00B4AC2A /* UIView+LBExtension.m in Sources */,
 				A42BDCF31D7523F2006508C2 /* UIView+Additions.m in Sources */,
@@ -1630,7 +1633,7 @@
 					"$(PROJECT_DIR)/BesTools/Main/Location",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = /Users/jr/Desktop/8.30/BesTools/Main/Location/appDefine.pch;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/BesTools/BesTools-PrefixHeader.pch";
 				INFOPLIST_FILE = BesTools/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.jj.GDMapPoiDem;
@@ -1651,7 +1654,7 @@
 					"$(PROJECT_DIR)/BesTools/Main/Location",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = /Users/jr/Desktop/8.30/BesTools/Main/Location/appDefine.pch;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/BesTools/BesTools-PrefixHeader.pch";
 				INFOPLIST_FILE = BesTools/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.jj.GDMapPoiDem;

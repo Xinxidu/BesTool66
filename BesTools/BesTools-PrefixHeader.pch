@@ -1,13 +1,14 @@
 //
-//  appDefine.pch
-//  GDMapPoiDemo
+//  BesTools-PrefixHeader.pch
+//  BesTools
 //
-//  Created by Mr.JJ on 16/7/29.
-//  Copyright © 2016年 Mr.JJ. All rights reserved.
+//  Created by Aaron Lee on 16/8/30.
+//  Copyright © 2016年 Aaron Lee. All rights reserved.
 //
 
-#ifndef appDefine_pch
-#define appDefine_pch
+#ifndef BesTools_PrefixHeader_pch
+#define BesTools_PrefixHeader_pch
+
 #import <UIKit/UIKit.h>
 #import <CocoaLumberjack/DDLog.h>
 
@@ -30,4 +31,5 @@ static const DDLogLevel ddLogLevel = DDLogLevelDebug;
 static const DDLogLevel ddLogLevel = DDLogLevelError;
 #endif
 
-#endif /* appDefine_pch */
+
+#endif /* BesTools_PrefixHeader_pch */
