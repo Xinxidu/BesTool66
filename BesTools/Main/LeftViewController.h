@@ -7,7 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
-
-@interface LeftViewController : UIViewController
+#import "BaseViewController.h"
+@class HomePageViewController;
+@class SideMenuViewController;
+@interface LeftViewController : BaseViewController
 @property (strong,nonatomic) UITableView *tableview;
+@property (nonatomic, weak) HomePageViewController *homePageViewController;
+@property (nonatomic, weak) SideMenuViewController *sideMenuController;
 @end

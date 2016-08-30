@@ -110,7 +110,6 @@
     [menuButton addTarget:self action:@selector(openOrCloseLeftList) forControlEvents:UIControlEventTouchUpInside];
     Vc.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc]initWithCustomView:menuButton];
     [self addChildViewController:nav];
-    
 }
 //- (UIColor *)randomColor
 //{

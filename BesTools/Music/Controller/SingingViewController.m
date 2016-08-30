@@ -8,7 +8,7 @@
 
 #import "SingingViewController.h"
 #import "UIImageView+WebCache.h"
-#import "ViewController.h"
+//#import "ViewController.h"
 #define WIDTH [UIScreen mainScreen].bounds.size.width
 #define HEIGHT [UIScreen mainScreen].bounds.size.height
 @interface SingingViewController ()<UITableViewDelegate,UITableViewDataSource,AVAudioPlayerDelegate>

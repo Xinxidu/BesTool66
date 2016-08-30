@@ -23,7 +23,7 @@
 #import "ThemeDailyViewController.h"
 //#import "ThemeManager.h"
 //#import "SkinStyle.h"
-
+#import "AppDelegate.h"
 #define NAVBAR_CHANGE_POINT 50
 #define TABLE_HEADER_VIEW_HEIGHT 34
 #define TABLE_VIEW_CELL_HEIGHT 82
@@ -169,7 +169,14 @@ SYNTHESIZE_SINGLETON_FOR_CLASS(HomePageViewController)
 #pragma mark - Controller Transition
 
 - (void)menuButtonClicked:(UIButton *)button{
-    [self.sideMenuController showMenuViewController];
+    //[self.sideMenuController showMenuViewController];
+    AppDelegate *tempAppDelegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
+    if (tempAppDelegate.LeftSlideVC.closed) {
+        [tempAppDelegate.LeftSlideVC openLeftView];
+    }else{
+        [tempAppDelegate.LeftSlideVC closeLeftView];
+    }
+    
 }
 
 - (void)transitionToDetailNewsVC:(NSInteger)storyID section:(NSInteger)section{

@@ -14,7 +14,7 @@
 #import "SearchResultTableVC.h"
 #import "Reachability.h"
 #import "MBProgressHUD.h"
-#import "appDefine.pch"
+
 
 #define CELL_HEIGHT                     55.f
 #define CELL_COUNT                      5

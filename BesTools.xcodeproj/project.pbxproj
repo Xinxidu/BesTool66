@@ -105,6 +105,7 @@
 		A42BDCFA1D7523F2006508C2 /* CircularCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A42BDCCB1D7523F2006508C2 /* CircularCollectionViewCell.m */; };
 		A42BDCFB1D7523F2006508C2 /* CircularView.m in Sources */ = {isa = PBXBuildFile; fileRef = A42BDCCD1D7523F2006508C2 /* CircularView.m */; };
 		A42BDCFE1D752A5B006508C2 /* UIView+Theme.m in Sources */ = {isa = PBXBuildFile; fileRef = A42BDCFD1D752A5B006508C2 /* UIView+Theme.m */; };
+		A42BDD021D75607D006508C2 /* LeftMenuTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A42BDD011D75607D006508C2 /* LeftMenuTableViewCell.m */; };
 		A45DBB401D6ADF8E00B4AC2A /* leftbackiamge.png in Resources */ = {isa = PBXBuildFile; fileRef = A45DBAC51D6ADF8D00B4AC2A /* leftbackiamge.png */; };
 		A45DBB411D6ADF8E00B4AC2A /* menu@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A45DBAC61D6ADF8D00B4AC2A /* menu@2x.png */; };
 		A45DBB421D6ADF8E00B4AC2A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A45DBAC91D6ADF8D00B4AC2A /* AppDelegate.m */; };
@@ -113,7 +114,6 @@
 		A45DBB491D6ADF8E00B4AC2A /* LeftViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A45DBAD91D6ADF8D00B4AC2A /* LeftViewController.m */; };
 		A45DBB4E1D6ADF8E00B4AC2A /* OtherViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A45DBAE41D6ADF8D00B4AC2A /* OtherViewController.m */; };
 		A45DBB5F1D6ADF8E00B4AC2A /* UIView+LBExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = A45DBB121D6ADF8E00B4AC2A /* UIView+LBExtension.m */; };
-		A45DBB601D6ADF8E00B4AC2A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A45DBB141D6ADF8E00B4AC2A /* ViewController.m */; };
 		A45DBB6D1D6ADF8E00B4AC2A /* ZYNewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A45DBB2A1D6ADF8E00B4AC2A /* ZYNewViewController.m */; };
 		A45DBB6E1D6ADF8E00B4AC2A /* ZYPathButton.m in Sources */ = {isa = PBXBuildFile; fileRef = A45DBB2C1D6ADF8E00B4AC2A /* ZYPathButton.m */; };
 		A45DBB6F1D6ADF8E00B4AC2A /* ZYPathItemButton.m in Sources */ = {isa = PBXBuildFile; fileRef = A45DBB2E1D6ADF8E00B4AC2A /* ZYPathItemButton.m */; };
@@ -228,7 +228,6 @@
 		3B7DB8F51D6EC0CE004BC09C /* BaseTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseTableView.h; sourceTree = "<group>"; };
 		3B7DB8F61D6EC0CE004BC09C /* BaseTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseTableView.m; sourceTree = "<group>"; };
 		3B888B801D702337007A829F /* APIKey.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = APIKey.h; path = Main/Location/APIKey.h; sourceTree = "<group>"; };
-		3B888B811D702337007A829F /* appDefine.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = appDefine.pch; path = Main/Location/appDefine.pch; sourceTree = "<group>"; };
 		3B888B821D702378007A829F /* LocationDetailVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocationDetailVC.h; sourceTree = "<group>"; };
 		3B888B831D702378007A829F /* LocationDetailVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocationDetailVC.m; sourceTree = "<group>"; };
 		3B888B841D702378007A829F /* MapPoiTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapPoiTableView.h; sourceTree = "<group>"; };
@@ -351,6 +350,9 @@
 		A42BDCCD1D7523F2006508C2 /* CircularView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CircularView.m; sourceTree = "<group>"; };
 		A42BDCFC1D752A5B006508C2 /* UIView+Theme.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Theme.h"; sourceTree = "<group>"; };
 		A42BDCFD1D752A5B006508C2 /* UIView+Theme.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Theme.m"; sourceTree = "<group>"; };
+		A42BDD001D75607D006508C2 /* LeftMenuTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeftMenuTableViewCell.h; sourceTree = "<group>"; };
+		A42BDD011D75607D006508C2 /* LeftMenuTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LeftMenuTableViewCell.m; sourceTree = "<group>"; };
+		A42BDD031D758496006508C2 /* BesTools-PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BesTools-PrefixHeader.pch"; sourceTree = "<group>"; };
 		A45DBAC51D6ADF8D00B4AC2A /* leftbackiamge.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = leftbackiamge.png; sourceTree = "<group>"; };
 		A45DBAC61D6ADF8D00B4AC2A /* menu@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "menu@2x.png"; sourceTree = "<group>"; };
 		A45DBAC81D6ADF8D00B4AC2A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -365,8 +367,6 @@
 		A45DBAE41D6ADF8D00B4AC2A /* OtherViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OtherViewController.m; sourceTree = "<group>"; };
 		A45DBB111D6ADF8E00B4AC2A /* UIView+LBExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+LBExtension.h"; sourceTree = "<group>"; };
 		A45DBB121D6ADF8E00B4AC2A /* UIView+LBExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+LBExtension.m"; sourceTree = "<group>"; };
-		A45DBB131D6ADF8E00B4AC2A /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		A45DBB141D6ADF8E00B4AC2A /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		A45DBB291D6ADF8E00B4AC2A /* ZYNewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYNewViewController.h; sourceTree = "<group>"; };
 		A45DBB2A1D6ADF8E00B4AC2A /* ZYNewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZYNewViewController.m; sourceTree = "<group>"; };
 		A45DBB2B1D6ADF8E00B4AC2A /* ZYPathButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYPathButton.h; sourceTree = "<group>"; };
@@ -681,7 +681,6 @@
 				A424D6F31D65556800A6AE2A /* LaunchScreen.storyboard */,
 				A424D6F61D65556800A6AE2A /* Info.plist */,
 				3B888B801D702337007A829F /* APIKey.h */,
-				3B888B811D702337007A829F /* appDefine.pch */,
 				A424D6E51D65556800A6AE2A /* Supporting Files */,
 			);
 			path = BesTools;
@@ -691,6 +690,7 @@
 			isa = PBXGroup;
 			children = (
 				A424D6E61D65556800A6AE2A /* main.m */,
+				A42BDD031D758496006508C2 /* BesTools-PrefixHeader.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -1007,8 +1007,6 @@
 				A45DBAE41D6ADF8D00B4AC2A /* OtherViewController.m */,
 				A45DBB111D6ADF8E00B4AC2A /* UIView+LBExtension.h */,
 				A45DBB121D6ADF8E00B4AC2A /* UIView+LBExtension.m */,
-				A45DBB131D6ADF8E00B4AC2A /* ViewController.h */,
-				A45DBB141D6ADF8E00B4AC2A /* ViewController.m */,
 				A45DBB291D6ADF8E00B4AC2A /* ZYNewViewController.h */,
 				A45DBB2A1D6ADF8E00B4AC2A /* ZYNewViewController.m */,
 				A45DBB2B1D6ADF8E00B4AC2A /* ZYPathButton.h */,
@@ -1026,6 +1024,8 @@
 		A45DBAD31D6ADF8D00B4AC2A /* LeftSlideViewController */ = {
 			isa = PBXGroup;
 			children = (
+				A42BDD001D75607D006508C2 /* LeftMenuTableViewCell.h */,
+				A42BDD011D75607D006508C2 /* LeftMenuTableViewCell.m */,
 				A45DBAD41D6ADF8D00B4AC2A /* LeftSlideViewController.h */,
 				A45DBAD51D6ADF8D00B4AC2A /* LeftSlideViewController.m */,
 				A45DBAD61D6ADF8D00B4AC2A /* UIView_extra.h */,
@@ -1347,6 +1347,7 @@
 				A42BDCD61D7523F2006508C2 /* HTTPManager.m in Sources */,
 				A42BDCED1D7523F2006508C2 /* ThemeEditorTableHeaderView.m in Sources */,
 				3B780F441D6BF79E006AF895 /* JSONAPI.m in Sources */,
+				A42BDD021D75607D006508C2 /* LeftMenuTableViewCell.m in Sources */,
 				A42BDCE71D7523F2006508C2 /* ThemeDailyViewController.m in Sources */,
 				3B77A76A1D6D676D00F5C696 /* ReadListModel.m in Sources */,
 				A42BDCDA1D7523F2006508C2 /* LatestNewsResponseModel.m in Sources */,
@@ -1404,7 +1405,6 @@
 				A45DBB421D6ADF8E00B4AC2A /* AppDelegate.m in Sources */,
 				3B780F4E1D6BF79E006AF895 /* WZWeatherTool.m in Sources */,
 				A42BDCE31D7523F2006508C2 /* NewsDetailViewController.m in Sources */,
-				A45DBB601D6ADF8E00B4AC2A /* ViewController.m in Sources */,
 				A42BDCDF1D7523F2006508C2 /* ThemeDetailResponseModel.m in Sources */,
 				A45DBB771D6AE00100B4AC2A /* MusicViewController.m in Sources */,
 				A42BDCEF1D7523F2006508C2 /* BaseViewController.m in Sources */,
@@ -1592,7 +1592,7 @@
 					"$(PROJECT_DIR)/BesTools/Main/Location",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = /Users/aaronlee/Desktop/BesTool/BesTools/Main/Location/appDefine.pch;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/BesTools/BesTools-PrefixHeader.pch";
 				INFOPLIST_FILE = BesTools/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.jj.GDMapPoiDem;
@@ -1613,7 +1613,7 @@
 					"$(PROJECT_DIR)/BesTools/Main/Location",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = /Users/aaronlee/Desktop/BesTool/BesTools/Main/Location/appDefine.pch;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/BesTools/BesTools-PrefixHeader.pch";
 				INFOPLIST_FILE = BesTools/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.jj.GDMapPoiDem;

@@ -131,6 +131,7 @@
 }
 
 - (void)reloadData{
+    NSLog(@"666");
     [self initData];
 }
 

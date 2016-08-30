@@ -8,7 +8,7 @@
 
 #import "LocationDetailVC.h"
 #import <MAMapKit/MAMapKit.h>
-#import "appDefine.pch"
+
 
 #define LABEL_HEIGHT                    80
 
