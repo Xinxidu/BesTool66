@@ -40,7 +40,7 @@
     
     _titleLabel.lineBreakMode = NSLineBreakByWordWrapping;
     _titleLabel.numberOfLines = 0;
-    _titleLabel.backgroundColor = [UIColor colorWithRed:241/255.0 green:241/255.0 blue:241/255.0 alpha:1.0];;
+//    _titleLabel.backgroundColor = [UIColor colorWithRed:241/255.0 green:241/255.0 blue:241/255.0 alpha:1.0];;
     [self.contentView addSubview:_titleLabel];
 }
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {

@@ -52,6 +52,8 @@
 		3B888B8C1D702378007A829F /* MapPoiTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B888B851D702378007A829F /* MapPoiTableView.m */; };
 		3B888B8E1D702378007A829F /* SearchResultTableVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B888B8A1D702378007A829F /* SearchResultTableVC.m */; };
 		3B888BB01D703323007A829F /* LocationMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B888BAF1D703323007A829F /* LocationMainViewController.m */; };
+		3BBE0D7F1D7566FE00AE2C1A /* HistoryDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BBE0D7E1D7566FE00AE2C1A /* HistoryDetailViewController.m */; };
+		3BBE0D851D758ABE00AE2C1A /* HistoryDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BBE0D841D758ABE00AE2C1A /* HistoryDetailViewController.m */; };
 		A424D6E71D65556800A6AE2A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A424D6E61D65556800A6AE2A /* main.m */; };
 		A424D6F01D65556800A6AE2A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A424D6EE1D65556800A6AE2A /* Main.storyboard */; };
 		A424D6F21D65556800A6AE2A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A424D6F11D65556800A6AE2A /* Assets.xcassets */; };
@@ -248,6 +250,9 @@
 		3B888BA31D702858007A829F /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		3B888BAE1D703323007A829F /* LocationMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LocationMainViewController.h; path = UISearchController/LocationMainViewController.h; sourceTree = "<group>"; };
 		3B888BAF1D703323007A829F /* LocationMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LocationMainViewController.m; path = UISearchController/LocationMainViewController.m; sourceTree = "<group>"; };
+		3BBE0D7E1D7566FE00AE2C1A /* HistoryDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HistoryDetailViewController.m; sourceTree = "<group>"; };
+		3BBE0D831D758ABE00AE2C1A /* HistoryDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HistoryDetailViewController.h; sourceTree = "<group>"; };
+		3BBE0D841D758ABE00AE2C1A /* HistoryDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HistoryDetailViewController.m; sourceTree = "<group>"; };
 		A026D0734E41569235C5EE47 /* libPods-BesTools.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BesTools.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A424D6E21D65556800A6AE2A /* BesTools.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BesTools.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A424D6E61D65556800A6AE2A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -984,6 +989,8 @@
 		A42BDD041D75877D006508C2 /* HistoryToday */ = {
 			isa = PBXGroup;
 			children = (
+				3BBE0D831D758ABE00AE2C1A /* HistoryDetailViewController.h */,
+				3BBE0D841D758ABE00AE2C1A /* HistoryDetailViewController.m */,
 				A42BDD051D75877D006508C2 /* DateView.h */,
 				A42BDD061D75877D006508C2 /* DateView.m */,
 				A42BDD071D75877D006508C2 /* HistoryTodayModel.h */,
@@ -1372,6 +1379,7 @@
 				A42BDCE11D7523F2006508C2 /* ThemesListResponseModel.m in Sources */,
 				3B77A7701D6D9D6300F5C696 /* ReadDetailViewController.m in Sources */,
 				3B780F421D6BF79E006AF895 /* JSONModelError.m in Sources */,
+				3BBE0D851D758ABE00AE2C1A /* HistoryDetailViewController.m in Sources */,
 				A42BDCD61D7523F2006508C2 /* HTTPManager.m in Sources */,
 				A42BDCED1D7523F2006508C2 /* ThemeEditorTableHeaderView.m in Sources */,
 				3B780F441D6BF79E006AF895 /* JSONAPI.m in Sources */,
@@ -1383,6 +1391,7 @@
 				A42BDCF21D7523F2006508C2 /* UINavigationBar+BackgroundColor.m in Sources */,
 				A45DBB6F1D6ADF8E00B4AC2A /* ZYPathItemButton.m in Sources */,
 				3B780F451D6BF79E006AF895 /* JSONHTTPClient.m in Sources */,
+				3BBE0D7F1D7566FE00AE2C1A /* HistoryDetailViewController.m in Sources */,
 				A45DBB491D6ADF8E00B4AC2A /* LeftViewController.m in Sources */,
 				A42BDCDE1D7523F2006508C2 /* SingleThemeResponseModel.m in Sources */,
 				A42BDCFA1D7523F2006508C2 /* CircularCollectionViewCell.m in Sources */,
