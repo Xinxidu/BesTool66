@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3B6C8E481D76671A002DEF8D /* DateView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B6C8E3F1D76671A002DEF8D /* DateView.m */; };
+		3B6C8E491D76671A002DEF8D /* HistoryDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B6C8E411D76671A002DEF8D /* HistoryDetailViewController.m */; };
+		3B6C8E4A1D76671A002DEF8D /* HistoryTodayModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B6C8E431D76671A002DEF8D /* HistoryTodayModel.m */; };
+		3B6C8E4B1D76671A002DEF8D /* HistoryTodayTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B6C8E451D76671A002DEF8D /* HistoryTodayTableViewCell.m */; };
+		3B6C8E4C1D76671A002DEF8D /* HistoyrTodayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B6C8E471D76671A002DEF8D /* HistoyrTodayViewController.m */; };
 		3B77A7671D6D674100F5C696 /* ReadTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B77A7661D6D674100F5C696 /* ReadTableViewCell.m */; };
 		3B77A76A1D6D676D00F5C696 /* ReadListModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B77A7691D6D676D00F5C696 /* ReadListModel.m */; };
 		3B77A7701D6D9D6300F5C696 /* ReadDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B77A76F1D6D9D6300F5C696 /* ReadDetailViewController.m */; };
@@ -52,8 +57,6 @@
 		3B888B8C1D702378007A829F /* MapPoiTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B888B851D702378007A829F /* MapPoiTableView.m */; };
 		3B888B8E1D702378007A829F /* SearchResultTableVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B888B8A1D702378007A829F /* SearchResultTableVC.m */; };
 		3B888BB01D703323007A829F /* LocationMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B888BAF1D703323007A829F /* LocationMainViewController.m */; };
-		3BBE0D7F1D7566FE00AE2C1A /* HistoryDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BBE0D7E1D7566FE00AE2C1A /* HistoryDetailViewController.m */; };
-		3BBE0D851D758ABE00AE2C1A /* HistoryDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BBE0D841D758ABE00AE2C1A /* HistoryDetailViewController.m */; };
 		A424D6E71D65556800A6AE2A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A424D6E61D65556800A6AE2A /* main.m */; };
 		A424D6F01D65556800A6AE2A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A424D6EE1D65556800A6AE2A /* Main.storyboard */; };
 		A424D6F21D65556800A6AE2A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A424D6F11D65556800A6AE2A /* Assets.xcassets */; };
@@ -108,10 +111,6 @@
 		A42BDCFB1D7523F2006508C2 /* CircularView.m in Sources */ = {isa = PBXBuildFile; fileRef = A42BDCCD1D7523F2006508C2 /* CircularView.m */; };
 		A42BDCFE1D752A5B006508C2 /* UIView+Theme.m in Sources */ = {isa = PBXBuildFile; fileRef = A42BDCFD1D752A5B006508C2 /* UIView+Theme.m */; };
 		A42BDD021D75607D006508C2 /* LeftMenuTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A42BDD011D75607D006508C2 /* LeftMenuTableViewCell.m */; };
-		A42BDD0D1D75877D006508C2 /* DateView.m in Sources */ = {isa = PBXBuildFile; fileRef = A42BDD061D75877D006508C2 /* DateView.m */; };
-		A42BDD0E1D75877D006508C2 /* HistoryTodayModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A42BDD081D75877D006508C2 /* HistoryTodayModel.m */; };
-		A42BDD0F1D75877D006508C2 /* HistoryTodayTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A42BDD0A1D75877D006508C2 /* HistoryTodayTableViewCell.m */; };
-		A42BDD101D75877D006508C2 /* HistoyrTodayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A42BDD0C1D75877D006508C2 /* HistoyrTodayViewController.m */; };
 		A45DBB401D6ADF8E00B4AC2A /* leftbackiamge.png in Resources */ = {isa = PBXBuildFile; fileRef = A45DBAC51D6ADF8D00B4AC2A /* leftbackiamge.png */; };
 		A45DBB411D6ADF8E00B4AC2A /* menu@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A45DBAC61D6ADF8D00B4AC2A /* menu@2x.png */; };
 		A45DBB421D6ADF8E00B4AC2A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A45DBAC91D6ADF8D00B4AC2A /* AppDelegate.m */; };
@@ -156,6 +155,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3B6C8E3E1D76671A002DEF8D /* DateView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DateView.h; sourceTree = "<group>"; };
+		3B6C8E3F1D76671A002DEF8D /* DateView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DateView.m; sourceTree = "<group>"; };
+		3B6C8E401D76671A002DEF8D /* HistoryDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HistoryDetailViewController.h; sourceTree = "<group>"; };
+		3B6C8E411D76671A002DEF8D /* HistoryDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HistoryDetailViewController.m; sourceTree = "<group>"; };
+		3B6C8E421D76671A002DEF8D /* HistoryTodayModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HistoryTodayModel.h; sourceTree = "<group>"; };
+		3B6C8E431D76671A002DEF8D /* HistoryTodayModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HistoryTodayModel.m; sourceTree = "<group>"; };
+		3B6C8E441D76671A002DEF8D /* HistoryTodayTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HistoryTodayTableViewCell.h; sourceTree = "<group>"; };
+		3B6C8E451D76671A002DEF8D /* HistoryTodayTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HistoryTodayTableViewCell.m; sourceTree = "<group>"; };
+		3B6C8E461D76671A002DEF8D /* HistoyrTodayViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HistoyrTodayViewController.h; sourceTree = "<group>"; };
+		3B6C8E471D76671A002DEF8D /* HistoyrTodayViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HistoyrTodayViewController.m; sourceTree = "<group>"; };
 		3B77A7651D6D674100F5C696 /* ReadTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReadTableViewCell.h; sourceTree = "<group>"; };
 		3B77A7661D6D674100F5C696 /* ReadTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReadTableViewCell.m; sourceTree = "<group>"; };
 		3B77A7681D6D676D00F5C696 /* ReadListModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReadListModel.h; sourceTree = "<group>"; };
@@ -250,9 +259,6 @@
 		3B888BA31D702858007A829F /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		3B888BAE1D703323007A829F /* LocationMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LocationMainViewController.h; path = UISearchController/LocationMainViewController.h; sourceTree = "<group>"; };
 		3B888BAF1D703323007A829F /* LocationMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LocationMainViewController.m; path = UISearchController/LocationMainViewController.m; sourceTree = "<group>"; };
-		3BBE0D7E1D7566FE00AE2C1A /* HistoryDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HistoryDetailViewController.m; sourceTree = "<group>"; };
-		3BBE0D831D758ABE00AE2C1A /* HistoryDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HistoryDetailViewController.h; sourceTree = "<group>"; };
-		3BBE0D841D758ABE00AE2C1A /* HistoryDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HistoryDetailViewController.m; sourceTree = "<group>"; };
 		A026D0734E41569235C5EE47 /* libPods-BesTools.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BesTools.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A424D6E21D65556800A6AE2A /* BesTools.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BesTools.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A424D6E61D65556800A6AE2A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -362,14 +368,6 @@
 		A42BDD001D75607D006508C2 /* LeftMenuTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeftMenuTableViewCell.h; sourceTree = "<group>"; };
 		A42BDD011D75607D006508C2 /* LeftMenuTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LeftMenuTableViewCell.m; sourceTree = "<group>"; };
 		A42BDD031D758496006508C2 /* BesTools-PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BesTools-PrefixHeader.pch"; sourceTree = "<group>"; };
-		A42BDD051D75877D006508C2 /* DateView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DateView.h; sourceTree = "<group>"; };
-		A42BDD061D75877D006508C2 /* DateView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DateView.m; sourceTree = "<group>"; };
-		A42BDD071D75877D006508C2 /* HistoryTodayModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HistoryTodayModel.h; sourceTree = "<group>"; };
-		A42BDD081D75877D006508C2 /* HistoryTodayModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HistoryTodayModel.m; sourceTree = "<group>"; };
-		A42BDD091D75877D006508C2 /* HistoryTodayTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HistoryTodayTableViewCell.h; sourceTree = "<group>"; };
-		A42BDD0A1D75877D006508C2 /* HistoryTodayTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HistoryTodayTableViewCell.m; sourceTree = "<group>"; };
-		A42BDD0B1D75877D006508C2 /* HistoyrTodayViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HistoyrTodayViewController.h; sourceTree = "<group>"; };
-		A42BDD0C1D75877D006508C2 /* HistoyrTodayViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HistoyrTodayViewController.m; sourceTree = "<group>"; };
 		A45DBAC51D6ADF8D00B4AC2A /* leftbackiamge.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = leftbackiamge.png; sourceTree = "<group>"; };
 		A45DBAC61D6ADF8D00B4AC2A /* menu@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "menu@2x.png"; sourceTree = "<group>"; };
 		A45DBAC81D6ADF8D00B4AC2A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -989,16 +987,16 @@
 		A42BDD041D75877D006508C2 /* HistoryToday */ = {
 			isa = PBXGroup;
 			children = (
-				3BBE0D831D758ABE00AE2C1A /* HistoryDetailViewController.h */,
-				3BBE0D841D758ABE00AE2C1A /* HistoryDetailViewController.m */,
-				A42BDD051D75877D006508C2 /* DateView.h */,
-				A42BDD061D75877D006508C2 /* DateView.m */,
-				A42BDD071D75877D006508C2 /* HistoryTodayModel.h */,
-				A42BDD081D75877D006508C2 /* HistoryTodayModel.m */,
-				A42BDD091D75877D006508C2 /* HistoryTodayTableViewCell.h */,
-				A42BDD0A1D75877D006508C2 /* HistoryTodayTableViewCell.m */,
-				A42BDD0B1D75877D006508C2 /* HistoyrTodayViewController.h */,
-				A42BDD0C1D75877D006508C2 /* HistoyrTodayViewController.m */,
+				3B6C8E3E1D76671A002DEF8D /* DateView.h */,
+				3B6C8E3F1D76671A002DEF8D /* DateView.m */,
+				3B6C8E401D76671A002DEF8D /* HistoryDetailViewController.h */,
+				3B6C8E411D76671A002DEF8D /* HistoryDetailViewController.m */,
+				3B6C8E421D76671A002DEF8D /* HistoryTodayModel.h */,
+				3B6C8E431D76671A002DEF8D /* HistoryTodayModel.m */,
+				3B6C8E441D76671A002DEF8D /* HistoryTodayTableViewCell.h */,
+				3B6C8E451D76671A002DEF8D /* HistoryTodayTableViewCell.m */,
+				3B6C8E461D76671A002DEF8D /* HistoyrTodayViewController.h */,
+				3B6C8E471D76671A002DEF8D /* HistoyrTodayViewController.m */,
 			);
 			path = HistoryToday;
 			sourceTree = "<group>";
@@ -1379,7 +1377,6 @@
 				A42BDCE11D7523F2006508C2 /* ThemesListResponseModel.m in Sources */,
 				3B77A7701D6D9D6300F5C696 /* ReadDetailViewController.m in Sources */,
 				3B780F421D6BF79E006AF895 /* JSONModelError.m in Sources */,
-				3BBE0D851D758ABE00AE2C1A /* HistoryDetailViewController.m in Sources */,
 				A42BDCD61D7523F2006508C2 /* HTTPManager.m in Sources */,
 				A42BDCED1D7523F2006508C2 /* ThemeEditorTableHeaderView.m in Sources */,
 				3B780F441D6BF79E006AF895 /* JSONAPI.m in Sources */,
@@ -1389,9 +1386,9 @@
 				A42BDCDA1D7523F2006508C2 /* LatestNewsResponseModel.m in Sources */,
 				A42BDCE81D7523F2006508C2 /* ThemeDetailViewController.m in Sources */,
 				A42BDCF21D7523F2006508C2 /* UINavigationBar+BackgroundColor.m in Sources */,
+				3B6C8E4C1D76671A002DEF8D /* HistoyrTodayViewController.m in Sources */,
 				A45DBB6F1D6ADF8E00B4AC2A /* ZYPathItemButton.m in Sources */,
 				3B780F451D6BF79E006AF895 /* JSONHTTPClient.m in Sources */,
-				3BBE0D7F1D7566FE00AE2C1A /* HistoryDetailViewController.m in Sources */,
 				A45DBB491D6ADF8E00B4AC2A /* LeftViewController.m in Sources */,
 				A42BDCDE1D7523F2006508C2 /* SingleThemeResponseModel.m in Sources */,
 				A42BDCFA1D7523F2006508C2 /* CircularCollectionViewCell.m in Sources */,
@@ -1406,6 +1403,7 @@
 				3B780F3C1D6BF79E006AF895 /* WZResults.m in Sources */,
 				A45DBB6D1D6ADF8E00B4AC2A /* ZYNewViewController.m in Sources */,
 				A499364D1D6AF0D0003C8A04 /* SingingViewController.m in Sources */,
+				3B6C8E4A1D76671A002DEF8D /* HistoryTodayModel.m in Sources */,
 				A49936551D6AF0E3003C8A04 /* MusicModel.m in Sources */,
 				A45DBB4E1D6ADF8E00B4AC2A /* OtherViewController.m in Sources */,
 				3B888B8C1D702378007A829F /* MapPoiTableView.m in Sources */,
@@ -1414,6 +1412,7 @@
 				A42BDCF01D7523F2006508C2 /* SideMenuViewController.m in Sources */,
 				3B780F3F1D6BF79E006AF895 /* JSONModel.m in Sources */,
 				A45DBB6E1D6ADF8E00B4AC2A /* ZYPathButton.m in Sources */,
+				3B6C8E481D76671A002DEF8D /* DateView.m in Sources */,
 				3B780F3E1D6BF79E006AF895 /* WZWeatherData.m in Sources */,
 				A45DBB731D6ADF8E00B4AC2A /* ReadViewController.m in Sources */,
 				A42BDCE21D7523F2006508C2 /* TopNewsResponseModel.m in Sources */,
@@ -1422,7 +1421,6 @@
 				3B780F481D6BF79E006AF895 /* JSONValueTransformer.m in Sources */,
 				3B780F4D1D6BF79E006AF895 /* WZLocationTool.m in Sources */,
 				A42BDCD91D7523F2006508C2 /* DetailNewsResponseModel.m in Sources */,
-				A42BDD101D75877D006508C2 /* HistoyrTodayViewController.m in Sources */,
 				A42BDCD21D7523F2006508C2 /* HomeTopNewsCircularView.m in Sources */,
 				3B888B8E1D702378007A829F /* SearchResultTableVC.m in Sources */,
 				3B780F431D6BF79E006AF895 /* NSArray+JSONModel.m in Sources */,
@@ -1440,6 +1438,7 @@
 				3B7DB8F71D6EC0CE004BC09C /* BaseTableView.m in Sources */,
 				3B780F4F1D6BF79E006AF895 /* WZForecastItemTableViewCell.m in Sources */,
 				A42BDCEC1D7523F2006508C2 /* ThemeDailyView.m in Sources */,
+				3B6C8E4B1D76671A002DEF8D /* HistoryTodayTableViewCell.m in Sources */,
 				A45DBB421D6ADF8E00B4AC2A /* AppDelegate.m in Sources */,
 				3B780F4E1D6BF79E006AF895 /* WZWeatherTool.m in Sources */,
 				A42BDCE31D7523F2006508C2 /* NewsDetailViewController.m in Sources */,
@@ -1450,7 +1449,6 @@
 				3B780F531D6BF79E006AF895 /* WZHeaderTableViewCell.m in Sources */,
 				A42BDCF81D7523F2006508C2 /* NSObject+DeallocBlock.m in Sources */,
 				A45DBB701D6ADF8E00B4AC2A /* ZYTabBar.m in Sources */,
-				A42BDD0D1D75877D006508C2 /* DateView.m in Sources */,
 				3B780F3B1D6BF79E006AF895 /* WZIndex.m in Sources */,
 				A42BDCD31D7523F2006508C2 /* NavBarView.m in Sources */,
 				3B780F591D6BF79E006AF895 /* WZTitleTableViewCell.m in Sources */,
@@ -1460,7 +1458,6 @@
 				3B780F411D6BF79E006AF895 /* JSONModelClassProperty.m in Sources */,
 				A42BDCF71D7523F2006508C2 /* DeallocBlockExecutor.m in Sources */,
 				3B780F401D6BF79E006AF895 /* JSONModelArray.m in Sources */,
-				A42BDD0E1D75877D006508C2 /* HistoryTodayModel.m in Sources */,
 				A45DBB471D6ADF8E00B4AC2A /* LeftSlideViewController.m in Sources */,
 				3B780F471D6BF79E006AF895 /* JSONKeyMapper.m in Sources */,
 				A42BDCD51D7523F2006508C2 /* HTTPClient.m in Sources */,
@@ -1468,11 +1465,11 @@
 				3B780F461D6BF79E006AF895 /* JSONModel+networking.m in Sources */,
 				A42BDCF61D7523F2006508C2 /* WeakTarget.m in Sources */,
 				3B780F551D6BF79E006AF895 /* WZIndexItemTableViewCell.m in Sources */,
-				A42BDD0F1D75877D006508C2 /* HistoryTodayTableViewCell.m in Sources */,
 				A42BDCE51D7523F2006508C2 /* DetailNewsHeaderView.m in Sources */,
 				A45DBB5F1D6ADF8E00B4AC2A /* UIView+LBExtension.m in Sources */,
 				A42BDCF31D7523F2006508C2 /* UIView+Additions.m in Sources */,
 				A42BDCEB1D7523F2006508C2 /* ThemeDailyTableViewCell.m in Sources */,
+				3B6C8E491D76671A002DEF8D /* HistoryDetailViewController.m in Sources */,
 				3B780F491D6BF79E006AF895 /* UIImage+ImageEffects.m in Sources */,
 				3B77A7671D6D674100F5C696 /* ReadTableViewCell.m in Sources */,
 				A42BDCDC1D7523F2006508C2 /* NewsListResponseModel.m in Sources */,
